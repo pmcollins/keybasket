@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
 
   include ExceptionNotifiable
 
-  session :session_key => 'j4v4r0s3_s3ss10n'
+  session :session_key => 'foo'
 
   private
 
