@@ -1,0 +1,2 @@
+class ReportIntegerFiltersController < ReportFooFiltersController
+end

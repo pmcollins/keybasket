@@ -1,0 +1,37 @@
+<table class="main"><tr>
+  <td>
+    <fieldset>
+      <legend>Login Information</legend>
+      <% fields_for :login do |u| %>
+        <p>
+          <label>Username</label><br/>
+          <%= u.text_field :name %>
+        </p>
+        <p>
+          <label>Password</label><br/>
+          <%= u.password_field :password %>
+        </p>
+        <p>
+          <label>Password Confirmation</label><br/>
+          <%= u.password_field :password_confirmation %>
+        </p>
+      <% end %>
+    </fieldset>
+  </td>
+  <td>
+    <fieldset>
+      <legend>Contact Information</legend>
+      <% fields_for :contact do |c| %>
+        <p>
+          <label>First Name</label><br/>
+          <%= c.text_field :first_name %>
+        </p>
+        <p>
+          <label>Last Name</label><br/>
+          <%= c.text_field :last_name %>
+        </p>
+      <% end %>
+    </fieldset>
+  </td>
+</tr></table>
+

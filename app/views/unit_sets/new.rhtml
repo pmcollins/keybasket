@@ -1,0 +1,31 @@
+<%= breadcrumbs([@company, @property, @floor_plan, 'Assign Units']) %>
+<%= form_tag m([@company, @property, @floor_plan, 'unit_sets']) %>
+<fieldset>
+  <legend>Assign Units to this Floor Plan</legend>
+  <p>
+    <%= render(
+      :partial => '/floor_plans/floor_plan',
+      :object => @floor_plan
+    ) %>
+  </p>
+  <p>
+    <% if @property.units.any? %>
+      <table>
+      <% @property.units.group_by{|unit| unit.floor}.each do |floor, units| %>
+        <tr>
+          <th><%= floor %></th>
+          <% units.each do |unit| %>
+            <td>
+              <input type="checkbox" name="unit_id[<%= unit.id %>]" <% if @floor_plan.units.index(unit) %>checked<% end %> /><%= unit.apt %>
+            </td>
+          <% end %>
+        </tr>
+      <% end %>
+      </table>
+    <% else %>
+      <div class="empty">No units found for this property</div>
+    <% end %>
+  </p>
+  <%= submit_tag 'Save' %>
+</fieldset>
+</form>

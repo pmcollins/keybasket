@@ -1,0 +1,11 @@
+<%= breadcrumbs([@company, @property, 'Property Photos']) %>
+
+<fieldset>
+  <legend>Property Photos</legend>
+  <div>
+    <% @property.property_photos.each do |p| %>
+      <a href="<%= m([@company, @property, 'property_photos', p.photo.id]) %>"><img src="<%= m([@company, @property, 'thumb_photos', p.photo.id]) %>"/></a>
+    <% end %>
+  </div>
+  <%= link_to '[new]', n([@company, @property, 'property_photos/new']) %>
+</fieldset>

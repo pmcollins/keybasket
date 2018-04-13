@@ -1,0 +1,15 @@
+<% manager = manager_bar %>
+<% contact = manager.contact %>
+<p>
+  <span class="name">Hi</span>
+  <span class="value"><%= contact %></span>.
+</p>
+<p>
+  <span class="name">Properties</span>
+  <blockquote>
+  <%= render(
+    :partial => '/properties/property',
+    :collection => manager.properties
+  ) %>
+  </blockquote>
+</p>

@@ -1,0 +1,62 @@
+<%= breadcrumbs([@company, @property, @unit, @rental_agreement, 'Account Types']) %>
+<table class="main">
+  <tr>
+    <td>
+      <%= render(
+        :partial => '/rental_agreement_account_types/rental_agreement_account_type_fieldset',
+        :collection => @account_types
+      ) %>
+    </td>
+    <td>
+      <fieldset>
+        <legend>Checks</legend>
+        <p>
+          <% if @rental_agreement.checks.any? %>
+            <%= render(:partial => '/checks/check', :collection => @rental_agreement.checks) %>
+          <% else %>
+            <span class="empty">No Checks Defined</span>
+          <% end %>
+        </p>
+          <%= link_to(
+            'add a new check',
+            m([@company, @property, @unit, @rental_agreement, 'checks/new']),
+            :class => 'sys'
+          ) %>
+      </fieldset>
+      <fieldset>
+        <legend>Fees</legend>
+        <p>
+          <% if @rental_agreement.fees.any? %>
+            <table style="width: 100%;">
+              <%= render(
+                :partial => '/fees/fee_tr',
+                :collection => @rental_agreement.fees
+              ) %>
+            </table>
+          <% else %>
+            <span class="empty">No Fees Defined</span>
+          <% end %>
+        </p>
+        <%= link_to(
+          'add a new fee',
+          m([@company, @property, @unit, @rental_agreement, 'fees/new']),
+          :class => 'sys'
+          ) %>
+      </fieldset>
+      <fieldset>
+        <legend>Accounting History</legend>
+        <%= link_to(
+          'view accounting history',
+          m([
+            @company,
+            @property,
+            @unit,
+            @rental_agreement,
+            'rental_agreement_account_updates'
+          ]),
+          :class => 'sys'
+        ) %>
+      </fieldset>
+    </td>
+  </tr>
+</table>

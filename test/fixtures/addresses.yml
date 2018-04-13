@@ -1,0 +1,75 @@
+--- 
+addresses_003: 
+  line1: 123 4th Street
+  city: Los Angeles
+  line2: ""
+  zip: "90026"
+  id: "3"
+  state: CA
+addresses_004: 
+  line1: 1223 Federal. Ave.
+  city: Los Angeles
+  line2: ""
+  zip: "90025"
+  id: "4"
+  state: CA
+addresses_005: 
+  line1: 1223 Federal Ave.
+  city: LA
+  line2: 
+  zip: "90025"
+  id: "5"
+  state: CA
+addresses_006: 
+  line1: 1223 Federal Ave.
+  city: Los Angeles
+  line2: Apt. 402
+  zip: "90025"
+  id: "6"
+  state: CA
+addresses_007: 
+  line1: 816 S. Bundy
+  city: Los Angeles
+  line2: ""
+  zip: "90025"
+  id: "7"
+  state: CA
+addresses_008: 
+  line1: 400 S. Broadway
+  city: Los Angeles
+  line2: ""
+  zip: "90277"
+  id: "8"
+  state: CA
+addresses_009: 
+  line1: 123 4th Street.
+  city: LA
+  line2: ""
+  zip: ""
+  id: "9"
+  state: CA
+addresses_010: 
+  line1: 332 1st St.
+  city: Los Angeles
+  line2: ""
+  zip: ""
+  id: "10"
+  state: CA
+addresses_001: 
+  line1: |-
+    1223 Federal Ave.
+    Apt. 402
+  city: ""
+  line2: ""
+  zip: ""
+  id: "1"
+  state: CA
+addresses_002: 
+  line1: |-
+    1223 Federal Ave.
+    Apt. 402
+  city: Shit
+  line2: ""
+  zip: "12456"
+  id: "2"
+  state: Fuck

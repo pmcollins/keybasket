@@ -1,0 +1,20 @@
+<%= breadcrumbs([@company, @property, @unit, 'Edit Listing']) %>
+<% form_for(
+  :listing,
+  :url => m([@company, @property, @unit, @listing]),
+  :html => {:method => 'put'},
+  :builder => LabeledBuilder
+) do |form| %>
+<%= render :partial => 'form', :object => form %>
+<% end %>
+
+<fieldset>
+  <legend>Delete Listing</legend>
+  <% form_for(
+    :listing,
+    :url => m([@company, @property, @unit, @listing]),
+    :html => {:method => 'delete'}
+  ) do |form| %>
+    <p><%= submit_tag 'Delete this listing' %></p>
+  <% end %>
+</fieldset>

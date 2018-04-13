@@ -1,0 +1,32 @@
+<%= breadcrumbs([@company, @property, 'Details']) %>
+<% form_for(
+  :property,
+  :url => m([@company, @property]),
+  :html => {:method => :put}
+) do |form| %>
+  <fieldset>
+    <legend>Property Details</legend>
+    <table class="top_aligned"><tr>
+      <td>
+        <p>
+          <%= render(
+            :partial => 'form',
+            :object => form
+          ) %>
+        </p>
+      </td>
+    </tr></table>
+    <p><%= submit_tag 'Save' %></p>
+  </fieldset>
+<% end %>
+
+<% form_for(
+  :property,
+  :url => m([@company, @property]),
+  :html => {:method => :delete}
+) do |form| %>
+  <fieldset>
+    <legend>Delete This Property</legend>
+    <p><%= submit_tag 'Delete' %></p>
+  </fieldset>
+<% end %>

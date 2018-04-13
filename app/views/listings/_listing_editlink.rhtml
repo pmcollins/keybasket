@@ -1,0 +1,13 @@
+<div>
+  <% listing = listing_editlink %>
+  <span class="name">Unit <%= listing.unit %></span>
+  <span class="value"><%= render(
+    :partial => '/listings/listing_core',
+    :object => listing
+  ) %></span>
+  <%= link_to(
+    'edit',
+    m([@company, @property, listing.unit, listing, 'edit']),
+    :class => 'sys_inline'
+  ) %>
+</div>

@@ -1,0 +1,14 @@
+<%= breadcrumbs([@company, @report, @relation_attribute, 'Text Filter']) %>
+<fieldset>
+  <legend>Text Filter</legend>
+  <% form_for(
+    :report_text_filter,
+    :url => m([@company, @report, @relation_attribute, 'report_text_filters']),
+    :builder => LabeledBuilder
+  ) do |f| %>
+    <p>
+      <div><%= f.text_field :search_value %></div>
+      <div><%= submit_tag('Search') %></div>
+    </p>
+  <% end %>
+</fieldset>

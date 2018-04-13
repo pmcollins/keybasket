@@ -1,0 +1,41 @@
+<%= breadcrumbs([@company, @coordinator, 'Edit Contact']) %>
+<fieldset>
+  <legend><%= @contact %></legend>
+  <% form_for(
+    :contact,
+    :url => m([@company, @coordinator, 'coordinator_contacts', @contact.id]),
+    :html => {:method => 'put'}
+  ) do |contact| %>
+    <p>
+      <label>First Name</label><br/>
+      <%= contact.text_field :first_name %>
+    </p>
+    <p>
+      <label>Last Name</label><br/>
+      <%= contact.text_field :last_name %>
+    </p>
+    <% fields_for :address do |address| %>
+      <p>
+        <label>Address Line 1</label><br/>
+        <%= address.text_field :line1 %>
+      </p>
+      <p>
+        <label>Address Line 2</label><br/>
+        <%= address.text_field :line2 %><br/>
+      </p>
+      <p>
+        <label>City</label><br/>
+        <%= address.text_field :city %><br/>
+      </p>
+      <p>
+        <label>State</label><br/>
+        <%= address.text_field :state %><br/>
+      </p>
+      <p>
+        <label>Zip</label><br/>
+        <%= address.text_field :zip %>
+      </p>
+    <% end %>
+    <%= submit_tag 'Save' %>
+  <% end %>
+</fieldset>

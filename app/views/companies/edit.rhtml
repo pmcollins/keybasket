@@ -1,0 +1,36 @@
+<%= breadcrumbs([@company]) %>
+<!-- %= error_messages_for :company % -->
+<% form_for(
+  :company,
+  :url => m([@company]),
+  :html => {:method => :put},
+  :builder => LabeledBuilder
+) do |f| %>
+<fieldset>
+  <legend>Company Details</legend>
+  <%= f.text_field :name %>
+  <% fields_for :address do |a| %>
+    <p>
+      <label>Line 1</label><br/>
+      <%= a.text_field :line1 %>
+    </p>
+    <p>
+      <label>Line 2</label><br/>
+      <%= a.text_field :line2 %>
+    </p>
+    <p>
+      <label>City</label><br/>
+      <%= a.text_field :city  %>
+    </p>
+    <p>
+      <label>State</label><br/>
+      <%= a.text_field :state %>
+    </p>
+    <p>
+      <label>Zip</label><br/>
+      <%= a.text_field :zip   %>
+    </p>
+  <% end %>
+  <%= submit_tag 'Update' %>
+</fieldset>
+<% end %>

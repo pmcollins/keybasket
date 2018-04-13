@@ -1,0 +1,6 @@
+<span class="unit<% if unit.flagged? %> notice<% end %>">
+  <%= link_to(
+    unit.apt,
+    m([@company, @property, unit])
+  ) %>
+</span>

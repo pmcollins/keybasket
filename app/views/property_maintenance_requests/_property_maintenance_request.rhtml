@@ -1,0 +1,8 @@
+<% request = property_maintenance_request %>
+<dt>
+  <%= link_to(
+    request.created_at,
+    m([@company, @property, 'property_maintenance_requests', request.id])
+  ) %>
+</dt>
+<dd><%= request.maintenance_request_status %></dd>

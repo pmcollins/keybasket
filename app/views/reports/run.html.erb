@@ -1,0 +1,14 @@
+<table class="report">
+  <tr>
+    <% @output_fields.each do |field| %>
+      <th><%= "#{field.relation.name.singularize} #{field.name}".titleize %></th>
+    <% end %>
+  </tr>
+  <% @rows.each do |row| %>
+    <tr>
+      <% @output_fields.each do |field| %>
+        <td><%= linkify(row[field.relation.name.singularize.to_sym], field.name) %></td>
+      <% end %>
+    </tr>
+  <% end %>
+</table>

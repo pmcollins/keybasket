@@ -1,0 +1,41 @@
+--- 
+accounts_010: 
+  name: po_expenses
+  id: "10"
+  account_type_id: "7"
+accounts_009: 
+  name: orders_payable
+  id: "9"
+  account_type_id: "10"
+accounts_001: 
+  name: rent_income
+  id: "1"
+  account_type_id: "6"
+accounts_002: 
+  name: fee_income
+  id: "2"
+  account_type_id: "6"
+accounts_003: 
+  name: rents_receivable
+  id: "3"
+  account_type_id: "9"
+accounts_004: 
+  name: fees_receivable
+  id: "4"
+  account_type_id: "9"
+accounts_005: 
+  name: deposits_receivable
+  id: "5"
+  account_type_id: "9"
+accounts_006: 
+  name: security_deposits
+  id: "6"
+  account_type_id: "5"
+accounts_007: 
+  name: undeposited_funds
+  id: "7"
+  account_type_id: "1"
+accounts_008: 
+  name: deposited_funds
+  id: "8"
+  account_type_id: "1"

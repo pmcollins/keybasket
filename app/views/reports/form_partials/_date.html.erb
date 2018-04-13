@@ -1,0 +1,4 @@
+<%= collection_select(filter_name, :operator, @operators, :id, :description) %>
+<div><%= date_select(filter_name, :value1) %></div>
+<div>and</div>
+<div><%= date_select(filter_name, :value2) %></div>

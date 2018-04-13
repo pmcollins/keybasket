@@ -1,0 +1,17 @@
+<fieldset>
+  <legend>Listing</legend>
+  <p>
+    <table style="width: 100%;"><tr>
+      <td style="vertical-align: top">
+        <%= form.text_field :rent, :size => 8 %>
+        <%= form.text_field :lease_months, :size => 4 %>
+        <%= form.date_select :listing_date %>
+        <%= form.date_select :available_date %>
+      </td>
+      <td style="vertical-align: top;">
+        <%= form.text_area :description, :rows => 8 %>
+      </td>
+    </tr></table>
+  </p>
+  <div><%= submit_tag 'Save' %></div>
+</fieldset>

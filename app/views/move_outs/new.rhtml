@@ -1,0 +1,15 @@
+<%= breadcrumbs([@company, @property, @unit, @rental_agreement, 'Move Out']) %>
+<fieldset>
+  <legend>Move Out</legend>
+  <% form_for(
+    :move_out,
+    :url => m([@company, @property, @unit, @rental_agreement, 'move_outs']),
+    :builder => LabeledBuilder
+  ) do |form| %>
+    <p>
+      <%= form.date_select :moved_out_date %>
+      <%= form.text_area :notes, :rows => 4 %>
+    </p>
+    <%= submit_tag 'Retire Rental Agreement and Move Tenants Out Now' %>
+  <% end %>
+</fieldset>

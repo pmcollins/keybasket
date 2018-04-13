@@ -1,0 +1,137 @@
+<%= breadcrumbs([@company]) %>
+<% if session[:manager_id] %>
+  <fieldset>
+    <legend>Properties</legend>
+    <dl>
+      <% @properties.each do |property| %>
+        <dt><%= property %></dt>
+        <dd><%= property.units.count %> units</dd>
+      <% end %>
+    </dl>
+
+  </fieldset>
+<% else %>
+<table class="main"><tr>
+  <td>
+    <fieldset>
+      <legend>Properties</legend>
+      <p>
+        <% if @properties.any? %>
+          <%= render(
+            :partial => '/properties/property',
+            :collection => @properties
+          ) %>
+        <% else %>
+          <span class="empty">No properties defined</span>
+        <% end %>
+      </p>
+      <div class="sys">
+        <%= link_to(
+          'new property',
+          m([@company, 'properties/new'])
+        ) %>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Company Details</legend>
+        <div><%= @company.name %></div>
+        <% if @address %>
+            <div><%= render(
+              :partial => '/addresses/address',
+              :object => @address
+            ) %></div>
+        <% else %>
+          <div class="empty">No office address defined</div>
+        <% end %>
+      <div class="sys">
+        <%= link_to(
+          'edit company',
+          m([@company, 'edit'])
+        ) %>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Office Phones</legend>
+      <p>
+        <% if @phones.any? %>
+          <%= render(
+            :partial => '/company_phones/company_phone',
+            :collection => @phones
+          ) %>
+        <% else %>
+          <span class="empty">No phones defined.</span>
+        <% end %>
+      </p>
+      <div class="sys">
+        <%= link_to(
+          'new office phone',
+          m([@company, 'company_phones/new'])
+        ) %>
+      </div>
+    </fieldset>
+  </td>
+  <td>
+    <fieldset>
+      <legend>Management Coordinators</legend>
+      <p>
+        <% if @coordinators.any? %>
+          <%= render(
+            :partial => '/coordinators/coordinator',
+            :collection => @coordinators
+          ) %>
+        <% else %>
+          <span class="empty">No management coordinators defined</span>
+        <% end %>
+      </p>
+      <div class="sys">
+        <%= link_to(
+          'new management coordinator',
+          m([@company, 'coordinators/new'])
+        ) %>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Managers</legend>
+      <p>
+        <% if @managers.any? %>
+          <%= render(
+            :partial => '/managers/manager',
+            :collection => @managers
+          ) %>
+        <% else %>
+          <span class="empty">No managers defined</span>
+        <% end %>
+      </p>
+      <div class="sys">
+        <%= link_to(
+          'new manager',
+          m([@company, 'managers/new'])
+        ) %>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Accounting Operations</legend>
+      <div class="sys">
+        <%= link_to(
+          'view accounting summary',
+          m([@company, 'account_types'])
+        ) %>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Reports</legend>
+      <p>
+        <% @reports.each do |report| %>
+          <div><%= link_to(report, m([@company, report])) %></div>
+        <% end %>
+      </p>
+      <div class="sys">
+        <%= link_to(
+          'manage reports',
+          m([@company, 'reports']))
+        %>
+      </div>
+    </fieldset>
+  </td>
+</tr></table>
+<% end %>

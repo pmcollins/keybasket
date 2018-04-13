@@ -1,0 +1,30 @@
+<%= breadcrumbs([@company, @vendor]) %>
+
+<fieldset>
+  <legend><%= @vendor %></legend>
+  <p>
+    <% form_for(
+      :vendor,
+      :url => m([@company, @vendor]),
+      :builder => LabeledBuilder,
+      :html => {:method => 'put'}
+    ) do |vendor| %>
+      <%= vendor.text_field :name %>
+      <%= submit_tag 'Save' %>
+    <% end %>
+  </p>
+</fieldset>
+
+<fieldset>
+  <legend>Delete <%= @vendor %></legend>
+  <p>
+  <% form_for(
+    :vendor,
+    :url => m([@company, @vendor]),
+    :builder => LabeledBuilder,
+    :html => {:method => 'delete'}
+  ) do |vendor| %>
+    <%= submit_tag 'Delete' %>
+  <% end %>
+  </p>
+</fieldset>

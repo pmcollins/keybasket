@@ -1,0 +1,30 @@
+<% rental_agreement = rental_agreement_verbose %>
+<% if rental_agreement.tenants.any? %>
+  <div><span class="name">Tenants: </span><%= render(
+    :partial => '/tenants/tenant',
+    :collection => rental_agreement.tenants
+  ) %></div>
+<% end %>
+<% if rental_agreement.current_rent %>
+<div>
+  <span class="name">Current rent:</span>
+  <span class="value"><%= render(
+    :partial => '/current_rents/current_rent_nolink',
+    :object => rental_agreement.current_rent
+  ) %></span>
+</div>
+<% end %>
+<div>
+  <span class="name">Move-in date:</span>
+  <span class="value"><%= rental_agreement.move_in_date %></span>
+</div>
+<div>
+  <span class="name">Deposit:</span>
+  <span class="value"><%= number_to_currency(rental_agreement.deposit) %></span>
+</div>
+<% if rental_agreement.notes? %>
+<div>
+  <span class="name">Notes:</span>
+  <span class="value"><%= rental_agreement.notes %></span>
+</div>
+<% end %>

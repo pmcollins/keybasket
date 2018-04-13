@@ -1,0 +1,18 @@
+Dear <%= @contact.first_name %>,
+
+This is an automated message from keybasket.com notifying you of an upcoming
+vacancy that has a floor plan you expressed interested in.
+
+Unit <%= @unit.apt %> in <%= @property.name %> will be vacated on <%= @moveout_notice.moveout_date %> and should be available shortly thereafter.
+
+If you might be interested in this unit, feel free to contact the property manager:
+
+<%= render(
+  :partial => '../managers/manager_text',
+  :object => @manager
+) %>
+
+Thanks,
+
+Keybasket
+

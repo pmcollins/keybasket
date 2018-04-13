@@ -1,0 +1,81 @@
+--- 
+floor_plans_003: 
+  name: 1+1 A
+  bedrooms: "1"
+  half_bath: 
+  sq_ft: "588"
+  id: "3"
+  property_id: "1"
+  bathrooms: "1"
+  description: 
+  nominal_rent: 
+floor_plans_004: 
+  name: 1+1 B
+  bedrooms: "1"
+  half_bath: 
+  sq_ft: "777"
+  id: "4"
+  property_id: "1"
+  bathrooms: "1"
+  description: 
+  nominal_rent: 
+floor_plans_005: 
+  name: Jr. 1+1
+  bedrooms: "1"
+  half_bath: 
+  sq_ft: "514"
+  id: "5"
+  property_id: "1"
+  bathrooms: "1"
+  description: 
+  nominal_rent: 
+floor_plans_006: 
+  name: 1+1 C
+  bedrooms: "1"
+  half_bath: 
+  sq_ft: "638"
+  id: "6"
+  property_id: "1"
+  bathrooms: "1"
+  description: 
+  nominal_rent: 
+floor_plans_007: 
+  name: 2+2 C
+  bedrooms: "2"
+  half_bath: 
+  sq_ft: "1048"
+  id: "7"
+  property_id: "1"
+  bathrooms: "2"
+  description: 
+  nominal_rent: 
+floor_plans_008: 
+  name: 2+2 D
+  bedrooms: "2"
+  half_bath: 
+  sq_ft: "877"
+  id: "8"
+  property_id: "1"
+  bathrooms: "2"
+  description: 
+  nominal_rent: 
+floor_plans_001: 
+  name: 2+2 A
+  bedrooms: "2"
+  half_bath: 
+  sq_ft: "896"
+  id: "1"
+  property_id: "1"
+  bathrooms: "2"
+  description: ""
+  nominal_rent: "1795.0"
+floor_plans_002: 
+  name: 2+2 B
+  bedrooms: "2"
+  half_bath: 
+  sq_ft: "927"
+  id: "2"
+  property_id: "1"
+  bathrooms: "2"
+  description: 
+  nominal_rent: 

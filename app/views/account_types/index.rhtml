@@ -1,0 +1,66 @@
+<%= breadcrumbs([@company, 'Accounting Overview']) %>
+
+<table class="main">
+  <tr>
+    <td>
+        <p>
+          <%= render(
+            :partial => '/account_types/account_type_fieldset',
+            :collection => @account_types
+          ) %>
+        </p>
+    </td>
+    <td>
+      <fieldset>
+        <legend>Vendors</legend>
+        <p>
+          <% if @vendors.any? %>
+            <%= render(
+              :partial => '/vendors/vendor',
+              :collection => @vendors
+            ) %>
+          <% else %>
+            <span class="empty">No vendors found</span>
+          <% end %>
+        </p>
+        <div>
+          <%= link_to(
+            'new vendor',
+            m([@company, 'vendors/new']),
+            :class => 'sys'
+          ) %>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Purchase Orders Pending</legend>
+        <p>
+          <% if @purchase_orders.any? %>
+            <%= render(
+              :partial => '/purchase_orders/company_purchase_order',
+              :collection => @purchase_orders
+            ) %>
+          <% else %>
+            <span class="empty">No Purchase Orders Pending</span>
+          <% end %>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Accounting Operations</legend>
+        <div class="sys">
+          <%= link_to(
+            'new account transfer',
+            m([@company, 'account_transfers/new'])
+          ) %>
+          <%= link_to(
+            'generate rents receivable',
+            m([@company, 'receivable_rents/new'])
+          ) %>
+          <%= link_to(
+            'show checks',
+            m([@company, 'company_checks'])
+          ) %>
+        </div>
+      </fieldset>
+    </td>
+  </tr>
+</table>

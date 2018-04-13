@@ -1,0 +1,33 @@
+--- 
+measure_units_008: 
+  name: set
+  id: "8"
+  ordering: "7"
+measure_units_001: 
+  name: each
+  id: "1"
+  ordering: "0"
+measure_units_002: 
+  name: box
+  id: "2"
+  ordering: "1"
+measure_units_003: 
+  name: foot
+  id: "3"
+  ordering: "2"
+measure_units_004: 
+  name: ounce
+  id: "4"
+  ordering: "3"
+measure_units_005: 
+  name: pound
+  id: "5"
+  ordering: "4"
+measure_units_006: 
+  name: quart
+  id: "6"
+  ordering: "5"
+measure_units_007: 
+  name: ream
+  id: "7"
+  ordering: "6"

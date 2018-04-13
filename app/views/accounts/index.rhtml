@@ -1,0 +1,25 @@
+<%= breadcrumbs([@company, 'Accounts']) %>
+
+<fieldset>
+  <legend>Account Types</legend>
+  <p>
+    <table style="width: 100%;">
+      <%= render(
+        :partial => '/account_types/account_type_tr',
+        :collection => @account_types
+      ) %>
+    </table>
+  </p>
+</fieldset>
+
+<fieldset>
+  <legend>Accounts</legend>
+  <p>
+    <table style="width: 100%;">
+      <%= render(
+        :partial => '/accounts/account_summary_tr',
+        :collection => @accounts
+      ) %>
+    </table>
+  </p>
+</fieldset>

@@ -1,0 +1,31 @@
+--- 
+properties_001: 
+  name: Embassy Apartments
+  parking_type: 
+  has_pool: 
+  manager_id: "2"
+  id: "1"
+  address_id: "4"
+  company_id: "1"
+  property_photo_id: 
+  ad_text: hello
+properties_002: 
+  name: 816 Bundy
+  parking_type: 
+  has_pool: 
+  manager_id: "2"
+  id: "2"
+  address_id: "7"
+  company_id: "1"
+  property_photo_id: 
+  ad_text: 
+properties_003: 
+  name: The Moose
+  parking_type: 
+  has_pool: 
+  manager_id: 
+  id: "3"
+  address_id: "8"
+  company_id: "2"
+  property_photo_id: 
+  ad_text: 

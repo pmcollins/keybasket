@@ -1,0 +1,27 @@
+<%= breadcrumbs([@company, 'Generate Rents Receivable']) %>
+
+<fieldset>
+  <legend>Rents Receivable Generation History</legend>
+  <p>
+    <%= render(
+      :partial => '/receivable_rents/receivable_rent',
+      :collection => @company.receivable_rents
+    ) %>
+  </p>
+</fieldset>
+
+<fieldset>
+  <legend>Generate Rents Receivable</legend>
+  <% form_for(
+    :receivable_rent,
+    :url => m([@company, 'receivable_rents'])
+  ) do |form| %>
+  <p>
+    <label>
+      Generate rents receivable for the month of
+    </label><br/>
+    <%= form.date_select :when, :order => [:month, :year] %>
+  </p>
+  <div><%= submit_tag 'Generate Rents Receivable for the Selected Month Now' %></div>
+  <% end %>
+</fieldset>

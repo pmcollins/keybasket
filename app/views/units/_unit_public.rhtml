@@ -1,0 +1,9 @@
+<div class="unit">
+  <fieldset>
+    <legend>Apt <%= unit_public.apt %></legend>
+    <%= render(
+      :partial => '/floor_plans/floor_plan_public',
+      :object => unit_public.floor_plan
+    ) %>
+  </fieldset>
+</div>

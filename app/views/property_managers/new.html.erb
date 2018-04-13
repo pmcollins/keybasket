@@ -1,0 +1,18 @@
+<%= breadcrumbs([@company, @property, 'Manager']) %>
+<fieldset>
+  <legend>Manager</legend>
+  <% form_for(
+    :property_manager,
+    :url => m([@company, @property, 'property_managers'])
+  ) do |property_manager| %>
+    <p>
+      <% @managers.each do |manager| %>
+        <div>
+          <%= property_manager.radio_button(:manager_id, manager.id) %>
+          <%= manager %>
+        </div>
+      <% end %>
+    </p>
+    <div><%= submit_tag 'Add Manager' %></div>
+  <% end %>
+</fieldset>

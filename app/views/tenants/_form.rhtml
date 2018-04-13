@@ -1,0 +1,10 @@
+<% fields_for :contact do |contact| %>
+  <p>
+    <label>First Name</label><br/>
+    <%= contact.text_field :first_name %>
+  </p>
+  <p>
+    <label>Last Name</label><br/>
+    <%= contact.text_field :last_name %>
+  </p>
+<% end %>

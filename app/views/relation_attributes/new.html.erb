@@ -1,0 +1,25 @@
+<%= breadcrumbs([@company, @report, 'Attribute Filter']) %>
+
+<% form_for(
+  :relation_attribute,
+  :url => m([@company, @report, 'relation_attributes'])
+) do |form| %>
+  <p>
+    <% @relations.each do |relation| %>
+      <fieldset>
+        <legend><%= relation.name %></legend>
+          <% relation.relation_attributes.each do |relation_attribute| %>
+            <div>
+              <%= form.radio_button(
+                :id,
+                relation_attribute.id
+              ) %>
+              <span class="value"><%= relation_attribute.name %></span>
+            </div>
+          <% end %>
+      </fieldset>
+    <% end %>
+  </p>
+  <div><%= submit_tag 'Continue' %></div>
+<% end %>
+

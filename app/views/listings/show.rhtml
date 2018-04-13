@@ -1,0 +1,27 @@
+<%= breadcrumbs([@company, @property, @unit, 'Current Listing']) %>
+<fieldset>
+  <legend>Listing Detail</legend>
+  <p><%= render :partial => 'listing', :object => @listing %></p>
+  <%= link_to(
+    'edit',
+    m([@company, @property, @unit, @listing, 'edit']),
+    :class => 'sys'
+  ) %>
+</fieldset>
+
+<fieldset>
+  <legend>Showings</legend>
+  <% if @listing.showings.any? %>
+    <p>
+    <%= render(:partial => '/showings/showing', :collection => @listing.showings) %>
+    </p>
+  <% else %>
+    <p><span class="empty">No showings defined.</span></p>
+  <% end %>
+  <div class="sys">
+    <%= link_to(
+      'new',
+      m([@company, @property, @unit, @listing, 'showings/new'])
+    ) %>
+  </div>
+</fieldset>

@@ -1,0 +1,6 @@
+<div class="value">
+  <%= link_to(
+    "#{check.nominal_date} Check For #{number_to_currency(check.amount)}",
+    m([@company, @property, @unit, @rental_agreement, check])
+  ) %>
+</div>

@@ -1,0 +1,31 @@
+<%= breadcrumbs([@company, @property, 'New Vacancy Notification'])%>
+<fieldset>
+  <legend>Vacancy Notification</legend>
+  <% form_for(
+    :vacancy_notification,
+    :url => m([@company, @property, 'vacancy_notifications']),
+    :builder => LabeledBuilder
+  ) do |form| %>
+    <% fields_for(:contact) do |field| %>
+      <p>
+        <label>First and Last Name</label><br/>
+        <%= field.text_field :first_name, :size => 16 %>
+        <%= field.text_field :last_name, :size => 16 %>
+      </p>
+      <p>
+        <label>Email</label><br/>
+        <%= field.text_field :email, :size => 32 %>
+      </p>
+    <% end %>
+    <% @property.floor_plans.each do |floor_plan| %>
+      <div>
+        <%= check_box_tag('floor_plan_ids[]', floor_plan.id) %>
+        <%= render(
+          :partial => '/floor_plans/floor_plan_inline',
+          :object => floor_plan
+        ) %>
+      </div>
+    <% end %>
+    <%= submit_tag 'Go' %>
+  <% end %>
+</fieldset>

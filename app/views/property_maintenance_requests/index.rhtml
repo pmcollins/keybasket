@@ -1,0 +1,19 @@
+<%= breadcrumbs([@company, @property, 'Maintenance Requests']) %>
+
+<fieldset>
+  <legend>Maintenance Requests</legend>
+  <dl>
+    <% @property_maintenance_requests.each do |r| %>
+      <dt>
+        <%= link_to(
+          r.created_at,
+          m([@company, @property, r])
+        ) %>
+      </dt>
+      <dd>
+        <div><%= r.maintenance_request_status %></div>
+        <div><%= r.description %></div>
+      </dd>
+    <% end %>
+  </dl>
+</fieldset>

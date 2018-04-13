@@ -1,0 +1,46 @@
+<%= breadcrumbs([@company, @property, @unit, 'New Move In']) %>
+
+<fieldset>
+  <legend>Move-in Wizard</legend>
+  <% form_for(
+    :move_in,
+    :url => m([@company, @property, @unit, 'move_ins'])
+  ) do |form| %>
+    <p>
+      <label>Tenant First Name</label><br/>
+      <%= form.text_field :first_name, :size => 16 %>
+    </p>
+    <p>
+      <label>Tenant Last Name</label><br/>
+      <%= form.text_field :last_name, :size => 16 %>
+    </p>
+    <p>
+      <label>Phone</label><br/>
+      <%= form.text_field :phone, :size => 16 %>
+      <%= form.check_box :is_land_line %>
+      land-line
+    </p>
+    <p>
+      <label>Phone Label</label><br/>
+      <%= form.text_field :tag, :size => 8 %>
+    </p>
+    <p>
+      <label>Move-in Date</label><br/>
+      <%= form.date_select :move_in_date %>
+    </p>
+    <p>
+      <label>Lease Duration in Months</label><br/>
+      <%= form.text_field :lease_duration, :size => 8 %>
+      <span class="tiny">leave blank if no lease</span>
+    </p>
+    <p>
+      <label>Rent</label><br/>
+      <%= form.text_field :rent, :size => 8 %>
+    </p>
+    <p>
+      <label>Deposit</label><br/>
+      <%= form.text_field :deposit, :size => 8 %>
+    </p>
+    <div><%= submit_tag 'Save' %></div>
+  <% end %>
+</fieldset>

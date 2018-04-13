@@ -1,0 +1,39 @@
+<%= breadcrumbs([@company, @property, ['property_maintenance_request', @property_maintenance_request]]) %>
+
+<fieldset>
+  <legend><%= @property_maintenance_request %></legend>
+  <dl>
+    <dt>Created</dt>
+    <dd><%= @property_maintenance_request.created_at %></dd>
+    <dt>Descr.</dt>
+    <dd><%= @property_maintenance_request.description %></dd>
+    <dt>Unit</dt>
+    <dd><%= @property_maintenance_request.unit %></dd>
+  </dl>
+</fieldset>
+
+<fieldset>
+  <legend>Updates</legend>
+  <p>
+    <% if @property_maintenance_request_updates.any? %>
+      <%= render(
+        :partial => '/property_maintenance_request_updates/property_maintenance_request_update',
+        :collection => @property_maintenance_request_updates
+      ) %>
+    <% else %>
+      <span class="empty">No Maintenance Request Updates Found</span>
+    <% end %>
+  </p>
+  <div class="sys">
+    <%= link_to(
+      'new update',
+      m([
+        @company,
+        @property,
+        'property_maintenance_requests', 
+        @property_maintenance_request.id,
+        'property_maintenance_request_updates/new'
+      ])
+    ) %>
+  </div>
+</fieldset>

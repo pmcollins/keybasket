@@ -1,0 +1,19 @@
+<%= breadcrumbs([@company, @parent, 'Notes']) %>
+
+<fieldset>
+  <legend><%= @parent %> Notes</legend>
+  <% if @notes.any? %>
+    <dl>
+      <% @notes.each do |note| %>
+        <dt><%= link_to(
+          note.name,
+          "#{request.path}/#{note.id}"
+        ) %></dt>
+        <dd><%= note.value %></dd>
+      <% end %>
+    <dl>
+  <% else %>
+    <p><div class="empty">No notes found.</div></p>
+  <% end %>
+  <div class="sys"><%= link_to('new note', "#{request.path}/new") %></div>
+</fieldset>

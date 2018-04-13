@@ -1,0 +1,147 @@
+<%= breadcrumbs([@company, @property, @unit]) %>
+
+<table class="main">
+  <tr>
+    <td>
+      <fieldset>
+        <legend>Rental Agreement</legend>
+        <% if @rental_agreement %>
+          <%= render(
+            :partial => '/rental_agreements/rental_agreement',
+            :object => @rental_agreement
+          ) %>
+          <div class="sys">
+            <%= link_to(
+              'show rental agreement',
+              m([@company, @property, @unit, @rental_agreement])
+            ) %>
+          </div>
+        <% else %>
+          <p><span class="empty">No rental agreement.</span></p>
+          <div class="sys">
+            <%= link_to(
+              'new rental agreement',
+              m([@company, @property, @unit, 'rental_agreements/new'])
+            ) %>
+          </div>
+          <div class="sys">
+            <%= link_to(
+              'move-in wizard',
+              m([@company, @property, @unit, 'move_ins/new'])
+            ) %>
+          </div>
+        <% end %>
+      </fieldset>
+      <fieldset>
+        <legend>Unit Attributes</legend>
+        <dl>
+          <dt>Unit</dt>
+          <dd><%= @unit.apt %></dd>
+
+          <dt>Floor</dt>
+          <dd><%= @unit.floor %></dd>
+
+          <dt>Notes</dt>
+          <% if @unit.notes %>
+            <dd><%= @unit.notes %></dd>
+          <% else %>
+            <dd class="empty">No notes defined.</dd>
+          <% end %>
+
+          <dt>Flag</dt>
+          <% if @unit.flagged? %>
+            <dd>This unit has been flagged.</dd>
+          <% else %>
+            <dd class="empty">No flag present.</dd>
+          <% end %>
+        </dl>
+        <div class="sys">
+          <%= link_to(
+            'edit unit attributes',
+            m([@company, @property, @unit, 'edit'])
+          ) %>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Floor Plan</legend>
+        <% if @floor_plan %>
+          <%= render(
+            :partial => '/floor_plans/floor_plan_verbose',
+            :object => @floor_plan
+          ) %>
+        <% else %>
+          <span class="empty">No floorplan is assigned to this unit.</span>
+        <% end %>
+        <div class="sys">
+          <%= link_to(
+            'view floor plan',
+            m([@company, @property, @floor_plan])
+          ) %>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Open Maintenance Requests</legend>
+        <% if @maintenance_requests.any? %>
+          <dl>
+            <%= render(
+              :partial => '/maintenance_requests/maintenance_request',
+              :collection => @maintenance_requests
+            ) %>
+          </dl>
+        <% else %>
+          <p class="empty">No open maintenance requests for this unit.</p>
+        <% end %>
+        <div class="sys">
+          <%= link_to(
+            'new maintenance request',
+            m([@company, @property, @unit, 'maintenance_requests/new'])
+          ) %>
+        </div>
+      </fieldset>
+    </td>
+    <td>
+      <fieldset>
+        <legend>Listing for this Unit</legend>
+        <% if @unit.listing %>
+          <p><%= render(
+            :partial => '/listings/listing',
+            :object => @unit.listing
+          ) %></p>
+          <div class="sys">
+            <%= link_to(
+              'view listing',
+              m([@company, @property, @unit, @unit.listing])
+            ) %>
+          </div>
+        <% else %>
+          <p><span class="empty">No current listing.</span></p>
+          <div class="sys">
+            <%= link_to(
+              'new listing',
+              m([@company, @property, @unit, 'listings/new'])
+            ) %>
+          </div>
+        <% end %>
+      </fieldset>
+      <fieldset>
+        <legend>Unit Photos</legend>
+        <p>
+          <% if @photos.any? %>
+            <%= render(
+              :partial => '/unit_photos/unit_thumbnail',
+              :collection => @photos
+            ) %>
+          <% else %>
+            <span class="empty">No photos found.</span>
+          <% end %>
+        </p>
+        <div class="sys">
+          <%= link_to(
+            'new photo',
+            m([@company, @property, @unit, 'unit_photos/new'])
+          )%>
+        </div>
+      </fieldset>
+    </td>
+  </tr>
+</table>

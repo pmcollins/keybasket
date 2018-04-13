@@ -1,0 +1,1613 @@
+--- 
+account_updates_045: 
+  rental_agreement_id: "24"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1495"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "24"
+  id: "45"
+  property_id: "1"
+  company_id: "1"
+account_updates_100: 
+  rental_agreement_id: "50"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1595"
+  transfer_id: "1"
+  unit_id: "51"
+  id: "100"
+  property_id: "1"
+  company_id: "1"
+account_updates_017: 
+  rental_agreement_id: "10"
+  created_on: 2007-12-15 10:10:44
+  vendor_id: 
+  debit: "1500"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "10"
+  id: "17"
+  property_id: "1"
+  company_id: "1"
+account_updates_073: 
+  rental_agreement_id: "37"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1850"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "38"
+  id: "73"
+  property_id: "1"
+  company_id: "1"
+account_updates_046: 
+  rental_agreement_id: "24"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1495"
+  transfer_id: "1"
+  unit_id: "24"
+  id: "46"
+  property_id: "1"
+  company_id: "1"
+account_updates_101: 
+  rental_agreement_id: "74"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1850"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "52"
+  id: "101"
+  property_id: "1"
+  company_id: "1"
+account_updates_018: 
+  rental_agreement_id: "10"
+  created_on: 2007-12-15 10:10:44
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1500"
+  transfer_id: "1"
+  unit_id: "10"
+  id: "18"
+  property_id: "1"
+  company_id: "1"
+account_updates_074: 
+  rental_agreement_id: "37"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1850"
+  transfer_id: "1"
+  unit_id: "38"
+  id: "74"
+  property_id: "1"
+  company_id: "1"
+account_updates_047: 
+  rental_agreement_id: "25"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1525"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "25"
+  id: "47"
+  property_id: "1"
+  company_id: "1"
+account_updates_102: 
+  rental_agreement_id: "74"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1850"
+  transfer_id: "1"
+  unit_id: "52"
+  id: "102"
+  property_id: "1"
+  company_id: "1"
+account_updates_019: 
+  rental_agreement_id: "64"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1850"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "11"
+  id: "19"
+  property_id: "1"
+  company_id: "1"
+account_updates_075: 
+  rental_agreement_id: "38"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1575"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "39"
+  id: "75"
+  property_id: "1"
+  company_id: "1"
+account_updates_048: 
+  rental_agreement_id: "25"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1525"
+  transfer_id: "1"
+  unit_id: "25"
+  id: "48"
+  property_id: "1"
+  company_id: "1"
+account_updates_103: 
+  rental_agreement_id: "52"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1725"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "53"
+  id: "103"
+  property_id: "1"
+  company_id: "1"
+account_updates_076: 
+  rental_agreement_id: "38"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1575"
+  transfer_id: "1"
+  unit_id: "39"
+  id: "76"
+  property_id: "1"
+  company_id: "1"
+account_updates_104: 
+  rental_agreement_id: "52"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1725"
+  transfer_id: "1"
+  unit_id: "53"
+  id: "104"
+  property_id: "1"
+  company_id: "1"
+account_updates_077: 
+  rental_agreement_id: "39"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1495"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "40"
+  id: "77"
+  property_id: "1"
+  company_id: "1"
+account_updates_049: 
+  rental_agreement_id: "26"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1795"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "26"
+  id: "49"
+  property_id: "1"
+  company_id: "1"
+account_updates_105: 
+  rental_agreement_id: "53"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1525"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "54"
+  id: "105"
+  property_id: "1"
+  company_id: "1"
+account_updates_078: 
+  rental_agreement_id: "39"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1495"
+  transfer_id: "1"
+  unit_id: "40"
+  id: "78"
+  property_id: "1"
+  company_id: "1"
+account_updates_020: 
+  rental_agreement_id: "64"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1850"
+  transfer_id: "1"
+  unit_id: "11"
+  id: "20"
+  property_id: "1"
+  company_id: "1"
+account_updates_079: 
+  rental_agreement_id: "71"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1950"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "41"
+  id: "79"
+  property_id: "1"
+  company_id: "1"
+account_updates_106: 
+  rental_agreement_id: "53"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1525"
+  transfer_id: "1"
+  unit_id: "54"
+  id: "106"
+  property_id: "1"
+  company_id: "1"
+account_updates_021: 
+  rental_agreement_id: "12"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1695"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "12"
+  id: "21"
+  property_id: "1"
+  company_id: "1"
+account_updates_107: 
+  rental_agreement_id: "54"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1595"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "55"
+  id: "107"
+  property_id: "1"
+  company_id: "1"
+account_updates_022: 
+  rental_agreement_id: "12"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1695"
+  transfer_id: "1"
+  unit_id: "12"
+  id: "22"
+  property_id: "1"
+  company_id: "1"
+account_updates_108: 
+  rental_agreement_id: "54"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1595"
+  transfer_id: "1"
+  unit_id: "55"
+  id: "108"
+  property_id: "1"
+  company_id: "1"
+account_updates_050: 
+  rental_agreement_id: "26"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1795"
+  transfer_id: "1"
+  unit_id: "26"
+  id: "50"
+  property_id: "1"
+  company_id: "1"
+account_updates_023: 
+  rental_agreement_id: "13"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "2095"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "13"
+  id: "23"
+  property_id: "1"
+  company_id: "1"
+account_updates_109: 
+  rental_agreement_id: "55"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1825"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "56"
+  id: "109"
+  property_id: "1"
+  company_id: "1"
+account_updates_051: 
+  rental_agreement_id: "27"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1625"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "27"
+  id: "51"
+  property_id: "1"
+  company_id: "1"
+account_updates_024: 
+  rental_agreement_id: "13"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2095"
+  transfer_id: "1"
+  unit_id: "13"
+  id: "24"
+  property_id: "1"
+  company_id: "1"
+account_updates_080: 
+  rental_agreement_id: "71"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1950"
+  transfer_id: "1"
+  unit_id: "41"
+  id: "80"
+  property_id: "1"
+  company_id: "1"
+account_updates_052: 
+  rental_agreement_id: "27"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1625"
+  transfer_id: "1"
+  unit_id: "27"
+  id: "52"
+  property_id: "1"
+  company_id: "1"
+account_updates_025: 
+  rental_agreement_id: "14"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "2230"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "14"
+  id: "25"
+  property_id: "1"
+  company_id: "1"
+account_updates_081: 
+  rental_agreement_id: "41"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1600"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "42"
+  id: "81"
+  property_id: "1"
+  company_id: "1"
+account_updates_053: 
+  rental_agreement_id: "28"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "2195"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "28"
+  id: "53"
+  property_id: "1"
+  company_id: "1"
+account_updates_026: 
+  rental_agreement_id: "14"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2230"
+  transfer_id: "1"
+  unit_id: "14"
+  id: "26"
+  property_id: "1"
+  company_id: "1"
+account_updates_082: 
+  rental_agreement_id: "41"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1600"
+  transfer_id: "1"
+  unit_id: "42"
+  id: "82"
+  property_id: "1"
+  company_id: "1"
+account_updates_054: 
+  rental_agreement_id: "28"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2195"
+  transfer_id: "1"
+  unit_id: "28"
+  id: "54"
+  property_id: "1"
+  company_id: "1"
+account_updates_027: 
+  rental_agreement_id: "15"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "2150"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "15"
+  id: "27"
+  property_id: "1"
+  company_id: "1"
+account_updates_083: 
+  rental_agreement_id: "42"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "2145"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "43"
+  id: "83"
+  property_id: "1"
+  company_id: "1"
+account_updates_055: 
+  rental_agreement_id: "29"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "2195"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "29"
+  id: "55"
+  property_id: "1"
+  company_id: "1"
+account_updates_110: 
+  rental_agreement_id: "55"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1825"
+  transfer_id: "1"
+  unit_id: "56"
+  id: "110"
+  property_id: "1"
+  company_id: "1"
+account_updates_084: 
+  rental_agreement_id: "42"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2145"
+  transfer_id: "1"
+  unit_id: "43"
+  id: "84"
+  property_id: "1"
+  company_id: "1"
+account_updates_056: 
+  rental_agreement_id: "29"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2195"
+  transfer_id: "1"
+  unit_id: "29"
+  id: "56"
+  property_id: "1"
+  company_id: "1"
+account_updates_111: 
+  rental_agreement_id: "56"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1895"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "57"
+  id: "111"
+  property_id: "1"
+  company_id: "1"
+account_updates_028: 
+  rental_agreement_id: "15"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2150"
+  transfer_id: "1"
+  unit_id: "15"
+  id: "28"
+  property_id: "1"
+  company_id: "1"
+account_updates_085: 
+  rental_agreement_id: "43"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "2200"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "44"
+  id: "85"
+  property_id: "1"
+  company_id: "1"
+account_updates_057: 
+  rental_agreement_id: "30"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "2050"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "30"
+  id: "57"
+  property_id: "1"
+  company_id: "1"
+account_updates_112: 
+  rental_agreement_id: "56"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1895"
+  transfer_id: "1"
+  unit_id: "57"
+  id: "112"
+  property_id: "1"
+  company_id: "1"
+account_updates_029: 
+  rental_agreement_id: "16"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "2150"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "16"
+  id: "29"
+  property_id: "1"
+  company_id: "1"
+account_updates_086: 
+  rental_agreement_id: "43"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2200"
+  transfer_id: "1"
+  unit_id: "44"
+  id: "86"
+  property_id: "1"
+  company_id: "1"
+account_updates_058: 
+  rental_agreement_id: "30"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2050"
+  transfer_id: "1"
+  unit_id: "30"
+  id: "58"
+  property_id: "1"
+  company_id: "1"
+account_updates_113: 
+  rental_agreement_id: "57"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "2195"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "58"
+  id: "113"
+  property_id: "1"
+  company_id: "1"
+account_updates_087: 
+  rental_agreement_id: "44"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "2195"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "45"
+  id: "87"
+  property_id: "1"
+  company_id: "1"
+account_updates_059: 
+  rental_agreement_id: "31"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "2250"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "31"
+  id: "59"
+  property_id: "1"
+  company_id: "1"
+account_updates_114: 
+  rental_agreement_id: "57"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2195"
+  transfer_id: "1"
+  unit_id: "58"
+  id: "114"
+  property_id: "1"
+  company_id: "1"
+account_updates_115: 
+  rental_agreement_id: "58"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "2200"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "59"
+  id: "115"
+  property_id: "1"
+  company_id: "1"
+account_updates_088: 
+  rental_agreement_id: "44"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2195"
+  transfer_id: "1"
+  unit_id: "45"
+  id: "88"
+  property_id: "1"
+  company_id: "1"
+account_updates_001: 
+  rental_agreement_id: "1"
+  created_on: 2007-12-15 10:10:44
+  vendor_id: 
+  debit: "2050"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "1"
+  id: "1"
+  property_id: "1"
+  company_id: "1"
+account_updates_116: 
+  rental_agreement_id: "58"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2200"
+  transfer_id: "1"
+  unit_id: "59"
+  id: "116"
+  property_id: "1"
+  company_id: "1"
+account_updates_089: 
+  rental_agreement_id: "45"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "2350"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "46"
+  id: "89"
+  property_id: "1"
+  company_id: "1"
+account_updates_002: 
+  rental_agreement_id: "1"
+  created_on: 2007-12-15 10:10:44
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2050"
+  transfer_id: "1"
+  unit_id: "1"
+  id: "2"
+  property_id: "1"
+  company_id: "1"
+account_updates_030: 
+  rental_agreement_id: "16"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2150"
+  transfer_id: "1"
+  unit_id: "16"
+  id: "30"
+  property_id: "1"
+  company_id: "1"
+account_updates_117: 
+  rental_agreement_id: "59"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "2125"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "60"
+  id: "117"
+  property_id: "1"
+  company_id: "1"
+account_updates_003: 
+  rental_agreement_id: "2"
+  created_on: 2007-12-15 10:10:44
+  vendor_id: 
+  debit: "2250"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "2"
+  id: "3"
+  property_id: "1"
+  company_id: "1"
+account_updates_031: 
+  rental_agreement_id: "17"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "2100"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "17"
+  id: "31"
+  property_id: "1"
+  company_id: "1"
+account_updates_118: 
+  rental_agreement_id: "59"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2125"
+  transfer_id: "1"
+  unit_id: "60"
+  id: "118"
+  property_id: "1"
+  company_id: "1"
+account_updates_004: 
+  rental_agreement_id: "2"
+  created_on: 2007-12-15 10:10:44
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2250"
+  transfer_id: "1"
+  unit_id: "2"
+  id: "4"
+  property_id: "1"
+  company_id: "1"
+account_updates_060: 
+  rental_agreement_id: "31"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2250"
+  transfer_id: "1"
+  unit_id: "31"
+  id: "60"
+  property_id: "1"
+  company_id: "1"
+account_updates_032: 
+  rental_agreement_id: "17"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2100"
+  transfer_id: "1"
+  unit_id: "17"
+  id: "32"
+  property_id: "1"
+  company_id: "1"
+account_updates_119: 
+  rental_agreement_id: "76"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "2150"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "69"
+  id: "119"
+  property_id: "2"
+  company_id: "1"
+account_updates_005: 
+  rental_agreement_id: "3"
+  created_on: 2007-12-15 10:10:44
+  vendor_id: 
+  debit: "1675"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "3"
+  id: "5"
+  property_id: "1"
+  company_id: "1"
+account_updates_061: 
+  rental_agreement_id: "65"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "2150"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "32"
+  id: "61"
+  property_id: "1"
+  company_id: "1"
+account_updates_033: 
+  rental_agreement_id: "18"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1775"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "18"
+  id: "33"
+  property_id: "1"
+  company_id: "1"
+account_updates_006: 
+  rental_agreement_id: "3"
+  created_on: 2007-12-15 10:10:44
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1675"
+  transfer_id: "1"
+  unit_id: "3"
+  id: "6"
+  property_id: "1"
+  company_id: "1"
+account_updates_090: 
+  rental_agreement_id: "45"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2350"
+  transfer_id: "1"
+  unit_id: "46"
+  id: "90"
+  property_id: "1"
+  company_id: "1"
+account_updates_062: 
+  rental_agreement_id: "65"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2150"
+  transfer_id: "1"
+  unit_id: "32"
+  id: "62"
+  property_id: "1"
+  company_id: "1"
+account_updates_034: 
+  rental_agreement_id: "18"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1775"
+  transfer_id: "1"
+  unit_id: "18"
+  id: "34"
+  property_id: "1"
+  company_id: "1"
+account_updates_091: 
+  rental_agreement_id: "46"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1896"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "47"
+  id: "91"
+  property_id: "1"
+  company_id: "1"
+account_updates_063: 
+  rental_agreement_id: "32"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1730"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "33"
+  id: "63"
+  property_id: "1"
+  company_id: "1"
+account_updates_035: 
+  rental_agreement_id: "19"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1850"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "19"
+  id: "35"
+  property_id: "1"
+  company_id: "1"
+account_updates_007: 
+  rental_agreement_id: "4"
+  created_on: 2007-12-15 10:10:44
+  vendor_id: 
+  debit: "1725"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "4"
+  id: "7"
+  property_id: "1"
+  company_id: "1"
+account_updates_064: 
+  rental_agreement_id: "32"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1730"
+  transfer_id: "1"
+  unit_id: "33"
+  id: "64"
+  property_id: "1"
+  company_id: "1"
+account_updates_036: 
+  rental_agreement_id: "19"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1850"
+  transfer_id: "1"
+  unit_id: "19"
+  id: "36"
+  property_id: "1"
+  company_id: "1"
+account_updates_008: 
+  rental_agreement_id: "4"
+  created_on: 2007-12-15 10:10:44
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1725"
+  transfer_id: "1"
+  unit_id: "4"
+  id: "8"
+  property_id: "1"
+  company_id: "1"
+account_updates_092: 
+  rental_agreement_id: "46"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1896"
+  transfer_id: "1"
+  unit_id: "47"
+  id: "92"
+  property_id: "1"
+  company_id: "1"
+account_updates_120: 
+  rental_agreement_id: "76"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2150"
+  transfer_id: "1"
+  unit_id: "69"
+  id: "120"
+  property_id: "2"
+  company_id: "1"
+account_updates_065: 
+  rental_agreement_id: "69"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1950"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "34"
+  id: "65"
+  property_id: "1"
+  company_id: "1"
+account_updates_037: 
+  rental_agreement_id: "20"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1525"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "20"
+  id: "37"
+  property_id: "1"
+  company_id: "1"
+account_updates_009: 
+  rental_agreement_id: "5"
+  created_on: 2007-12-15 10:10:44
+  vendor_id: 
+  debit: "1350"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "5"
+  id: "9"
+  property_id: "1"
+  company_id: "1"
+account_updates_093: 
+  rental_agreement_id: "72"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1795"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "48"
+  id: "93"
+  property_id: "1"
+  company_id: "1"
+account_updates_121: 
+  rental_agreement_id: "77"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1850"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "70"
+  id: "121"
+  property_id: "2"
+  company_id: "1"
+account_updates_066: 
+  rental_agreement_id: "69"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1950"
+  transfer_id: "1"
+  unit_id: "34"
+  id: "66"
+  property_id: "1"
+  company_id: "1"
+account_updates_038: 
+  rental_agreement_id: "20"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1525"
+  transfer_id: "1"
+  unit_id: "20"
+  id: "38"
+  property_id: "1"
+  company_id: "1"
+account_updates_094: 
+  rental_agreement_id: "72"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1795"
+  transfer_id: "1"
+  unit_id: "48"
+  id: "94"
+  property_id: "1"
+  company_id: "1"
+account_updates_122: 
+  rental_agreement_id: "77"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1850"
+  transfer_id: "1"
+  unit_id: "70"
+  id: "122"
+  property_id: "2"
+  company_id: "1"
+account_updates_067: 
+  rental_agreement_id: "34"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1525"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "35"
+  id: "67"
+  property_id: "1"
+  company_id: "1"
+account_updates_039: 
+  rental_agreement_id: "21"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1495"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "21"
+  id: "39"
+  property_id: "1"
+  company_id: "1"
+account_updates_095: 
+  rental_agreement_id: "48"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1800"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "49"
+  id: "95"
+  property_id: "1"
+  company_id: "1"
+account_updates_123: 
+  rental_agreement_id: "78"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1900"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "71"
+  id: "123"
+  property_id: "2"
+  company_id: "1"
+account_updates_068: 
+  rental_agreement_id: "34"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1525"
+  transfer_id: "1"
+  unit_id: "35"
+  id: "68"
+  property_id: "1"
+  company_id: "1"
+account_updates_096: 
+  rental_agreement_id: "48"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1800"
+  transfer_id: "1"
+  unit_id: "49"
+  id: "96"
+  property_id: "1"
+  company_id: "1"
+account_updates_124: 
+  rental_agreement_id: "78"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1900"
+  transfer_id: "1"
+  unit_id: "71"
+  id: "124"
+  property_id: "2"
+  company_id: "1"
+account_updates_069: 
+  rental_agreement_id: "70"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1595"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "36"
+  id: "69"
+  property_id: "1"
+  company_id: "1"
+account_updates_097: 
+  rental_agreement_id: "73"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1695"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "50"
+  id: "97"
+  property_id: "1"
+  company_id: "1"
+account_updates_010: 
+  rental_agreement_id: "5"
+  created_on: 2007-12-15 10:10:44
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1350"
+  transfer_id: "1"
+  unit_id: "5"
+  id: "10"
+  property_id: "1"
+  company_id: "1"
+account_updates_098: 
+  rental_agreement_id: "73"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1695"
+  transfer_id: "1"
+  unit_id: "50"
+  id: "98"
+  property_id: "1"
+  company_id: "1"
+account_updates_011: 
+  rental_agreement_id: "6"
+  created_on: 2007-12-15 10:10:44
+  vendor_id: 
+  debit: "1545"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "6"
+  id: "11"
+  property_id: "1"
+  company_id: "1"
+account_updates_040: 
+  rental_agreement_id: "21"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1495"
+  transfer_id: "1"
+  unit_id: "21"
+  id: "40"
+  property_id: "1"
+  company_id: "1"
+account_updates_099: 
+  rental_agreement_id: "50"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1595"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "51"
+  id: "99"
+  property_id: "1"
+  company_id: "1"
+account_updates_012: 
+  rental_agreement_id: "6"
+  created_on: 2007-12-15 10:10:44
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1545"
+  transfer_id: "1"
+  unit_id: "6"
+  id: "12"
+  property_id: "1"
+  company_id: "1"
+account_updates_041: 
+  rental_agreement_id: "22"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1700"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "22"
+  id: "41"
+  property_id: "1"
+  company_id: "1"
+account_updates_013: 
+  rental_agreement_id: "61"
+  created_on: 2007-12-15 10:10:44
+  vendor_id: 
+  debit: "1795"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "7"
+  id: "13"
+  property_id: "1"
+  company_id: "1"
+account_updates_070: 
+  rental_agreement_id: "70"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1595"
+  transfer_id: "1"
+  unit_id: "36"
+  id: "70"
+  property_id: "1"
+  company_id: "1"
+account_updates_042: 
+  rental_agreement_id: "22"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1700"
+  transfer_id: "1"
+  unit_id: "22"
+  id: "42"
+  property_id: "1"
+  company_id: "1"
+account_updates_014: 
+  rental_agreement_id: "61"
+  created_on: 2007-12-15 10:10:44
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1795"
+  transfer_id: "1"
+  unit_id: "7"
+  id: "14"
+  property_id: "1"
+  company_id: "1"
+account_updates_043: 
+  rental_agreement_id: "23"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1650"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "23"
+  id: "43"
+  property_id: "1"
+  company_id: "1"
+account_updates_015: 
+  rental_agreement_id: "60"
+  created_on: 2007-12-15 10:10:44
+  vendor_id: 
+  debit: "2795"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "9"
+  id: "15"
+  property_id: "1"
+  company_id: "1"
+account_updates_071: 
+  rental_agreement_id: "36"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: "1850"
+  account_id: "1"
+  transfer_type: ReceivableRent
+  credit: 
+  transfer_id: "1"
+  unit_id: "37"
+  id: "71"
+  property_id: "1"
+  company_id: "1"
+account_updates_044: 
+  rental_agreement_id: "23"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1650"
+  transfer_id: "1"
+  unit_id: "23"
+  id: "44"
+  property_id: "1"
+  company_id: "1"
+account_updates_016: 
+  rental_agreement_id: "60"
+  created_on: 2007-12-15 10:10:44
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "2795"
+  transfer_id: "1"
+  unit_id: "9"
+  id: "16"
+  property_id: "1"
+  company_id: "1"
+account_updates_072: 
+  rental_agreement_id: "36"
+  created_on: 2007-12-15 10:10:45
+  vendor_id: 
+  debit: 
+  account_id: "3"
+  transfer_type: ReceivableRent
+  credit: "1850"
+  transfer_id: "1"
+  unit_id: "37"
+  id: "72"
+  property_id: "1"
+  company_id: "1"

@@ -1,0 +1,37 @@
+<%= breadcrumbs([@company, @report, 'edit']) %>
+<fieldset>
+  <legend>Edit Report</legend>
+  <% form_for(
+    :report,
+    :url => m([@company, @report]),
+    :html => {:method => :put},
+    :builder => LabeledBuilder
+  ) do |report| %>
+    <%= report.text_field :name, :size => 16 %>
+    <p>
+      <label>Output Fields</label><br/>
+      <%= report.collection_select(
+        :relation_attribute_ids,
+        @relation_attributes,
+        :id,
+        :to_s,
+        {},
+        {:multiple => true, :size => 8}
+      ) %>
+    </p>
+    <div><%= submit_tag 'Update' %></div>
+  <% end %>
+</fieldset>
+<fieldset>
+  <legend>Delete Report</legend>
+  <p>
+    <% form_for(
+      :report,
+      :url => m([@company, @report]),
+      :html => {:method => :delete},
+      :builder => LabeledBuilder
+    ) do |report| %>
+      <%= submit_tag 'Delete' %>
+    <% end %>
+  </p>
+</fieldset>

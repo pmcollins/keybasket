@@ -1,0 +1,14 @@
+<% unit = unit_row %>
+<% rental_agreement = unit.rental_agreement %>
+<% tenants = rental_agreement ? rental_agreement.tenants : nil %>
+<div>
+  <%= render :partial => 'unit', :object => unit %>
+  <% if tenants %>
+    <%= render(
+      :partial => '/tenants/tenant',
+      :collection => tenants
+    ) %>
+  <% else %>
+    <span class="empty">No tenants found.</span>
+  <% end %>
+</div>

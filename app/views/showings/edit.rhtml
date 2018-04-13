@@ -1,0 +1,26 @@
+<%= breadcrumbs([@company, @property, @unit, @listing, @showing]) %>
+<fieldset>
+  <legend>Edit Showing</legend>
+  <% form_for(
+    :showing,
+    :url => m([@company, @property, @unit, @listing, @showing]),
+    :html => {:method => 'put'},
+    :builder => LabeledBuilder
+  ) do |form| %>
+    <%= form.datetime_select :starting_at %>
+    <%= form.text_field :duration_minutes, :size => 8 %>
+    <%= form.text_area :comments, :rows => 4 %>
+    <%= submit_tag 'Save' %>
+  <% end %>
+</fieldset>
+
+<fieldset>
+  <legend>Delete</legend>
+  <% form_for(
+    :showing,
+    :url => m([@company, @property, @unit, @listing, @showing]),
+    :html => {:method => 'delete'}
+  ) do |form| %>
+    <%= submit_tag 'Delete' %>
+  <% end %>
+</fieldset>

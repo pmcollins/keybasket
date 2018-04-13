@@ -1,0 +1,14 @@
+<%= breadcrumbs([@company, @manager, @manager_property]) %>
+<fieldset>
+  <legend>Manager Property</legend>
+  <p>
+    <%= @manager_property %>
+  </p>
+  <% form_for(
+    :manager_property,
+    :url => m([@company, @manager, @manager_property]),
+    :html => {:method => :delete}
+  ) do %>
+    <%= submit_tag 'Delete' %>
+  <% end %>
+</fieldset>

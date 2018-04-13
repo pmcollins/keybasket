@@ -1,0 +1,24 @@
+<%= breadcrumbs([@company, @account]) %>
+
+<p>
+  <div><a href="?">chronological view</a></div>
+  <div><a href="?group=rental_agreement_id">group by rental agreement</a></div>
+</p>
+<fieldset>
+  <legend><%= @account %> Account</legend>
+  <p>
+    <table style="width: 100%;">
+      <%= render(
+        :partial => '/account_updates/account_update_tr',
+        :collection => @account_updates
+      ) %>
+      <tr>
+        <td colspan="6"></td>
+        <td style="text-align: right;">
+          <span class="name">Total:</span>
+          <span class="value"><%= number_to_currency(@balance) %></span>
+        </td>
+      </tr>
+    </table>
+  </p>
+</fieldset>

@@ -1,0 +1,14 @@
+<%= breadcrumbs([@company, @property, 'Units Eligible for a Rent Increase']) %>
+
+<fieldset>
+  <legend>All Units</legend>
+  <%= link_to('List All Units', m([@company, @property, 'units'])) %>
+</fieldset>
+
+<fieldset>
+  <legend>Units Eligible for a Rent Increase</legend>
+  <%= render(
+    :partial => 'unit_last_rent',
+    :collection => @units
+  ) %>
+</fieldset>

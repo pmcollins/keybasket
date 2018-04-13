@@ -1,0 +1,2 @@
+class ReportDecimalFiltersController < ReportFooFiltersController
+end

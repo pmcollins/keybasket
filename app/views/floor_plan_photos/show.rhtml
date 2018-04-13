@@ -1,0 +1,17 @@
+<%= breadcrumbs([@company, @property, @floor_plan, 'Floor Plan Photo']) %>
+
+<fieldset>
+  <legend>Floor Plan Photo</legend>
+  <div><%= render :partial => '/photos/photo', :object => @photo %></div>
+  <p>
+    Caption:
+    <%= @caption.empty? ? '[no caption defined]' : @caption %>
+  </p>
+  <div>
+    <%= link_to(
+      '[edit]',
+      m([@company, @property, @floor_plan, 'floor_plan_photos', @photo.id]))
+    %>
+  </div>
+</fieldset>
+

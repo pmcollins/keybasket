@@ -1,0 +1,44 @@
+<% account_update = account_update_tr %>
+<% normalized_update = account_update.normalized_update(@account) %>
+<% unless normalized_update == 0 %>
+  <tr>
+    <td>
+      <%= account_update.created_on if account_update.has_attribute?('created_on') && account_update.created_on %>
+    </td>
+    <td>
+      <%= link_to_transfer(account_update.transfer) if account_update.has_attribute?('transfer_id') && account_update.transfer_id %>
+    </td>
+    <td>
+      <%= link_to(
+        account_update.property,
+        m([@company, account_update.property])
+      ) if account_update.has_attribute?('property_id') && account_update.property %>
+    </td>
+    <td>
+      <%= link_to(
+        account_update.unit,
+        m([@company, account_update.property, account_update.unit])
+      ) if account_update.has_attribute?('unit_id') && account_update.unit_id %>
+    </td>
+    <td>
+      <%= link_to(
+        account_update.rental_agreement,
+        m([
+          @company,
+          account_update.property,
+          account_update.unit,
+          account_update.rental_agreement
+        ])
+      ) if account_update.has_attribute?('rental_agreement_id') && account_update.rental_agreement_id %>
+    </td>
+    <td>
+      <%= link_to(
+        account_update.vendor,
+        m([@company, account_update.vendor])
+      ) if account_update.has_attribute?('vendor_id') && account_update.vendor_id %>
+    </td>
+    <td style="text-align: right;" class="value">
+      <%= number_to_currency(normalized_update) %>
+    </td>
+  </tr>
+<% end %>

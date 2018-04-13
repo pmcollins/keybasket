@@ -1,0 +1,24 @@
+<%= breadcrumbs([@company, @property, @unit, @rental_agreement, 'Accounting History']) %>
+
+<fieldset>
+  <legend>Accounting History</legend>
+  <p>
+    <% if @account_updates %>
+      <table style="width: 100%;">
+        <tr>
+          <th class="name">Created on</th>
+          <th class="name">Account</th>
+          <th class="name">Transfer type</th>
+          <th class="name">Credit</th>
+          <th class="name">Debit</th>
+        </tr>
+        <%= render(
+          :partial => '/rental_agreement_account_updates/rental_agreement_account_update_tr',
+          :collection => @account_updates
+        ) %>
+      </table>
+    <% else %>
+      <span class="empty">This rental agreement has no accounting history.</span>
+    <% end %>
+  </p>
+</fieldset>

@@ -1,0 +1,8 @@
+<%= breadcrumbs([@company, 'New Manager']) %>
+<% form_for(
+  :manager,
+  :url => m([@company, 'managers'])
+) do |form| %>
+  <%= render :partial => 'form', :object => form %>
+  <p><%= submit_tag 'Create' %></p>
+<% end %>

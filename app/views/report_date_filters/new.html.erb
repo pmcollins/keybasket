@@ -1,0 +1,69 @@
+<%= breadcrumbs([@company, @report, @relation_attribute, 'Date Filter']) %>
+<script>
+function relativeAbsoluteChange(selectNode) {
+  var h = new Hash({absolute : 'hide', relative : 'hide'});
+  h.set(selectNode.value, 'show');
+  h.each(function(pair) {
+    selectNode.up('fieldset').select('.' + pair.key).each(function(n) {
+      n[pair.value]();
+    });
+  })
+}
+</script>
+<fieldset>
+  <legend>Date Filter</legend>
+  <% form_for(
+    :report_date_filter,
+    :url => m([@company, @report, @relation_attribute, 'report_date_filters'])
+  ) do |f| %>
+  <div style="float: right;">
+    <span class="name">Search type</span>
+    <select
+      name="report_date_filter[search_type]"
+      onchange="relativeAbsoluteChange(this)"
+    >
+      <option value="relative">Relative</option>
+      <option value="absolute">Absolute</option>
+    </select>
+  </div>
+  <p>
+    <span class="name">Show all where</span>
+    <span class="value"><%= @report_filter %></span>
+    <span class="name">is</span>
+  </p>
+    <p>
+      <%= f.collection_select(
+        :operator_id,
+        @operators,
+        :id,
+        :description,
+        {},
+        {:onchange => "$('between')[this.value >= 7 ? 'show' : 'hide']()"}
+      ) %>
+    </p>
+    <p>
+      <div class="relative">
+        <label>Days Ago</label><br/>
+        <%= f.text_field(:days_ago1, :size => 8) %>
+      </div>
+      <div class="absolute" style="display: none;">
+        <label>Search Date</label><br/>
+        <%= f.date_select(:date1) %>
+      </div>
+    </p>
+    <div id="between" style="display: none;">
+      <p>and</p>
+      <div>
+        <div class="relative">
+          <label>Days Ago</label><br/>
+          <%= f.text_field(:days_ago2, :size => 8) %>
+        </div>
+        <div class="absolute" style="display: none;">
+          <label>End Date</label><br/>
+          <%= f.date_select(:date2) %>
+        </div>
+      </div>
+    </div>
+    <div><%= submit_tag 'Save' %></div>
+  <% end %>
+</fieldset>

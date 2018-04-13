@@ -1,0 +1,17 @@
+<%= breadcrumbs([@company, @property, @unit, @rental_agreement, @account_type]) %>
+
+<fieldset>
+  <legend><%= @account_type %></legend>
+  <p>
+    <table style="width: 100%;">
+    <% @account_type.accounts.each do |account| %>
+      <tr>
+        <td class="name"><%= account %></td>
+        <td class="value" style="text-align: right;">
+          <%= number_to_currency(account.get_balance_by_rental_agreement_id(@rental_agreement.id)) %>
+        </td>
+      </tr>
+    <% end %>
+    </table>
+  </p>
+</fieldset>

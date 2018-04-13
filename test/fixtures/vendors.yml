@@ -1,0 +1,11 @@
+--- 
+vendors_001: 
+  name: Mickey's AC Service
+  created_on: 2007-11-08 17:58:55
+  id: "1"
+  company_id: "1"
+vendors_002: 
+  name: Chickendog's Monkey Service
+  created_on: 2007-11-13 19:56:40
+  id: "2"
+  company_id: "1"

@@ -1,0 +1,19 @@
+<table class="main">
+  <tr>
+    <td>
+      <fieldset>
+        <legend>Properties</legend>
+        <%= render(
+          :partial => '/public_listings/adbox_property',
+          :collection => @properties
+        ) %>
+      </fieldset>
+    </td>
+    <td>
+      <fieldset>
+        <legend>Log In</legend>
+        <%= render(:partial => '/user_sessions/form') %>
+      </fieldset>
+    </td>
+  </tr>
+<table>

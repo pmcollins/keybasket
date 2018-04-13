@@ -1,0 +1,377 @@
+--- 
+tenants_083: 
+  rental_agreement_id: "69"
+  contact_id: "94"
+  id: "84"
+tenants_020: 
+  rental_agreement_id: "16"
+  contact_id: "31"
+  id: "21"
+tenants_018: 
+  rental_agreement_id: "15"
+  contact_id: "29"
+  id: "19"
+tenants_041: 
+  rental_agreement_id: "34"
+  contact_id: "52"
+  id: "42"
+tenants_039: 
+  rental_agreement_id: "32"
+  contact_id: "50"
+  id: "40"
+tenants_062: 
+  rental_agreement_id: "50"
+  contact_id: "73"
+  id: "63"
+tenants_084: 
+  rental_agreement_id: "70"
+  contact_id: "95"
+  id: "85"
+tenants_021: 
+  rental_agreement_id: "17"
+  contact_id: "32"
+  id: "22"
+tenants_019: 
+  rental_agreement_id: "16"
+  contact_id: "30"
+  id: "20"
+tenants_042: 
+  rental_agreement_id: "35"
+  contact_id: "53"
+  id: "43"
+tenants_063: 
+  rental_agreement_id: "51"
+  contact_id: "74"
+  id: "64"
+tenants_085: 
+  rental_agreement_id: "71"
+  contact_id: "96"
+  id: "86"
+tenants_001: 
+  rental_agreement_id: "1"
+  contact_id: "11"
+  id: "1"
+tenants_022: 
+  rental_agreement_id: "18"
+  contact_id: "33"
+  id: "23"
+tenants_043: 
+  rental_agreement_id: "36"
+  contact_id: "54"
+  id: "44"
+tenants_064: 
+  rental_agreement_id: "52"
+  contact_id: "75"
+  id: "65"
+tenants_086: 
+  rental_agreement_id: "72"
+  contact_id: "97"
+  id: "87"
+tenants_002: 
+  rental_agreement_id: "1"
+  contact_id: "12"
+  id: "2"
+tenants_023: 
+  rental_agreement_id: "19"
+  contact_id: "34"
+  id: "24"
+tenants_044: 
+  rental_agreement_id: "37"
+  contact_id: "55"
+  id: "45"
+tenants_065: 
+  rental_agreement_id: "53"
+  contact_id: "76"
+  id: "66"
+tenants_087: 
+  rental_agreement_id: "73"
+  contact_id: "98"
+  id: "88"
+tenants_024: 
+  rental_agreement_id: "20"
+  contact_id: "35"
+  id: "25"
+tenants_045: 
+  rental_agreement_id: "38"
+  contact_id: "56"
+  id: "46"
+tenants_066: 
+  rental_agreement_id: "54"
+  contact_id: "77"
+  id: "67"
+tenants_003: 
+  rental_agreement_id: "2"
+  contact_id: "13"
+  id: "3"
+tenants_088: 
+  rental_agreement_id: "74"
+  contact_id: "99"
+  id: "89"
+tenants_067: 
+  rental_agreement_id: "55"
+  contact_id: "78"
+  id: "68"
+tenants_046: 
+  rental_agreement_id: "39"
+  contact_id: "57"
+  id: "47"
+tenants_004: 
+  rental_agreement_id: "3"
+  contact_id: "14"
+  id: "4"
+tenants_025: 
+  rental_agreement_id: "21"
+  contact_id: "36"
+  id: "26"
+tenants_090: 
+  rental_agreement_id: "75"
+  contact_id: "102"
+  id: "91"
+tenants_089: 
+  rental_agreement_id: "75"
+  contact_id: "101"
+  id: "90"
+tenants_068: 
+  rental_agreement_id: "56"
+  contact_id: "79"
+  id: "69"
+tenants_005: 
+  rental_agreement_id: "4"
+  contact_id: "15"
+  id: "5"
+tenants_026: 
+  rental_agreement_id: "22"
+  contact_id: "37"
+  id: "27"
+tenants_047: 
+  rental_agreement_id: "40"
+  contact_id: "58"
+  id: "48"
+tenants_091: 
+  rental_agreement_id: "75"
+  contact_id: "103"
+  id: "92"
+tenants_070: 
+  rental_agreement_id: "58"
+  contact_id: "81"
+  id: "71"
+tenants_069: 
+  rental_agreement_id: "57"
+  contact_id: "80"
+  id: "70"
+tenants_027: 
+  rental_agreement_id: "23"
+  contact_id: "38"
+  id: "28"
+tenants_048: 
+  rental_agreement_id: "41"
+  contact_id: "59"
+  id: "49"
+tenants_092: 
+  rental_agreement_id: "76"
+  contact_id: "104"
+  id: "93"
+tenants_071: 
+  rental_agreement_id: "59"
+  contact_id: "82"
+  id: "72"
+tenants_006: 
+  rental_agreement_id: "5"
+  contact_id: "16"
+  id: "6"
+tenants_050: 
+  rental_agreement_id: "43"
+  contact_id: "61"
+  id: "51"
+tenants_049: 
+  rental_agreement_id: "42"
+  contact_id: "60"
+  id: "50"
+tenants_093: 
+  rental_agreement_id: "77"
+  contact_id: "105"
+  id: "94"
+tenants_072: 
+  rental_agreement_id: "59"
+  contact_id: "83"
+  id: "73"
+tenants_007: 
+  rental_agreement_id: "6"
+  contact_id: "17"
+  id: "7"
+tenants_030: 
+  rental_agreement_id: "25"
+  contact_id: "41"
+  id: "31"
+tenants_028: 
+  rental_agreement_id: "23"
+  contact_id: "39"
+  id: "29"
+tenants_051: 
+  rental_agreement_id: "43"
+  contact_id: "62"
+  id: "52"
+tenants_094: 
+  rental_agreement_id: "78"
+  contact_id: "106"
+  id: "95"
+tenants_073: 
+  rental_agreement_id: "26"
+  contact_id: "84"
+  id: "74"
+tenants_010: 
+  rental_agreement_id: "10"
+  contact_id: "20"
+  id: "10"
+tenants_008: 
+  rental_agreement_id: "7"
+  contact_id: "18"
+  id: "8"
+tenants_031: 
+  rental_agreement_id: "27"
+  contact_id: "42"
+  id: "32"
+tenants_029: 
+  rental_agreement_id: "24"
+  contact_id: "40"
+  id: "30"
+tenants_052: 
+  rental_agreement_id: "44"
+  contact_id: "63"
+  id: "53"
+tenants_074: 
+  rental_agreement_id: "60"
+  contact_id: "85"
+  id: "75"
+tenants_011: 
+  rental_agreement_id: "11"
+  contact_id: "21"
+  id: "11"
+tenants_009: 
+  rental_agreement_id: "9"
+  contact_id: "19"
+  id: "9"
+tenants_032: 
+  rental_agreement_id: "28"
+  contact_id: "43"
+  id: "33"
+tenants_053: 
+  rental_agreement_id: "44"
+  contact_id: "64"
+  id: "54"
+tenants_075: 
+  rental_agreement_id: "60"
+  contact_id: "86"
+  id: "76"
+tenants_012: 
+  rental_agreement_id: "12"
+  contact_id: "22"
+  id: "12"
+tenants_033: 
+  rental_agreement_id: "28"
+  contact_id: "44"
+  id: "34"
+tenants_054: 
+  rental_agreement_id: "45"
+  contact_id: "65"
+  id: "55"
+tenants_076: 
+  rental_agreement_id: "61"
+  contact_id: "87"
+  id: "77"
+tenants_013: 
+  rental_agreement_id: "13"
+  contact_id: "24"
+  id: "14"
+tenants_034: 
+  rental_agreement_id: "29"
+  contact_id: "45"
+  id: "35"
+tenants_055: 
+  rental_agreement_id: "45"
+  contact_id: "66"
+  id: "56"
+tenants_077: 
+  rental_agreement_id: "64"
+  contact_id: "88"
+  id: "78"
+tenants_035: 
+  rental_agreement_id: "29"
+  contact_id: "46"
+  id: "36"
+tenants_056: 
+  rental_agreement_id: "46"
+  contact_id: "67"
+  id: "57"
+tenants_014: 
+  rental_agreement_id: "13"
+  contact_id: "25"
+  id: "15"
+tenants_078: 
+  rental_agreement_id: "14"
+  contact_id: "89"
+  id: "79"
+tenants_057: 
+  rental_agreement_id: "46"
+  contact_id: "68"
+  id: "58"
+tenants_015: 
+  rental_agreement_id: "13"
+  contact_id: "26"
+  id: "16"
+tenants_036: 
+  rental_agreement_id: "30"
+  contact_id: "47"
+  id: "37"
+tenants_080: 
+  rental_agreement_id: "66"
+  contact_id: "91"
+  id: "81"
+tenants_079: 
+  rental_agreement_id: "65"
+  contact_id: "90"
+  id: "80"
+tenants_016: 
+  rental_agreement_id: "14"
+  contact_id: "27"
+  id: "17"
+tenants_037: 
+  rental_agreement_id: "31"
+  contact_id: "48"
+  id: "38"
+tenants_058: 
+  rental_agreement_id: "47"
+  contact_id: "69"
+  id: "59"
+tenants_081: 
+  rental_agreement_id: "67"
+  contact_id: "92"
+  id: "82"
+tenants_038: 
+  rental_agreement_id: "32"
+  contact_id: "49"
+  id: "39"
+tenants_060: 
+  rental_agreement_id: "48"
+  contact_id: "71"
+  id: "61"
+tenants_059: 
+  rental_agreement_id: "47"
+  contact_id: "70"
+  id: "60"
+tenants_082: 
+  rental_agreement_id: "68"
+  contact_id: "93"
+  id: "83"
+tenants_017: 
+  rental_agreement_id: "15"
+  contact_id: "28"
+  id: "18"
+tenants_040: 
+  rental_agreement_id: "33"
+  contact_id: "51"
+  id: "41"
+tenants_061: 
+  rental_agreement_id: "49"
+  contact_id: "72"
+  id: "62"

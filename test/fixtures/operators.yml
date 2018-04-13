@@ -1,0 +1,57 @@
+--- 
+operators_001: 
+  name: eq
+  updated_at: 2008-01-19 22:01:12
+  id: "1"
+  description: equal to
+  method_name: ==
+  created_at: 2008-01-19 22:01:12
+operators_002: 
+  name: ne
+  updated_at: 2008-01-19 22:01:12
+  id: "2"
+  description: not equal to
+  method_name: "!="
+  created_at: 2008-01-19 22:01:12
+operators_003: 
+  name: lt
+  updated_at: 2008-01-19 22:01:12
+  id: "3"
+  description: less than
+  method_name: <
+  created_at: 2008-01-19 22:01:12
+operators_004: 
+  name: le
+  updated_at: 2008-01-19 22:01:12
+  id: "4"
+  description: less than or equal to
+  method_name: <=
+  created_at: 2008-01-19 22:01:12
+operators_005: 
+  name: gt
+  updated_at: 2008-01-19 22:01:12
+  id: "5"
+  description: greater than
+  method_name: ">"
+  created_at: 2008-01-19 22:01:12
+operators_006: 
+  name: ge
+  updated_at: 2008-01-19 22:01:12
+  id: "6"
+  description: greater than or equal to
+  method_name: ">="
+  created_at: 2008-01-19 22:01:12
+operators_007: 
+  name: bt
+  updated_at: 2008-01-19 22:01:12
+  id: "7"
+  description: between
+  method_name: between?
+  created_at: 2008-01-19 22:01:12
+operators_008: 
+  name: nb
+  updated_at: 2008-01-19 22:01:12
+  id: "8"
+  description: not between
+  method_name: not_between?
+  created_at: 2008-01-19 22:01:12

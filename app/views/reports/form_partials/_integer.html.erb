@@ -1,0 +1,12 @@
+<div>
+  <%= collection_select(
+    filter_name,
+    :operator,
+    @operators,
+    :id,
+    :description
+  ) %>
+</div>
+<div><%= text_field(filter_name, :value1, :size => 8) %></div>
+<div>and</div>
+<div><%= text_field(filter_name, :value2, :size => 8) %></div>

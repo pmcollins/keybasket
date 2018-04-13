@@ -1,0 +1,10 @@
+--- 
+property_reports_001: 
+  name: Rent Increase Candidates
+  notice_given: f
+  in_lease: f
+  is_vacant: f
+  id: "1"
+  property_id: "1"
+  latest_rent_older_than_months: "10"
+  rent_below_floorplan_average: f

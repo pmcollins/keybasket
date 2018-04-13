@@ -1,0 +1,29 @@
+<%= breadcrumbs([@company, @vendor]) %>
+<fieldset>
+  <legend>Vendor</legend>
+  <p>
+    <%= @vendor %>
+  </p>
+  <div class="sys">
+    <%= link_to(
+      'edit vendor',
+      m([@company, @vendor, 'edit'])
+    ) %>
+  </div>
+</fieldset>
+<fieldset>
+  <legend>Purchase Orders</legend>
+  <p>
+    <%= render(
+      :partial => '/purchase_orders/purchase_order',
+      :collection => @purchase_orders
+    ) %>
+  </p>
+  <div style="sys">
+    <%= link_to(
+      'new purchase order',
+      m([@company, @vendor, 'purchase_orders/new'])
+    ) %>
+  </div>
+</fieldset>
+

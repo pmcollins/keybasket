@@ -1,0 +1,529 @@
+--- 
+phones_072: 
+  number: 310-466-3738
+  tag: cell
+  id: "75"
+  phoneable_id: "5"
+  phoneable_type: Contact
+phones_008: 
+  number: 753-3035
+  tag: cell
+  id: "8"
+  phoneable_id: "6"
+  phoneable_type: Contact
+phones_030: 
+  number: 1-818-823-7015
+  tag: cell
+  id: "32"
+  phoneable_id: "48"
+  phoneable_type: Contact
+phones_029: 
+  number: 384-8810
+  tag: cell
+  id: "31"
+  phoneable_id: "47"
+  phoneable_type: Contact
+phones_051: 
+  number: 694-7857
+  tag: cell
+  id: "54"
+  phoneable_id: "75"
+  phoneable_type: Contact
+phones_073: 
+  number: 310-466-3738
+  tag: cell
+  id: "76"
+  phoneable_id: "92"
+  phoneable_type: Contact
+phones_010: 
+  number: 323-490-5905
+  tag: cell
+  id: "11"
+  phoneable_id: "21"
+  phoneable_type: Contact
+phones_009: 
+  number: 231-6477
+  tag: ""
+  id: "10"
+  phoneable_id: "10"
+  phoneable_type: Unit
+phones_031: 
+  number: 940-8032
+  tag: cell
+  id: "33"
+  phoneable_id: "49"
+  phoneable_type: Contact
+phones_052: 
+  number: 443-3200
+  tag: work
+  id: "55"
+  phoneable_id: "75"
+  phoneable_type: Contact
+phones_074: 
+  number: 310-466-3738
+  tag: cell
+  id: "77"
+  phoneable_id: "93"
+  phoneable_type: Contact
+phones_011: 
+  number: 516-606-9996
+  tag: cell
+  id: "12"
+  phoneable_id: "22"
+  phoneable_type: Contact
+phones_032: 
+  number: 801-1916
+  tag: cell
+  id: "34"
+  phoneable_id: "50"
+  phoneable_type: Contact
+phones_053: 
+  number: 774-7802
+  tag: ""
+  id: "56"
+  phoneable_id: "76"
+  phoneable_type: Contact
+phones_075: 
+  number: 310-466-3738
+  tag: cell
+  id: "78"
+  phoneable_id: "94"
+  phoneable_type: Contact
+phones_012: 
+  number: 818-655-6797
+  tag: work
+  id: "14"
+  phoneable_id: "29"
+  phoneable_type: Contact
+phones_033: 
+  number: 575-3693
+  tag: ""
+  id: "36"
+  phoneable_id: "35"
+  phoneable_type: Unit
+phones_054: 
+  number: 805-304-3813
+  tag: cell
+  id: "57"
+  phoneable_id: "77"
+  phoneable_type: Contact
+phones_076: 
+  number: 760-672-0234
+  tag: cell
+  id: "79"
+  phoneable_id: "95"
+  phoneable_type: Contact
+phones_013: 
+  number: 463-5755
+  tag: ""
+  id: "15"
+  phoneable_id: "30"
+  phoneable_type: Contact
+phones_034: 
+  number: 704-562-5956
+  tag: ""
+  id: "37"
+  phoneable_id: "53"
+  phoneable_type: Contact
+phones_055: 
+  number: 312-2040
+  tag: ""
+  id: "58"
+  phoneable_id: "56"
+  phoneable_type: Unit
+phones_077: 
+  number: 310-405-4492
+  tag: cell
+  id: "80"
+  phoneable_id: "96"
+  phoneable_type: Contact
+phones_014: 
+  number: 951-6551
+  tag: cell
+  id: "16"
+  phoneable_id: "31"
+  phoneable_type: Contact
+phones_035: 
+  number: 709-5760
+  tag: cell
+  id: "38"
+  phoneable_id: "54"
+  phoneable_type: Contact
+phones_056: 
+  number: 497-4656
+  tag: cell
+  id: "59"
+  phoneable_id: "78"
+  phoneable_type: Contact
+phones_078: 
+  number: 561-628-2381
+  tag: cell
+  id: "81"
+  phoneable_id: "97"
+  phoneable_type: Contact
+phones_015: 
+  number: 235-1994
+  tag: ""
+  id: "17"
+  phoneable_id: "17"
+  phoneable_type: Unit
+phones_036: 
+  number: 445-7716
+  tag: ""
+  id: "39"
+  phoneable_id: "37"
+  phoneable_type: Unit
+phones_057: 
+  number: 309-4404
+  tag: work
+  id: "60"
+  phoneable_id: "78"
+  phoneable_type: Contact
+phones_080: 
+  number: 310-927-7963
+  tag: ""
+  id: "83"
+  phoneable_id: "52"
+  phoneable_type: Unit
+phones_079: 
+  number: 416-820-4341
+  tag: cell
+  id: "82"
+  phoneable_id: "98"
+  phoneable_type: Contact
+phones_016: 
+  number: 978-771-6749
+  tag: cell
+  id: "18"
+  phoneable_id: "33"
+  phoneable_type: Contact
+phones_037: 
+  number: 473-3398
+  tag: ""
+  id: "40"
+  phoneable_id: "39"
+  phoneable_type: Unit
+phones_058: 
+  number: 213-4563
+  tag: ""
+  id: "61"
+  phoneable_id: "57"
+  phoneable_type: Unit
+phones_081: 
+  number: 332-3434
+  tag: cell
+  id: "84"
+  phoneable_id: "101"
+  phoneable_type: Contact
+phones_017: 
+  number: 312-8918
+  tag: ""
+  id: "19"
+  phoneable_id: "19"
+  phoneable_type: Unit
+phones_038: 
+  number: 979-5769
+  tag: cell
+  id: "41"
+  phoneable_id: "56"
+  phoneable_type: Contact
+phones_060: 
+  number: 447-1310
+  tag: ""
+  id: "63"
+  phoneable_id: "58"
+  phoneable_type: Unit
+phones_059: 
+  number: 647-8025
+  tag: work
+  id: "62"
+  phoneable_id: "79"
+  phoneable_type: Contact
+phones_082: 
+  number: 310-333-4443
+  tag: work
+  id: "85"
+  phoneable_id: "102"
+  phoneable_type: Contact
+phones_039: 
+  number: 760-326-1066
+  tag: ""
+  id: "42"
+  phoneable_id: "57"
+  phoneable_type: Contact
+phones_061: 
+  number: 666-4643
+  tag: cell
+  id: "64"
+  phoneable_id: "80"
+  phoneable_type: Contact
+phones_018: 
+  number: 510-378-3186
+  tag: cell
+  id: "20"
+  phoneable_id: "35"
+  phoneable_type: Contact
+phones_040: 
+  number: 415-577-3702
+  tag: cell
+  id: "43"
+  phoneable_id: "58"
+  phoneable_type: Contact
+phones_083: 
+  number: 333-445-3232
+  tag: cell
+  id: "86"
+  phoneable_id: "103"
+  phoneable_type: Contact
+phones_020: 
+  number: 489-1620
+  tag: cell
+  id: "22"
+  phoneable_id: "37"
+  phoneable_type: Contact
+phones_019: 
+  number: 323-363-0863
+  tag: cell
+  id: "21"
+  phoneable_id: "36"
+  phoneable_type: Contact
+phones_041: 
+  number: 477-4119
+  tag: ""
+  id: "44"
+  phoneable_id: "42"
+  phoneable_type: Unit
+phones_062: 
+  number: 645-1011
+  tag: work
+  id: "65"
+  phoneable_id: "80"
+  phoneable_type: Contact
+phones_084: 
+  number: 310-430-1122
+  tag: pink
+  id: "87"
+  phoneable_id: "104"
+  phoneable_type: Contact
+phones_021: 
+  number: 383-4123
+  tag: cell
+  id: "23"
+  phoneable_id: "38"
+  phoneable_type: Contact
+phones_042: 
+  number: 818-481-8482
+  tag: cell
+  id: "45"
+  phoneable_id: "61"
+  phoneable_type: Contact
+phones_063: 
+  number: 477-6557
+  tag: ""
+  id: "66"
+  phoneable_id: "60"
+  phoneable_type: Unit
+phones_085: 
+  number: 310-434-3422
+  tag: cell
+  id: "88"
+  phoneable_id: "105"
+  phoneable_type: Contact
+phones_001: 
+  number: 525-1923
+  tag: ""
+  id: "1"
+  phoneable_id: "1"
+  phoneable_type: Unit
+phones_022: 
+  number: 570-8475
+  tag: cell
+  id: "24"
+  phoneable_id: "39"
+  phoneable_type: Contact
+phones_043: 
+  number: 893-4595
+  tag: cell
+  id: "46"
+  phoneable_id: "63"
+  phoneable_type: Contact
+phones_064: 
+  number: 903-2250
+  tag: cell
+  id: "67"
+  phoneable_id: "82"
+  phoneable_type: Contact
+phones_086: 
+  number: 221-787-7454
+  tag: abel
+  id: "89"
+  phoneable_id: "106"
+  phoneable_type: Contact
+phones_002: 
+  number: 479-8458
+  tag: ""
+  id: "2"
+  phoneable_id: "3"
+  phoneable_type: Unit
+phones_023: 
+  number: 201-704-4849
+  tag: cell
+  id: "25"
+  phoneable_id: "40"
+  phoneable_type: Contact
+phones_044: 
+  number: 404-641-7707
+  tag: cell
+  id: "47"
+  phoneable_id: "65"
+  phoneable_type: Contact
+phones_065: 
+  number: 415-847-7482
+  tag: cell
+  id: "68"
+  phoneable_id: "84"
+  phoneable_type: Contact
+phones_087: 
+  number: 310-333-4443
+  tag: main line
+  id: "90"
+  phoneable_id: "11"
+  phoneable_type: Contact
+phones_003: 
+  number: 445-4300
+  tag: work
+  id: "3"
+  phoneable_id: "14"
+  phoneable_type: Contact
+phones_024: 
+  number: 986-0818
+  tag: ""
+  id: "26"
+  phoneable_id: "25"
+  phoneable_type: Unit
+phones_045: 
+  number: 310-430-3372
+  tag: cell
+  id: "48"
+  phoneable_id: "67"
+  phoneable_type: Contact
+phones_066: 
+  number: 704-562-5956
+  tag: cell
+  id: "69"
+  phoneable_id: "85"
+  phoneable_type: Contact
+phones_088: 
+  number: 333-222-3343
+  tag: secondary line
+  id: "91"
+  phoneable_id: "1"
+  phoneable_type: Company
+phones_067: 
+  number: 310-344-6052
+  tag: ""
+  id: "70"
+  phoneable_id: "13"
+  phoneable_type: Contact
+phones_004: 
+  number: 818-321-8233
+  tag: cell
+  id: "4"
+  phoneable_id: "14"
+  phoneable_type: Contact
+phones_025: 
+  number: 714-4151
+  tag: cell
+  id: "27"
+  phoneable_id: "42"
+  phoneable_type: Contact
+phones_046: 
+  number: 310-430-3372
+  tag: cell
+  id: "49"
+  phoneable_id: "68"
+  phoneable_type: Contact
+phones_068: 
+  number: 650-454-0322
+  tag: cell
+  id: "71"
+  phoneable_id: "87"
+  phoneable_type: Contact
+phones_005: 
+  number: 213-430-3212
+  tag: work
+  id: "5"
+  phoneable_id: "15"
+  phoneable_type: Contact
+phones_026: 
+  number: 473-8676
+  tag: ""
+  id: "28"
+  phoneable_id: "28"
+  phoneable_type: Unit
+phones_047: 
+  number: 323-633-9932
+  tag: cell
+  id: "50"
+  phoneable_id: "69"
+  phoneable_type: Contact
+phones_070: 
+  number: 310-986-0818
+  tag: cell
+  id: "73"
+  phoneable_id: "41"
+  phoneable_type: Contact
+phones_069: 
+  number: 480-991-0851
+  tag: cell
+  id: "72"
+  phoneable_id: "27"
+  phoneable_type: Contact
+phones_006: 
+  number: 490-6740
+  tag: cell
+  id: "6"
+  phoneable_id: "16"
+  phoneable_type: Contact
+phones_027: 
+  number: 876-6867
+  tag: 
+  id: "29"
+  phoneable_id: "45"
+  phoneable_type: Contact
+phones_048: 
+  number: 477-0077
+  tag: ""
+  id: "51"
+  phoneable_id: "49"
+  phoneable_type: Unit
+phones_071: 
+  number: 310-445-2456
+  tag: ""
+  id: "74"
+  phoneable_id: "32"
+  phoneable_type: Unit
+phones_028: 
+  number: 444-2907
+  tag: 
+  id: "30"
+  phoneable_id: "30"
+  phoneable_type: Unit
+phones_050: 
+  number: 310-968-3949
+  tag: ""
+  id: "53"
+  phoneable_id: "74"
+  phoneable_type: Contact
+phones_049: 
+  number: 570-5121
+  tag: cell
+  id: "52"
+  phoneable_id: "72"
+  phoneable_type: Contact
+phones_007: 
+  number: 748-6797
+  tag: cell
+  id: "7"
+  phoneable_id: "17"
+  phoneable_type: Contact

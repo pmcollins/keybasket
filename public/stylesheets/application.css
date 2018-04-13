@@ -1,0 +1,319 @@
+body {
+  text-align: center;
+  background-color: white;
+  margin: 0px;
+  color: #000;
+}
+body, td, th, dt, dd, legend {
+  font-family: arial, helvetica, sans-serif;
+}
+body, td, th, dt, dd {
+  font-size: 0.95em;
+}
+#matte {
+  width: 775px;
+  margin: auto;
+  background-color: white;
+  padding-left:  16px;
+  padding-right: 16px;
+}
+div.top {
+  padding-top: 8px;
+}
+#binder {
+  background-color: white;
+}
+.breadcrumbs {
+  padding-left: 16px;
+  margin-top: 8px;
+  text-align: left;
+}
+div.footer {
+  margin-top: 18px;
+}
+body, input[type="submit"], .bigdaddy a {
+  color: black;
+}
+a > img {
+  border-width: 1px;
+}
+form {
+  display: inline;
+}
+.sys {
+  float: right;
+  clear: right;
+}
+.sys_inline, .sys a, dt {
+  white-space: nowrap
+}
+.name, .empty {
+  color: #aaa;
+}
+.name th {
+  font-weight: normal;
+  text-align: left;
+}
+.value {
+  font-weight: bold;
+}
+.empty {
+  font-style: italic;
+  font-weight: normal;
+}
+.indent {
+  margin-left: 20px;
+}
+legend {
+  color: #6a6;
+}
+fieldset {
+  border-color: #9a9;
+}
+fieldset {
+  margin-bottom: 8px;
+  text-align: left;
+  border-style: solid;
+  border-width: 1px 0px 0px 0px;
+}
+.bordered {
+  padding: 4px;
+}
+table.matrix {
+  border-collapse: collapse;
+}
+table.matrix td {
+  border: solid #aaa 1px;
+}
+table.matrix th {
+  background-color: #fff;
+}
+#topbar {
+  width: 100%;
+  text-align: right;
+  background-color: #afe;
+  border-bottom: solid #aaa 1px;
+  padding-top: 2px;
+}
+#banner {
+  margin: auto;
+  text-align: left;
+  padding-left: 8px;
+}
+#banner a.big {
+  text-decoration: none;
+  font-size: 36px;
+  color: #222;
+}
+#banner a img {
+  vertical-align: bottom;
+  border: 0;
+}
+#main_table {
+  width: 100%;
+}
+td.user_bar {
+  width: 33%;
+  vertical-align: top;
+}
+td.user_bar > div {
+  padding: 8px;
+}
+.notice, .notice a {
+  color: #222;
+}
+#flash {
+  color: #000;
+  background-color: #afa;
+  padding: 2px;
+  -moz-border-radius: 8px;
+}
+table.top_aligned td {
+  vertical-align: top;
+}
+.wide {
+  width: 100%;
+}
+.grande {
+  font-weight: bold;
+  font-size: 18px;
+}
+td {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+table.right td {
+  text-align: right;
+}
+li {
+  list-style: none;
+}
+div.thumbs {
+  height: 350px;
+  overflow: auto;
+}
+div.thumbs input[type="radio"] {
+  position: relative;
+  bottom: 30px;
+}
+input[type="checkbox"] {
+  margin: 0px;
+}
+.adbox {
+  margin-bottom: 8px;
+  padding: 8px;
+}
+.adbox .header {
+  height: 22px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.adbox .header .details {
+  float: left;
+}
+.adbox .header .status {
+  float: right;
+}
+.adbox .moveout_notice, .adbox .listing {
+}
+.adbox .detailbar {
+  height: 2em;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.adbox .address {
+  float: left;
+}
+.adbox .detailbar a {
+  float: right;
+}
+.adbox .units {
+  text-align: center;
+  padding: 8px;
+}
+div.main {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+table.main {
+  width: 100%;
+}
+table.main td {
+  width: 50%;
+  vertical-align: top;
+}
+td.currency {
+  text-align: right;
+}
+blockquote {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+table.purchase_order_line_item {
+  width: 100%;
+}
+table.purchase_order_line_item th {
+  text-align: left;
+  font-weight: normal;
+}
+table.purchase_order_line_item td {
+  vertical-align: top;
+}
+table.purchase_order_line_item td.left {
+  background-color: #eee;
+  width: 4px;
+  padding: 0px;
+}
+table.purchase_order_line_item textarea {
+  width: 100%;
+}
+div#tab_container {
+  text-align: right;
+}
+div#tab_container li {
+  cursor: pointer;
+  display: inline;
+  margin: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-weight: bold;
+  color: #aaa;
+  text-decoration: underline;
+}
+div#tab_container li.tabby_selected {
+  background-color: white;
+  color: #000;
+  text-decoration: none;
+}
+
+dl {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+dt {
+  float: left;
+  clear: left;
+  width: 120px;
+  text-align: right;
+  margin-right: 8px;
+  font-weight: bold;
+  overflow: hidden;
+}
+dd {
+  font-weight: normal;
+}
+dt, dd {
+  margin-bottom: 1px;
+}
+
+dd {
+  margin-bottom: 2px;
+}
+
+form dt, form dd {
+  margin-bottom: 16px !important;
+}
+label {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+table.report {
+  width: 100%;
+  empty-cells: show;
+  border-collapse: collapse;
+}
+table.report th {
+  text-align: left;
+}
+table.report tr {
+  height: 50px
+}
+table.report td {
+  border-top: solid #aaa 1px;
+  vertical-align: top;
+}
+table.report td.column_name {
+  width: 20%;
+  padding-top: 12px
+}
+table.report td.checkbox {
+  width: 10px;
+  padding-top: 16px
+}
+table.report td, table.report th {
+  padding: 8px;
+}
+.frontpage dt {
+  color: #3a3;
+}
+.frontpage dd {
+  color: #333;
+}
+#report_output_container {
+  margin-top: 8px;
+  border: solid #eee 2px;
+}
+.tiny {
+  font-size: 0.8em;
+  color: #aaa;
+}

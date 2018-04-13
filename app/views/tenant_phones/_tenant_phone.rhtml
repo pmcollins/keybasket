@@ -1,0 +1,16 @@
+<div>
+  <span class="value"><%= tenant_phone.number %> <%= tenant_phone.tag %></span>
+  <%= link_to(
+    'edit',
+    m([
+      @company,
+      @property,
+      @unit,
+      @rental_agreement,
+      @tenant,
+      "tenant_phones/#{tenant_phone.id}",
+      'edit'
+    ]),
+    :class => 'sys_inline'
+  ) %>
+</div>

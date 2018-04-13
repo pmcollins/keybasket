@@ -1,0 +1,10 @@
+<% manager = manager_text %><% contact = manager.contact %>
+<%= contact.first_name %> <%= contact.last_name %>
+<% if contact.phones.any? %>
+<% contact.phones.each do |phone| %>
+<%= phone.number %> <%= phone.tag %>
+<% end %>
+<% end %>
+<% if contact.email? %>
+email: <%= contact.email %>
+<% end %>

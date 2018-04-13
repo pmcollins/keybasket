@@ -1,0 +1,31 @@
+--- 
+account_types_001: 
+  name: bank
+  inverted: f
+  id: "1"
+  ordering: "3"
+account_types_002: 
+  name: liability
+  inverted: t
+  id: "5"
+  ordering: "4"
+account_types_003: 
+  name: income
+  inverted: t
+  id: "6"
+  ordering: "1"
+account_types_004: 
+  name: expense
+  inverted: f
+  id: "7"
+  ordering: "6"
+account_types_005: 
+  name: accounts_receivable
+  inverted: f
+  id: "9"
+  ordering: "2"
+account_types_006: 
+  name: accounts_payable
+  inverted: t
+  id: "10"
+  ordering: "5"

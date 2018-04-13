@@ -1,0 +1,9 @@
+<% p = public_listing_cells %>
+<% u = p.unit %>
+<% f = u.floor_plan %>
+<%= f.bedrooms %>
+<%= f.bathrooms %>
+<%= f.sq_ft %>
+<%= number_to_currency(p.amount) %>
+<%= p.lease_months %>
+<%= p.available_date %>

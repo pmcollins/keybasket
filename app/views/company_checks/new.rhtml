@@ -1,0 +1,59 @@
+<%= breadcrumbs([@company, @property, @unit, @rental_agreement, 'New Check']) %>
+
+<fieldset>
+  <legend>New Check</legend>
+  <p>
+  <% form_for(
+    :check,
+    :url => m([@company, @property, @unit, @rental_agreement, 'checks'])
+  ) do |check| %>
+
+    <p>
+      <label>Amount</label><br/>
+      <%= check.text_field :amount, :size => 16 %>
+    </p>
+    <p>
+      <label>Check Number</label><br/>
+      <%= check.text_field :check_number, :size => 16 %>
+    </p>
+    <p>
+      <label>Date on Check</label><br/>
+      <%= check.date_select :nominal_date %>
+    </p>
+    <p>
+      <label>Check Notes</label><br/>
+      <%= check.text_area :notes, :cols => 40, :rows => 4 %>
+    </p>
+
+<% fields_for :check_transaction do |check_transaction| %>
+    <p>
+      <label>
+        Apply payment to:
+        <blockquote>
+          <% @source_accounts.each do |source_account| %>
+            <div>
+              <%= check_transaction.radio_button :source_account_id, source_account.id %>
+              <label class="value">
+                <%= source_account %>
+                (<%= number_to_currency(source_account.get_balance_by_rental_agreement_id(@rental_agreement.id)) %>
+                outstanding)
+              </label>
+            </div>
+          <% end %>
+        </blockquote>
+      </label>
+    </p>
+    <label>
+      Put funds in account:
+    </label>
+    <blockquote>
+      <%= render :partial => '/check_transactions/form', :object => check_transaction %>
+    </blockquote>
+<% end %>
+
+
+    <%= submit_tag 'Save' %>
+  <% end %>
+  </p>
+</fieldset>
+

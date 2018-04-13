@@ -1,0 +1,10 @@
+<% account = account_summary_tr %>
+<tr>
+  <td>
+    <%= link_to(
+      account,
+      m([@company, account])
+    ) %>
+  </td>
+  <td class="currency"><%= number_to_currency(account.get_balance_by_company_id(@company.id)) %></td>
+</tr>

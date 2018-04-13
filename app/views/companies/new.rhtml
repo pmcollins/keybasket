@@ -1,0 +1,15 @@
+<%= error_messages_for :company %>
+<fieldset>
+  <legend>New Company</legend>
+  <% form_for(
+    :company,
+    :url => m('companies')
+  ) do |f| %>
+    <p>
+      <label>Company Name</label><br/>
+      <%= f.text_field :name %>
+    </p>
+    <div><%= submit_tag 'Create' %></div>
+  <% end %>
+</fieldset>
+

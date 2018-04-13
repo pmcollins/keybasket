@@ -1,0 +1,40 @@
+<tr>
+  <td class="left"></td>
+  <td>
+    <%= form.text_field :product_code, :index => index, :size => 4 %>
+  </td>
+  <td>
+    <%= form.text_area :description, :rows => 1, :index => index %>
+  </td>
+  <td>
+    <%= form.collection_select(
+      :measure_unit_id,
+      @measure_units,
+      :id,
+      :to_s,
+      {},
+      :index => index
+    ) %>
+  </td>
+  <td>
+    <%= form.text_field(
+      :quantity,
+      :index => index,
+      :size => 3,
+      :class => 'quantity',
+      :onchange => 'recalculateRow(this)'
+    ) %>
+  </td>
+  <td>
+    <%= form.text_field(
+      :unit_price,
+      :index => index,
+      :size => 5,
+      :onchange => 'recalculateRow(this)',
+      :class => 'unit_price'
+    ) %>
+  </td>
+  <td>
+    <input type="text" size="6" class="total" />
+  </td>
+</tr>

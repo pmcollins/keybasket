@@ -1,0 +1,29 @@
+<%= breadcrumbs([@company, @manager, 'New Purchase Order Request']) %>
+
+<fieldset>
+  <legend>New Purchase Order Request</legend>
+  <p>
+    <% form_for(
+      :purchase_order,
+      :url => m([@company, @manager, 'manager_purchase_orders']),
+      :builder => LabeledBuilder
+    ) do |purchase_order| %>
+      <p>
+        <label>Vendor</label><br/>
+      <%= purchase_order.collection_select(
+        :vendor_id,
+        @vendors,
+        :id,
+        :to_s, {
+          :include_blank => true
+        }
+      ) %>
+      </p>
+      <%= render(
+        :partial => '/purchase_orders/form',
+        :object => purchase_order
+      ) %>
+      <%= submit_tag 'Submit Request' %>
+    <% end %>
+  </p>
+</fieldset>

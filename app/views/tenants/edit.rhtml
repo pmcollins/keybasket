@@ -1,0 +1,12 @@
+<%= breadcrumbs([@company, @property, @unit, @rental_agreement, @tenant, 'Edit Details']) %>
+<% form_for(
+  :tenant,
+  :url => m([@company, @property, @unit, @rental_agreement, @tenant]),
+  :html => {:method => 'put'}
+) do |form| %>
+  <fieldset>
+    <legend>Edit Tenant</legend>
+    <%= render :partial => 'form', :object => form %>
+    <div><%= submit_tag 'Update' %></div>
+  </fieldset>
+<% end %>

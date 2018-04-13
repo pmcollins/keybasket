@@ -1,0 +1,19 @@
+<%= breadcrumbs([@company, @report, @relation_attribute, 'Yes/No Filter']) %>
+<fieldset>
+  <legend>Yes/No Filter</legend>
+  <% form_for(
+    :report_boolean_filter,
+    :url => m([
+      @company,
+      @report,
+      @relation_attribute,
+      'report_boolean_filters'
+    ])
+  ) do |f| %>
+    <p>
+      <div><%= f.radio_button :search_value, 't' %>Yup</div>
+      <div><%= f.radio_button :search_value, 'f' %>No</div>
+      <div><%= submit_tag('Save') %></div>
+    </p>
+  <% end %>
+</fieldset>

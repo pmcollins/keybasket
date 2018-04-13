@@ -1,0 +1,38 @@
+<%= breadcrumbs([@company, @property, @account]) %>
+
+<fieldset>
+  <legend><%= @account %> Balances</legend>
+  <p>
+    <table style="width: 100%;">
+    <% @rental_agreements.each do |rental_agreement| %>
+      <% balance = @account.get_balance_by_rental_agreement_id(rental_agreement.id) %>
+        <% if balance != 0.0 %>
+          <% unit = rental_agreement.unit %>
+          <tr>
+            <td class="name">
+              <%= link_to(
+                unit,
+                m([@company, @property, unit])
+              ) %>
+            </td>
+            <td class="name">
+              <%= link_to(
+                'Accounting Overview',
+                m([
+                  @company,
+                  @property,
+                  unit,
+                  rental_agreement,
+                  'rental_agreement_account_types'
+                ])
+              ) %>
+            </td>
+            <td class="value" style="text-align: right;">
+              <%= number_to_currency(balance) %>
+            </td>
+          </tr>
+      <% end %>
+    <% end %>
+    </table>
+  </p>
+</fieldset>

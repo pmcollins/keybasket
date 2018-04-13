@@ -1,0 +1,8 @@
+<%= breadcrumbs([@company, @property, @unit, 'New Listing']) %>
+<% form_for(
+  :listing,
+  :url => m([@company, @property, @unit, 'listings']),
+  :builder => LabeledBuilder
+) do |form| %>
+  <%= render :partial => 'form', :object => form %>
+<% end %>

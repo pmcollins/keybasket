@@ -1,0 +1,6 @@
+--- 
+building_prototypes_001: 
+  floors: "4"
+  units_per_floor: "15"
+  id: "1"
+  property_id: "1"

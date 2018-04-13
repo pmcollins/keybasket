@@ -1,0 +1,24 @@
+<% unit = unit_current_rent %>
+<% rental_agreement = unit.rental_agreement %>
+<% tenants = rental_agreement ? rental_agreement.tenants : nil %>
+<dt class="<% if unit.flagged? %>notice<% end %>">
+  <%= link_to(
+    unit.apt,
+    m([@company, @property, unit])
+  ) %>
+</dt>
+<% if rental_agreement %>
+  <dd>
+    <% if rental_agreement.current_rent %>
+      <%= number_to_currency(rental_agreement.current_rent.amount) %>/month
+    <% elsif rental_agreement.current_rents.any? %>
+      <% rent = rental_agreement.current_rents.first %>
+      <%= number_to_currency(rent.amount) %>/month
+      effective <%= rent.effective_date.to_s(:short) %>
+    <% else %>
+      <span class="empty">No rent amount defined.</span>
+    <% end %>
+  </dd>
+<% else %>
+  <dd class="empty">vacant</dd>
+<% end %>

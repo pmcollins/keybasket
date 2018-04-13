@@ -1,0 +1,15 @@
+<%= breadcrumbs([@company, @vendor, @purchase_order, 'Approve Purchase Order']) %>
+
+<fieldset>
+  <legend>Approve Purchase Order</legend>
+  <p>
+    <% form_for(
+      :purchase_order_approval,
+      :url => m([@company, @vendor, @purchase_order, 'purchase_order_approvals']),
+      :builder => LabeledBuilder
+    ) do |purchase_order| %>
+      <%= purchase_order.text_area :notes, :rows => 2, :cols => 40 %>
+      <%= submit_tag 'Approve This Purchase Order Now' %>
+    <% end %>
+  </p>
+</fieldset>

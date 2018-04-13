@@ -1,0 +1,15 @@
+<%= breadcrumbs([@company, @property, @unit, 'New Maintenence Request']) %>
+
+<fieldset>
+  <legend>New Maintenance Request</legend>
+  <p>
+    <% form_for(
+      :maintenance_request,
+      :url => m([@company, @property, @unit, 'maintenance_requests']),
+      :builder => LabeledBuilder
+    ) do |mainenance_request| %>
+      <%= mainenance_request.text_area :description, :rows => 4, :cols => 40 %>
+      <%= submit_tag 'Submit' %>
+    <% end %>
+  </p>
+</fieldset>

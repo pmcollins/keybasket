@@ -1,0 +1,7 @@
+<dt>
+  <%= link_to(
+    maintenance_request.created_at,
+    m([@company, @property, @unit, maintenance_request])
+  ) %>
+</dt>
+<dd><%= maintenance_request.maintenance_request_status %></dd>

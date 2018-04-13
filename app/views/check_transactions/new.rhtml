@@ -1,0 +1,35 @@
+<%= breadcrumbs([@company, @property, @unit, @rental_agreement, @check, 'New Transaction']) %>
+
+<fieldset>
+  <legend>New Check Transaction</legend>
+  <p>
+    <% form_for(
+      :check_transaction,
+      :url => m([
+        @company,
+        @property,
+        @unit,
+        @rental_agreement,
+        @check,
+        'check_transactions'
+      ])
+    ) do |check_transaction| %>
+      <label>Source Account</label>
+      <blockquote>
+        <label class="value"><%= @source_account %></label>
+      </blockquote>
+      <br/>
+      <label>Target Account</label>
+      <blockquote>
+        <%= check_transaction.hidden_field :source_account_id, :value => @source_account.id %>
+        <%= render :partial => '/check_transactions/form', :object => check_transaction %>
+      </blockquote>
+      <br/>
+      <p>
+        <label>Notes</label><br/>
+        <%= check_transaction.text_area :notes, :cols => 40, :rows => 4 %>
+      </p>
+      <%= submit_tag 'Run this Transaction' %>
+    <% end %>
+  </p>
+</fieldset>

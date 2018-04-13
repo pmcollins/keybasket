@@ -1,0 +1,10 @@
+<dl>
+  <dt>name</dt>
+  <dd><%= nvl(@report.name) %></dd>
+  <dt>owner</dt>
+  <dd><%= nvl(@report.owner) %></dd>
+  <dt>created at</dt>
+  <dd><%= nvl(@report.created_at) %></dd>
+  <dt>output fields</dt>
+  <dd><%= @report.relation_attributes.join(', ') %></dd>
+</dl>

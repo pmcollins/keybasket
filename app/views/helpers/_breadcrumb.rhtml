@@ -1,0 +1,7 @@
+<% if breadcrumb.class == Array %>
+  <% name = breadcrumb[0] %>
+  <% url  = breadcrumb[1] %>
+  <%= link_to(name, url) %>
+<% else %>
+  <span><%= breadcrumb %></span>
+<% end %>

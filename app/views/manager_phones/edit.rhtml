@@ -1,0 +1,25 @@
+<%= breadcrumbs([@company, @manager, 'New Phone']) %>
+
+<fieldset>
+  <legend>Edit Manger Phone</legend>
+  <% form_for(
+    :phone,
+    :url => m([@company, @manager, 'manager_phones', @phone.id]),
+    :builder => LabeledBuilder,
+    :html => {:method => :put}
+  ) do |form| %>
+    <%= render :partial => 'form', :object => form %>
+    <%= submit_tag 'Save' %>
+  <% end %>
+</fieldset>
+
+<fieldset>
+  <legend>Delete Phone</legend>
+  <% form_for(
+    :phone,
+    :url => m([@company, @manager, 'manager_phones', @phone.id]),
+    :html => {:method => :delete}
+  ) do |form| %>
+    <%= submit_tag 'Delete' %>
+  <% end %>
+</fieldset>

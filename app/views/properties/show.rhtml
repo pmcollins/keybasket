@@ -1,0 +1,197 @@
+<%= breadcrumbs([@company, @property]) %>
+
+<table class="main">
+  <tr>
+    <td>
+
+      <fieldset>
+        <legend>Property Details</legend>
+        <div><span class="value"><%= @property.name %></span></div>
+        <% address = @property.address %>
+        <% if address %>
+          <%= render(:partial => '/addresses/address', :object => address) %>
+        <% else %>
+          <span class="empty">No address defined.</span>
+        <% end %>
+        <div class="sys">
+          <%= link_to(
+            'edit details',
+            m([@company, @property, 'edit'])
+          ) %>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Property Managers</legend>
+        <p>
+          <% if @manager_properties.any? %>
+            <% @manager_properties.each do |manager_property| %>
+                <% if session[:coordinator_id] %>
+                  <div><%= link_to(
+                    manager_property.manager,
+                    m([
+                      @company,
+                      @property,
+                      'property_managers',
+                      manager_property.id
+                    ])
+                  ) %></div>
+                <% else %>
+                  <div class="value"><%= manager_property.manager %></div>
+                <% end %>
+            <% end%>
+          <% else %>
+            <span class="empty">No managers defined.</span>
+          <% end %>
+        </p>
+        <% if session[:coordinator_id] %>
+          <div class="sys"><%= link_to(
+            'add a manager',
+            m([@company, @property, 'property_managers/new'])
+          ) %></div>
+        <% end %>
+      </fieldset>
+
+      <fieldset>
+        <legend>Units</legend>
+        <p>
+          <% if @property.units.empty? %>
+            <span class="empty">No Units Defined</span>
+            <div class="sys">
+              <%= link_to(
+                'setup units',
+                m([@company, @property, 'building_prototypes/new'])
+              ) %>
+            </div>
+          <% else %>
+            <%= render(
+              :partial => '/units/unit',
+              :collection => @property.units
+            ) %>
+            <div class="sys">
+              <%= link_to(
+                'view units/tenants list',
+                m([@company, @property, 'units'])
+              ) %>
+            </div>
+          <% end %>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Active Maintenance Requests</legend>
+        <dl>
+          <% if @maintenance_requests.any? %>
+            <%= render(
+              :partial => '/property_maintenance_requests/property_maintenance_request',
+              :collection => @maintenance_requests
+            ) %>
+          <% else %>
+            <span class="empty">No active maintenance requests found for this property.</span>
+          <% end %>
+        </dl>
+        <div class="sys">
+          <%= link_to(
+            'new',
+            m([@company, @property, 'property_maintenance_requests/new'])
+          ) %>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Property Notes</legend>
+        <p>
+          <% if @notes %>
+            <% @notes.each do |note| %>
+              <div><%= link_to(
+                note,
+                m([@company, @property, 'notes', note.id]))
+              %></div>
+            <% end %>
+          <% else %>
+            <div class="empty">No notes found.</div>
+          <% end %>
+        </p>
+        <div class="sys"><%= link_to(
+          'new note',
+          m([@company, @property, 'notes/new']))
+        %></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Property Reports</legend>
+        <p>
+          <% if @reports.any? %>
+            <dl>
+              <% @reports.each do |report| %>
+                <dt><%= report.owner %></dt>
+                <dd><%= link_to(
+                  report.name,
+                  m([@company, @property, 'property_reports', report.id])
+                ) %></dd>
+              <% end %>
+            </dl>
+          <% else %>
+            <div class="empty">No reports found for this propery.</div>
+          <% end %>
+        </p>
+      </fieldset>
+
+    </td>
+    <td>
+
+      <fieldset>
+        <legend>Floor Plans</legend>
+        <dl>
+          <%= render(
+            :partial => '/floor_plans/floor_plan',
+            :collection => @property.floor_plans
+          ) %>
+        </dl>
+        <div class="sys">
+          <%= link_to(
+            'new floorplan',
+            m([@company, @property, 'floor_plans/new'])
+          ) %>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Property Vendors</legend>
+        <p>
+          <% @property_vendors.each do |property_vendor| %>
+            <div>
+              <%= link_to(
+                property_vendor.vendor,
+                m([@company, @property, property_vendor, 'edit']))
+              %>
+            </div>
+          <% end %>
+        </p>
+        <div class="sys">
+          <%= link_to(
+            'new',
+            m([@company, @property, 'property_vendors/new']))
+          %>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Property Photos</legend>
+        <p>
+          <% @property.property_photos.each do |p| %>
+            <a href="<%= m([
+              @company, @property, p
+            ]) %>"><img src="<%= m([p.photo, 'thumb']) %>"/></a>
+          <% end %>
+        </p>
+        <div class="sys"><%= link_to(
+          'manage photos',
+          m([@company, @property, 'property_photos'])
+        ) %></div>
+      </fieldset>
+
+    </td>
+  </tr>
+</table>
+

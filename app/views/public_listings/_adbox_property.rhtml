@@ -1,0 +1,34 @@
+<% property = adbox_property %>
+<% vacancy_units = property.current_and_upcoming_vacancy_units %>
+<div class="adbox">
+  <div class="header">
+    <span class="details">
+      <span class="value"><%= property.name %></span>
+      <span class="small"><%= property.units_count %> units</span>
+    </span>
+    <span class="status">
+      <% if vacancy_units.any? %>
+        <span class="small"><%= vacancy_units.nitems %> available</span>
+      <% end %>
+    </span>
+  </div>
+  <div class="expansion">
+    <div class="detailbar">
+      <div class="address small"><%= render(
+        :partial => '/addresses/address',
+        :object => property.address
+      ) %></div>
+      <!-- %= link_to(
+        'notify me of new vacancies',
+        m([property.company, property, 'vacancy_notifications/new']),
+        :class => 'sys'
+      ) % -->
+      <% if property.property_photo %>
+        <%= render(
+          :partial => '/photos/thumb',
+          :object => property.property_photo
+        ) %>
+      <% end %>
+    </div>
+  </div>
+</div>

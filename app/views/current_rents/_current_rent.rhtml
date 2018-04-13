@@ -1,0 +1,9 @@
+  <dt>
+    <%= link_to(
+      number_to_currency(current_rent.amount),
+      m([@company, @property, @unit, @rental_agreement, current_rent, 'edit'])
+    ) %>
+  </dt>
+  <dd>
+    starting on <%= current_rent.effective_date %>
+  </dd>

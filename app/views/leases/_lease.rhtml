@@ -1,0 +1,26 @@
+<% if lease.expired? %>
+  <div class="notice">This lease has expired.</div>
+<% end %>
+  <dt>Rent</dt>
+  <dd><%= number_to_currency(lease.rent) %></dd>
+
+  <dt>Start</dt>
+  <dd><%= lease.start_date %></dd>
+
+  <dt>End</dt>
+  <dd><%= lease.end_date %></dd>
+
+  <dt>Notes</dt>
+  <% if lease.notes? %>
+    <dd><%= lease.notes %></dd>
+  <% else %>
+    <dd class="empty">No notes defined.</dd>
+  <% end %>
+
+  <dd>
+    <%= link_to(
+      'edit this lease',
+      m([@company, @property, @unit, @rental_agreement, lease, 'edit']),
+      :class => 'sys_inline'
+    ) %>
+  </dd>

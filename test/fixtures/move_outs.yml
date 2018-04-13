@@ -1,0 +1,55 @@
+--- 
+move_outs_003: 
+  rental_agreement_id: "7"
+  moved_out_date: "2007-08-24"
+  unit_id: "7"
+  id: "3"
+  notes: moved into 304
+move_outs_004: 
+  rental_agreement_id: "11"
+  moved_out_date: "2007-08-01"
+  unit_id: "11"
+  id: "4"
+  notes: ""
+move_outs_005: 
+  rental_agreement_id: "33"
+  moved_out_date: "2007-08-01"
+  unit_id: "34"
+  id: "5"
+  notes: ""
+move_outs_006: 
+  rental_agreement_id: "35"
+  moved_out_date: "2007-08-30"
+  unit_id: "36"
+  id: "6"
+  notes: moved into 109
+move_outs_007: 
+  rental_agreement_id: "40"
+  moved_out_date: "2007-07-31"
+  unit_id: "41"
+  id: "7"
+  notes: ""
+move_outs_008: 
+  rental_agreement_id: "47"
+  moved_out_date: "2007-06-30"
+  unit_id: "48"
+  id: "8"
+  notes: ""
+move_outs_009: 
+  rental_agreement_id: "49"
+  moved_out_date: "2007-08-24"
+  unit_id: "50"
+  id: "9"
+  notes: ""
+move_outs_001: 
+  rental_agreement_id: "51"
+  moved_out_date: "2007-09-01"
+  unit_id: "52"
+  id: "1"
+  notes: ""
+move_outs_002: 
+  rental_agreement_id: "9"
+  moved_out_date: "2007-08-24"
+  unit_id: "9"
+  id: "2"
+  notes: ""

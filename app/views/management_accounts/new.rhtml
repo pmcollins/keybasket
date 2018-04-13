@@ -1,0 +1,11 @@
+<fieldset>
+  <legend>New Management Account</legend>
+  <% form_for(
+    :management_account,
+    :url => m([@company, 'management_accounts/new']),
+    :builder => LabeledBuilder
+  ) do |form| %>
+    <%= render :partial => 'form', :object => form %>
+    <%= submit_tag 'Go' %>
+  <% end %>
+</fieldset>

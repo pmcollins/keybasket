@@ -1,0 +1,15 @@
+--- 
+purchase_orders_001: 
+  vendor_id: "1"
+  required_by: "2007-11-30"
+  purchase_order_approval_id: "1"
+  title: jjjj
+  payment_term_id: 
+  id: "1"
+  notes: ""
+  requisitioner_type: Manager
+  amount: "189"
+  company_id: "1"
+  ship_to_address_id: 
+  created_at: "2007-11-30"
+  requisitioner_id: "2"

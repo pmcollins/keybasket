@@ -1,0 +1,59 @@
+<% purchase_order = form %>
+
+<%= purchase_order.date_select :required_by %>
+<%= purchase_order.text_field :title, :size => 32 %>
+<%= purchase_order.text_area :notes, :cols => 40, :rows => 2 %>
+<%= purchase_order.text_field :amount, :size => 8 %>
+<div>
+  <input type="checkbox" name="purchase_order[itemize]" onchange="chx(this)" />
+  <label>Specify Line Items</label>
+</div>
+<div id="po_line_item">
+<br/>
+<% fields_for :purchase_order_line_item do |purchase_order_line_item| %>
+  <table class="purchase_order_line_item">
+    <tr>
+      <th></th>
+      <th><label>Code</label></th>
+      <th><label>Description</label></th>
+      <th><label>Units</label></th>
+      <th><label>Qty</label></th>
+      <th><label>Unit&nbsp;Price</label></th>
+      <th><label>Line Total</label></th>
+    </tr>
+    <% 2.times do |index| %>
+      <%= render(
+        :partial => '/purchase_order_line_items/form',
+        :object => purchase_order_line_item,
+        :locals => {:index => index}
+      ) %>
+    <% end %>
+  </table>
+<% end %>
+</div>
+<br/>
+<script>
+var poLineItemNode = $('po_line_item');
+poLineItemNode.hide();
+function chx(node) {
+  if (node.checked) {
+    poLineItemNode.show();
+  } else {
+    poLineItemNode.hide();
+  }
+}
+function recalculateTotal() {
+  var tot = 0;
+  $$('.total').each(function(n) {
+    tot += new Number(n.value);
+  });
+  $('purchase_order_amount').value = tot;
+}
+function recalculateRow(inputNode) {
+  var trNode = inputNode.up('tr');
+  var unitPrice = trNode.down('.unit_price').value;
+  var quantity = trNode.down('.quantity').value;
+  trNode.down('.total').value = unitPrice * quantity;
+  recalculateTotal();
+}
+</script>

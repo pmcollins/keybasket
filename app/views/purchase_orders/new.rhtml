@@ -1,0 +1,15 @@
+<%= breadcrumbs([@company, @vendor, 'New Purchase Order']) %>
+
+<fieldset>
+  <legend>New Purchase Order</legend>
+  <p>
+    <% form_for(
+      :purchase_order,
+      :url => m([@company, 'purchase_orders']),
+      :builder => LabeledBuilder
+    ) do |purchase_order| %>
+      <%= render(:partial => 'form', :object => purchase_order) %>
+      <div><%= submit_tag 'Save' %></div>
+    <% end %>
+  </p>
+</fieldset>

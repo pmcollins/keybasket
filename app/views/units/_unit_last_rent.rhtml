@@ -1,0 +1,13 @@
+<% unit = unit_last_rent %>
+<% rental_agreement = unit.rental_agreement %>
+<% tenants = rental_agreement ? rental_agreement.tenants : nil %>
+<div>
+  <%= render :partial => '/units/unit', :object => unit %>
+  <span class="value">
+    <%= render(
+      :partial => '/current_rents/current_rent_nolink',
+      :collection => rental_agreement.current_rents
+    ) %>
+  </span>
+</div>
+

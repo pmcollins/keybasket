@@ -1,0 +1,26 @@
+<%= breadcrumbs([@company, @parent, 'Edit Note']) %>
+
+<fieldset>
+  <legend>New Note</legend>
+  <% form_for(
+    :note,
+    :url => @note_path,
+    :html => {:method => :put}
+  ) do |note| %>
+    <%= render :partial => 'form', :object => note %>
+    <%= submit_tag 'Update' %>
+  <% end %>
+</fieldset>
+
+<fieldset>
+  <legend>Delete Note</legend>
+  <p>
+    <% form_for(
+      :note,
+      :url => @note_path,
+      :html => {:method => :delete}
+    ) do |f| %>
+      <%= submit_tag 'Delete' %>
+    <% end %>
+  </p>
+</fieldset>

@@ -1,0 +1,15 @@
+<%= breadcrumbs([@company, @property, 'New Property Photo']) %>
+<fieldset>
+  <legend>Upload a Property Photo</legend>
+  <% form_for(
+    :property_photo,
+    :url => m([@company, @property, 'property_photos']),
+    :html => {:multipart => true}
+  ) do |form| %>
+    <%= render(
+      :partial => 'form',
+      :object => form
+    ) %>
+    <%= submit_tag 'Upload' %>
+  <% end %>
+</fieldset>

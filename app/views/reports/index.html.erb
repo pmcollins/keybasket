@@ -1,0 +1,13 @@
+<%= breadcrumbs([@company, 'Reports']) %>
+<fieldset>
+  <legend>Reports</legend>
+  <dl>
+    <% @reports.each do |report| %>
+      <dt><%= report.name %></dt>
+      <dd><%= link_to(report.name, m([@company, report])) %></dd>
+    <% end %>
+  </dl>
+  <div class="sys">
+    <%= link_to('new report', m([@company, 'reports/new'])) %>
+  </div>
+</fieldset>

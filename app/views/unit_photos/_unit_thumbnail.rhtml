@@ -1,0 +1,9 @@
+<a href="<%= m([
+  @company,
+  @property,
+  @unit,
+  'unit_thumbnail', unit_thumbnail.id
+]) %>"><%= render(
+  :partial => '/photos/thumb',
+  :object => unit_thumbnail.photo
+) %></a>

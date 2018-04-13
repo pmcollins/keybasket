@@ -1,0 +1,51 @@
+<%= breadcrumbs([@company, 'New Account Transfer']) %>
+
+<fieldset>
+  <legend>New Account Transfer</legend>
+    <% form_for(
+      :account_transfer,
+      :url => m([@company, 'account_transfers'])
+    ) do |account_transfer| %>
+      <p>
+        <table style="width: 100%;">
+          <tr class="name">
+            <th>Source Account</th>
+            <th>Target Account</th>
+          </tr>
+          <tr>
+            <td>
+              <% @accounts.each do |account| %>
+                <div>
+                <%= account_transfer.radio_button(:source_account_id, account.id) %>
+                <label>
+                  <%= account %>
+                  <%= number_to_currency(account.get_balance_by_company_id(@company.id)) %>
+                </label>
+                </div>
+              <% end %>
+            </td>
+            <td>
+              <% @accounts.each do |account| %>
+                <div>
+                <%= account_transfer.radio_button(:target_account_id, account.id) %>
+                <label>
+                  <%= account %>
+                  <%= number_to_currency(account.get_balance_by_company_id(@company.id)) %>
+                </label>
+                </div>
+              <% end %>
+            </td>
+          </tr>
+        </table>
+      </p>
+      <p>
+        <label>Transfer Amount</label><br/>
+        <%= account_transfer.text_field :amount, :size => 8 %>
+      </p>
+      <p>
+        <label>Notes</label><br/>
+        <%= account_transfer.text_area :notes, :cols => 40, :rows => 1 %>
+      </p>
+      <%= submit_tag 'Apply' %>
+    <% end %>
+</fieldset>

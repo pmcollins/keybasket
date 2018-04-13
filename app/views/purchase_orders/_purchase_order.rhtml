@@ -1,0 +1,12 @@
+<div>
+  <%= link_to(
+    purchase_order.title,
+    m([@company, @vendor, purchase_order])
+  ) %>
+  <span class="name">
+    Status:
+  </span>
+  <span class="value">
+    <%= purchase_order.get_status %>
+  </span>
+</div>

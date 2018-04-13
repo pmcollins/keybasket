@@ -1,0 +1,33 @@
+<%= breadcrumbs([@company, @property, @unit, @rental_agreement, @check]) %>
+
+<fieldset>
+  <legend>Check</legend>
+  <p>
+    <span class="name">Current Account</span>
+    <span class="value"><%= @check.account %></span>
+  </p>
+  <p>
+    <span class="name">Amount</span>
+    <span class="value"><%= number_to_currency(@check.amount) %></span>
+  </p>
+  <p>
+    <span class="name">Notes</span>
+    <% if @check.notes.any? %>
+      <span class="value"><%= @check.notes %></span>
+    <% else %>
+      <span class="empty">No notes found.</span>
+    <% end %>
+  </p>
+</fieldset>
+<fieldset>
+  <legend>Transactions</legend>
+  <%= render(
+    :partial => '/check_transactions/check_transaction',
+    :collection => @check.check_transactions
+  ) %>
+  <%= link_to(
+    'new transaction',
+    m([@company, @property, @unit, @rental_agreement, @check, 'check_transactions/new']),
+    :class => 'sys'
+  ) %>
+</fieldset>

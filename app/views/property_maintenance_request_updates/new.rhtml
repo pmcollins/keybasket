@@ -1,0 +1,26 @@
+<%= breadcrumbs([@company, @property, ['property_maintenance_request', @property_maintenance_request], 'New Maintenance Request Update']) %>
+<fieldset>
+  <legend>New Maintenance Request Update</legend>
+  <% form_for(
+    :property_maintenance_request_update,
+    :url => m([
+      @company,
+      @property,
+      'property_maintenance_requests', @property_maintenance_request.id,
+      'property_maintenance_request_updates'
+    ])
+  ) do |property_maintenance_request_update| %>
+    <label>Request Status</label><br/>
+    <%= property_maintenance_request_update.collection_select(
+      :maintenance_request_status_id,
+      @maintenance_request_statuses,
+      :id,
+      :to_s
+    ) %>
+    <p>
+      <label>Notes</label><br/>
+      <%= property_maintenance_request_update.text_area :notes, :cols => 40, :rows => 4 %>
+    </p>
+    <%= submit_tag 'Submit' %>
+  <% end %>
+</fieldset>

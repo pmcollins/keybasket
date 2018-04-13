@@ -1,0 +1,13 @@
+<% form_for(
+  :building_prototype,
+  :url => m([@company, @property, 'building_prototypes']),
+  :company_id => @company.id,
+  :property => @property.id,
+  :builder => LabeledBuilder
+) do |form| %>
+<fieldset>
+  <legend>New Building Prototype</legend>
+    <%= render :partial => 'form', :object => form %>
+    <div><%= submit_tag 'Create' %></div>
+</fieldset>
+<% end %>

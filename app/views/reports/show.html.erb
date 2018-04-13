@@ -1,0 +1,38 @@
+<%= breadcrumbs([@company, @report]) %>
+<fieldset>
+  <legend>Report</legend>
+  <%= render(:partial => '/reports/report_dl') %>
+  <div class="sys">
+    <%= link_to('edit', m([@company, @report, 'edit'])) %>
+  </div>
+</fieldset>
+<fieldset>
+  <legend>Report Filters</legend>
+  <p>
+    <%= render(:partial => 'filter', :collection => @filters) %>
+  </p>
+  <div class="sys">
+    <%= link_to(
+      'add a filter',
+      m([@company, @report, 'relation_attributes/new'])
+    ) %>
+  </div>
+</fieldset>
+<script>
+function runReport() {
+  new Ajax.Updater(
+    'report_output_container',
+    '<%= m([@company, @report, 'run']) %>', {
+      method : 'get'
+    }
+  );
+}
+</script>
+<fieldset>
+  <legend>Output</legend>
+  <div><input type="button" value="Run Report" onclick="runReport()"/></div>
+  <div
+    id="report_output_container"
+    style="width: 100%; height: 300px; overflow: auto;"
+  ></div>
+</fieldset>

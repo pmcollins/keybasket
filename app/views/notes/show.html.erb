@@ -1,0 +1,11 @@
+<%= breadcrumbs([@company, @parent, 'New Note']) %>
+
+<fieldset>
+  <legend><%= @parent%> Note</legend>
+  <p>
+    <span class="name"><%= @note.name %></span>
+    <span class="value"><pre><%= @note.value %></pre></span>
+  </p>
+  <div class="sys"><%= link_to('edit note', "#{request.path}/edit") %></div>
+</fieldset>
+

@@ -1,0 +1,23 @@
+<%= breadcrumbs([@company, @property, @unit, 'Unit Photo']) %>
+<fieldset>
+  <legend>Edit Unit Photo</legend>
+  <% form_for(
+    :unit_photo,
+    :url => m([@company, @property, @unit, @photo]),
+    :html => {:multipart => true, :method => :put}
+  ) do |form| %>
+    <div><%= render :partial => '/photos/photo', :object => @photo %></div>
+    <%= render :partial => 'form', :object => form %>
+    <%= submit_tag 'Update' %>
+  <% end %>
+</fieldset>
+<fieldset>
+  <legend>Delete Photo</legend>
+  <% form_for(
+    :unit_photo,
+    :url => m([@company, @property, @unit, @photo]),
+    :html => {:method => :delete}
+  ) do |form| %>
+    <%= submit_tag 'Delete' %>
+  <% end %>
+</fieldset>

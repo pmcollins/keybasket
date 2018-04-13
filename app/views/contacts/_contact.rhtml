@@ -1,0 +1,10 @@
+<div>
+  <span class="value"><%= contact.first_name %> <%= contact.last_name %></span>
+</div>
+<div>
+  <% if contact.address %>
+    <%= render :partial => '/addresses/address', :object => contact.address %>
+  <% else %>
+    <span class="empty">No address defined.</span>
+  <% end %>
+</div>

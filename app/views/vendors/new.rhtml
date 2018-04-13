@@ -1,0 +1,15 @@
+<%= breadcrumbs([@company, 'New Vendor']) %>
+
+<fieldset>
+  <legend>New Vendor</legend>
+  <p>
+    <% form_for(
+      :vendor,
+      :url => m([@company, 'vendors']),
+      :builder => LabeledBuilder
+    ) do |vendor| %>
+      <%= vendor.text_field :name %>
+      <%= submit_tag 'Save' %>
+    <% end %>
+  </p>
+</fieldset>

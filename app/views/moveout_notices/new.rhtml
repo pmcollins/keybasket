@@ -1,0 +1,12 @@
+<%= breadcrumbs([@company, @property, @unit, @rental_agreement, 'New Moveout Notice']) %>
+<% form_for(
+  :moveout_notice,
+  :url => m([@company, @property, @unit, @rental_agreement, 'moveout_notices']),
+  :builder => LabeledBuilder
+) do |form| %>
+  <fieldset>
+    <legend>New Moveout Notice</legend>
+    <%= render :partial => 'form', :object => form %>
+    <p><%= submit_tag 'Create' %></p>
+  </fieldset>
+<% end %>

@@ -1,0 +1,14 @@
+<% @target_accounts.each_with_index do |target_account, i| %>
+  <div>
+    <% if i == 0 %>
+      <% html = {:checked => 'checked'} %>
+    <% else %>
+      <% html = {} %>
+    <% end %>
+    <%= form.radio_button :target_account_id, target_account.id, html %>
+    <label>
+      <span class="value"><%= target_account %></span>
+      (<%= target_account.account_type %>)
+    </label>
+  </div>
+<% end %>

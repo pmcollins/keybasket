@@ -1,0 +1,16 @@
+<%= breadcrumbs([@company, @manager, 'Edit Login']) %>
+
+<fieldset>
+  <legend>Edit Login</legend>
+    <% form_for(
+      :login,
+      :url => m([@company, @manager, 'manager_logins', @login.id]),
+      :html => {:method => 'put'},
+      :builder => LabeledBuilder
+    ) do |login| %>
+      <%= login.text_field :name %>
+      <%= login.password_field :password %>
+      <%= login.password_field :password_confirmation %>
+      <%= submit_tag 'Save' %>
+    <% end %>
+</fieldset>

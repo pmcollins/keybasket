@@ -1,0 +1,757 @@
+--- 
+units_070: 
+  rental_agreement_id: "77"
+  floor_plan_id: 
+  flagged: 
+  id: "70"
+  apt: "2"
+  floor: "1"
+  property_id: "2"
+  notes: 
+units_068: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "68"
+  apt: H
+  floor: "4"
+  property_id: "3"
+  notes: 
+units_005: 
+  rental_agreement_id: "5"
+  floor_plan_id: "5"
+  flagged: 
+  id: "5"
+  apt: "105"
+  floor: "1"
+  property_id: "1"
+  notes: 
+units_026: 
+  rental_agreement_id: "26"
+  floor_plan_id: "4"
+  flagged: 
+  id: "26"
+  apt: "211"
+  floor: "2"
+  property_id: "1"
+  notes: 
+units_047: 
+  rental_agreement_id: "46"
+  floor_plan_id: "2"
+  flagged: 
+  id: "47"
+  apt: "402"
+  floor: "4"
+  property_id: "1"
+  notes: 
+units_071: 
+  rental_agreement_id: "78"
+  floor_plan_id: 
+  flagged: 
+  id: "71"
+  apt: "3"
+  floor: "1"
+  property_id: "2"
+  notes: 
+units_069: 
+  rental_agreement_id: "76"
+  floor_plan_id: 
+  flagged: 
+  id: "69"
+  apt: "1"
+  floor: "1"
+  property_id: "2"
+  notes: 
+units_006: 
+  rental_agreement_id: "6"
+  floor_plan_id: "5"
+  flagged: 
+  id: "6"
+  apt: "106"
+  floor: "1"
+  property_id: "1"
+  notes: 
+units_027: 
+  rental_agreement_id: "27"
+  floor_plan_id: "3"
+  flagged: 
+  id: "27"
+  apt: "212"
+  floor: "2"
+  property_id: "1"
+  notes: 
+units_050: 
+  rental_agreement_id: "73"
+  floor_plan_id: "5"
+  flagged: 
+  id: "50"
+  apt: "405"
+  floor: "4"
+  property_id: "1"
+  notes: 
+units_048: 
+  rental_agreement_id: "72"
+  floor_plan_id: "3"
+  flagged: 
+  id: "48"
+  apt: "403"
+  floor: "4"
+  property_id: "1"
+  notes: 
+units_072: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "72"
+  apt: "4"
+  floor: "1"
+  property_id: "2"
+  notes: 
+units_007: 
+  rental_agreement_id: "61"
+  floor_plan_id: "6"
+  flagged: 
+  id: "7"
+  apt: "107"
+  floor: "1"
+  property_id: "1"
+  notes: 
+units_030: 
+  rental_agreement_id: "30"
+  floor_plan_id: "8"
+  flagged: 
+  id: "30"
+  apt: "215"
+  floor: "2"
+  property_id: "1"
+  notes: 
+units_028: 
+  rental_agreement_id: "28"
+  floor_plan_id: "2"
+  flagged: 
+  id: "28"
+  apt: "213"
+  floor: "2"
+  property_id: "1"
+  notes: 
+units_051: 
+  rental_agreement_id: "50"
+  floor_plan_id: "5"
+  flagged: 
+  id: "51"
+  apt: "406"
+  floor: "4"
+  property_id: "1"
+  notes: 
+units_049: 
+  rental_agreement_id: "48"
+  floor_plan_id: "4"
+  flagged: 
+  id: "49"
+  apt: "404"
+  floor: "4"
+  property_id: "1"
+  notes: 
+units_073: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "73"
+  apt: "5"
+  floor: "2"
+  property_id: "2"
+  notes: 
+units_010: 
+  rental_agreement_id: "10"
+  floor_plan_id: "5"
+  flagged: 
+  id: "10"
+  apt: "110"
+  floor: "1"
+  property_id: "1"
+  notes: 
+units_008: 
+  rental_agreement_id: 
+  floor_plan_id: "6"
+  flagged: 
+  id: "8"
+  apt: "108"
+  floor: "1"
+  property_id: "1"
+  notes: 
+units_031: 
+  rental_agreement_id: "31"
+  floor_plan_id: "1"
+  flagged: 
+  id: "31"
+  apt: "301"
+  floor: "3"
+  property_id: "1"
+  notes: 
+units_029: 
+  rental_agreement_id: "29"
+  floor_plan_id: "1"
+  flagged: 
+  id: "29"
+  apt: "214"
+  floor: "2"
+  property_id: "1"
+  notes: 
+units_052: 
+  rental_agreement_id: "74"
+  floor_plan_id: "6"
+  flagged: 
+  id: "52"
+  apt: "407"
+  floor: "4"
+  property_id: "1"
+  notes: 
+units_074: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "74"
+  apt: "6"
+  floor: "2"
+  property_id: "2"
+  notes: 
+units_009: 
+  rental_agreement_id: "60"
+  floor_plan_id: "7"
+  flagged: 
+  id: "9"
+  apt: "109"
+  floor: "1"
+  property_id: "1"
+  notes: new hardwood and carpet
+units_032: 
+  rental_agreement_id: "65"
+  floor_plan_id: "2"
+  flagged: 
+  id: "32"
+  apt: "302"
+  floor: "3"
+  property_id: "1"
+  notes: 
+units_053: 
+  rental_agreement_id: "52"
+  floor_plan_id: "6"
+  flagged: 
+  id: "53"
+  apt: "408"
+  floor: "4"
+  property_id: "1"
+  notes: 
+units_075: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "75"
+  apt: "7"
+  floor: "2"
+  property_id: "2"
+  notes: 
+units_054: 
+  rental_agreement_id: "53"
+  floor_plan_id: "7"
+  flagged: 
+  id: "54"
+  apt: "409"
+  floor: "4"
+  property_id: "1"
+  notes: 
+units_011: 
+  rental_agreement_id: "64"
+  floor_plan_id: "4"
+  flagged: 
+  id: "11"
+  apt: "111"
+  floor: "1"
+  property_id: "1"
+  notes: 
+units_076: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "76"
+  apt: "8"
+  floor: "2"
+  property_id: "2"
+  notes: 
+units_012: 
+  rental_agreement_id: "12"
+  floor_plan_id: "3"
+  flagged: 
+  id: "12"
+  apt: "112"
+  floor: "1"
+  property_id: "1"
+  notes: 
+units_033: 
+  rental_agreement_id: "32"
+  floor_plan_id: "3"
+  flagged: 
+  id: "33"
+  apt: "303"
+  floor: "3"
+  property_id: "1"
+  notes: 
+units_013: 
+  rental_agreement_id: "13"
+  floor_plan_id: "2"
+  flagged: 
+  id: "13"
+  apt: "113"
+  floor: "1"
+  property_id: "1"
+  notes: 
+units_034: 
+  rental_agreement_id: "69"
+  floor_plan_id: "4"
+  flagged: f
+  id: "34"
+  apt: "304"
+  floor: "3"
+  property_id: "1"
+  notes: ""
+units_055: 
+  rental_agreement_id: "54"
+  floor_plan_id: "5"
+  flagged: 
+  id: "55"
+  apt: "410"
+  floor: "4"
+  property_id: "1"
+  notes: 
+units_077: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "77"
+  apt: "9"
+  floor: "3"
+  property_id: "2"
+  notes: 
+units_014: 
+  rental_agreement_id: "14"
+  floor_plan_id: "1"
+  flagged: 
+  id: "14"
+  apt: "114"
+  floor: "1"
+  property_id: "1"
+  notes: 
+units_035: 
+  rental_agreement_id: "34"
+  floor_plan_id: "5"
+  flagged: 
+  id: "35"
+  apt: "305"
+  floor: "3"
+  property_id: "1"
+  notes: 
+units_056: 
+  rental_agreement_id: "55"
+  floor_plan_id: "4"
+  flagged: 
+  id: "56"
+  apt: "411"
+  floor: "4"
+  property_id: "1"
+  notes: 
+units_080: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "80"
+  apt: "12"
+  floor: "3"
+  property_id: "2"
+  notes: 
+units_078: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "78"
+  apt: "10"
+  floor: "3"
+  property_id: "2"
+  notes: 
+units_015: 
+  rental_agreement_id: "15"
+  floor_plan_id: "8"
+  flagged: 
+  id: "15"
+  apt: "115"
+  floor: "1"
+  property_id: "1"
+  notes: 
+units_036: 
+  rental_agreement_id: "70"
+  floor_plan_id: "5"
+  flagged: f
+  id: "36"
+  apt: "306"
+  floor: "3"
+  property_id: "1"
+  notes: ""
+units_057: 
+  rental_agreement_id: "56"
+  floor_plan_id: "3"
+  flagged: 
+  id: "57"
+  apt: "412"
+  floor: "4"
+  property_id: "1"
+  notes: 
+units_081: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "81"
+  apt: "13"
+  floor: "4"
+  property_id: "2"
+  notes: 
+units_079: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "79"
+  apt: "11"
+  floor: "3"
+  property_id: "2"
+  notes: 
+units_016: 
+  rental_agreement_id: "16"
+  floor_plan_id: "1"
+  flagged: 
+  id: "16"
+  apt: "201"
+  floor: "2"
+  property_id: "1"
+  notes: 
+units_037: 
+  rental_agreement_id: "36"
+  floor_plan_id: "6"
+  flagged: 
+  id: "37"
+  apt: "307"
+  floor: "3"
+  property_id: "1"
+  notes: 
+units_060: 
+  rental_agreement_id: "59"
+  floor_plan_id: "8"
+  flagged: 
+  id: "60"
+  apt: "415"
+  floor: "4"
+  property_id: "1"
+  notes: 
+units_058: 
+  rental_agreement_id: "57"
+  floor_plan_id: "2"
+  flagged: 
+  id: "58"
+  apt: "413"
+  floor: "4"
+  property_id: "1"
+  notes: 
+units_082: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "82"
+  apt: "14"
+  floor: "4"
+  property_id: "2"
+  notes: 
+units_017: 
+  rental_agreement_id: "17"
+  floor_plan_id: "2"
+  flagged: 
+  id: "17"
+  apt: "202"
+  floor: "2"
+  property_id: "1"
+  notes: 
+units_040: 
+  rental_agreement_id: "39"
+  floor_plan_id: "5"
+  flagged: 
+  id: "40"
+  apt: "310"
+  floor: "3"
+  property_id: "1"
+  notes: 
+units_038: 
+  rental_agreement_id: "37"
+  floor_plan_id: "6"
+  flagged: 
+  id: "38"
+  apt: "308"
+  floor: "3"
+  property_id: "1"
+  notes: 
+units_061: 
+  rental_agreement_id: "75"
+  floor_plan_id: 
+  flagged: 
+  id: "61"
+  apt: A
+  floor: "1"
+  property_id: "3"
+  notes: 
+units_059: 
+  rental_agreement_id: "58"
+  floor_plan_id: "1"
+  flagged: 
+  id: "59"
+  apt: "414"
+  floor: "4"
+  property_id: "1"
+  notes: 
+units_083: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "83"
+  apt: "15"
+  floor: "4"
+  property_id: "2"
+  notes: 
+units_020: 
+  rental_agreement_id: "20"
+  floor_plan_id: "5"
+  flagged: 
+  id: "20"
+  apt: "205"
+  floor: "2"
+  property_id: "1"
+  notes: 
+units_018: 
+  rental_agreement_id: "18"
+  floor_plan_id: "3"
+  flagged: 
+  id: "18"
+  apt: "203"
+  floor: "2"
+  property_id: "1"
+  notes: 
+units_041: 
+  rental_agreement_id: "71"
+  floor_plan_id: "4"
+  flagged: 
+  id: "41"
+  apt: "311"
+  floor: "3"
+  property_id: "1"
+  notes: 
+units_039: 
+  rental_agreement_id: "38"
+  floor_plan_id: "7"
+  flagged: 
+  id: "39"
+  apt: "309"
+  floor: "3"
+  property_id: "1"
+  notes: 
+units_062: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "62"
+  apt: B
+  floor: "1"
+  property_id: "3"
+  notes: 
+units_084: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "84"
+  apt: "16"
+  floor: "4"
+  property_id: "2"
+  notes: 
+units_021: 
+  rental_agreement_id: "21"
+  floor_plan_id: "5"
+  flagged: 
+  id: "21"
+  apt: "206"
+  floor: "2"
+  property_id: "1"
+  notes: 
+units_019: 
+  rental_agreement_id: "19"
+  floor_plan_id: "4"
+  flagged: 
+  id: "19"
+  apt: "204"
+  floor: "2"
+  property_id: "1"
+  notes: 
+units_042: 
+  rental_agreement_id: "41"
+  floor_plan_id: "3"
+  flagged: 
+  id: "42"
+  apt: "312"
+  floor: "3"
+  property_id: "1"
+  notes: 
+units_063: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "63"
+  apt: C
+  floor: "2"
+  property_id: "3"
+  notes: 
+units_043: 
+  rental_agreement_id: "42"
+  floor_plan_id: "2"
+  flagged: 
+  id: "43"
+  apt: "313"
+  floor: "3"
+  property_id: "1"
+  notes: 
+units_064: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "64"
+  apt: D
+  floor: "2"
+  property_id: "3"
+  notes: 
+units_065: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "65"
+  apt: E
+  floor: "3"
+  property_id: "3"
+  notes: 
+units_001: 
+  rental_agreement_id: "1"
+  floor_plan_id: "1"
+  flagged: 
+  id: "1"
+  apt: "101"
+  floor: "1"
+  property_id: "1"
+  notes: 
+units_022: 
+  rental_agreement_id: "22"
+  floor_plan_id: "6"
+  flagged: 
+  id: "22"
+  apt: "207"
+  floor: "2"
+  property_id: "1"
+  notes: 
+units_002: 
+  rental_agreement_id: "2"
+  floor_plan_id: "2"
+  flagged: 
+  id: "2"
+  apt: "102"
+  floor: "1"
+  property_id: "1"
+  notes: new hardwood and carpet, custom paint
+units_023: 
+  rental_agreement_id: "23"
+  floor_plan_id: "6"
+  flagged: t
+  id: "23"
+  apt: "208"
+  floor: "2"
+  property_id: "1"
+  notes: rent increase?
+units_044: 
+  rental_agreement_id: "43"
+  floor_plan_id: "1"
+  flagged: 
+  id: "44"
+  apt: "314"
+  floor: "3"
+  property_id: "1"
+  notes: 
+units_003: 
+  rental_agreement_id: "3"
+  floor_plan_id: "3"
+  flagged: 
+  id: "3"
+  apt: "103"
+  floor: "1"
+  property_id: "1"
+  notes: 
+units_024: 
+  rental_agreement_id: "24"
+  floor_plan_id: "7"
+  flagged: 
+  id: "24"
+  apt: "209"
+  floor: "2"
+  property_id: "1"
+  notes: 
+units_045: 
+  rental_agreement_id: "44"
+  floor_plan_id: "8"
+  flagged: 
+  id: "45"
+  apt: "315"
+  floor: "3"
+  property_id: "1"
+  notes: 
+units_066: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "66"
+  apt: F
+  floor: "3"
+  property_id: "3"
+  notes: 
+units_067: 
+  rental_agreement_id: 
+  floor_plan_id: 
+  flagged: 
+  id: "67"
+  apt: G
+  floor: "4"
+  property_id: "3"
+  notes: 
+units_004: 
+  rental_agreement_id: "4"
+  floor_plan_id: "4"
+  flagged: 
+  id: "4"
+  apt: "104"
+  floor: "1"
+  property_id: "1"
+  notes: 
+units_025: 
+  rental_agreement_id: "25"
+  floor_plan_id: "5"
+  flagged: 
+  id: "25"
+  apt: "210"
+  floor: "2"
+  property_id: "1"
+  notes: 
+units_046: 
+  rental_agreement_id: "45"
+  floor_plan_id: "1"
+  flagged: 
+  id: "46"
+  apt: "401"
+  floor: "4"
+  property_id: "1"
+  notes: 

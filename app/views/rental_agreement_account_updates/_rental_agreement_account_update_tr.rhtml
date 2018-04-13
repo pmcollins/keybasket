@@ -1,0 +1,31 @@
+<% account_update = rental_agreement_account_update_tr %>
+<tr>
+  <td class="value">
+    <%= account_update.created_on %>
+  </td>
+  <td class="value">
+    <%= account_update.account %>
+    <!-- %= link_to(
+      account_update.account,
+      m([@company, @property, @unit, @rental_agreement, account_update.account])
+    ) % -->
+  </td>
+  <td class="value">
+    <% tt = account_update.transfer_type %>
+    <% if tt == 'CheckTransaction' %>
+      <% check_transaction = account_update.transfer %>
+      <%= link_to(
+        tt,
+        m([@company, @property, @unit, @rental_agreement, check_transaction.check])
+      ) %>
+    <% else %>
+      <%= tt %>
+    <% end %>
+  </td>
+  <td class="value" style="text-align: right;">
+    <%= number_to_currency(account_update.credit) %>
+  </td>
+  <td class="value" style="text-align: right;">
+    <%= number_to_currency(account_update.debit) %>
+  </td>
+</tr>

@@ -1,0 +1,37 @@
+<%= breadcrumbs([@company, @property, ['property_vendor', @property_vendor]]) %>
+
+<fieldset>
+  <legend>Edit Property Vendor</legend>
+  <p>
+    <% form_for(
+      :property_vendor,
+      :url => m([@company, @property, @property_vendor]),
+      :html => {:method => :put},
+      :builder => LabeledBuilder
+    ) do |property_vendor| %>
+      <p>
+        <label>Vendor</label><br/>
+        <div class="name"><%= @property_vendor.vendor %></div>
+      </p>
+      <p><%= property_vendor.text_area(
+        :notes,
+        :columns => 40,
+        :rows => 4
+      ) %></p>
+      <%= submit_tag 'Update' %>
+    <% end %>
+  </p>
+</fieldset>
+
+<fieldset>
+  <legend>Delete Property Vendor</legend>
+  <p>
+    <% form_for(
+      :property_vendor,
+      :url => m([@company, @property, @property_vendor]),
+      :html => {:method => :delete}
+    ) do |property_vendor| %>
+      <%= submit_tag 'Delete' %>
+    <% end %>
+  </p>
+</fieldset>

@@ -1,0 +1,82 @@
+<%= breadcrumbs([@company, @property, @floor_plan]) %>
+
+<table class="main"><tr>
+  <td>
+    <fieldset>
+      <legend>Floor Plan Details</legend>
+      <%= render(
+        :partial => 'floor_plan_verbose',
+        :object => @floor_plan
+      ) %>
+      <div>
+        <%= link_to(
+          'edit',
+          m([@company, @property, @floor_plan, 'edit']),
+          :class => 'sys'
+        ) %>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Floor Plan Photos</legend>
+      <p>
+        <% if @photos.any? %>
+          <%= render(
+            :partial => '/floor_plan_photos/floor_plan_thumbnail',
+            :collection => @photos
+          ) %>
+        <% else %>
+          <span class="empty">No photos found.</span>
+        <% end %>
+      </p>
+      <div>
+        <%= link_to(
+          'new',
+          m([@company, @property, @floor_plan, 'floor_plan_photos/new']),
+          :class => 'sys'
+        )%>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Vacancy Notification List</legend>
+      <p>
+        <%= render(
+          :partial => '/contacts/contact_brief',
+          :collection => @notification_contacts
+        ) %>
+      </p>
+    </fieldset>
+  </td>
+  <td>
+    <fieldset>
+      <legend>Units with this Floor Plan</legend>
+        <% if @floor_plan.units.empty? %>
+          <p>
+            <%= link_to(
+              'delete this floor plan',
+              m([@company, @property, @floor_plan]),
+              :method => :delete,
+              :class => 'sys'
+            ) %>
+          </p>
+        <% else %>
+          <dl>
+            <%= render(
+              :partial => '/units/unit_current_rent',
+              :collection => @floor_plan.units
+            ) %>
+          </dl>
+        <% end %>
+      <div>
+        <%= link_to(
+          'add/remove units',
+          m([@company, @property, @floor_plan, 'unit_sets/new']),
+          :class => 'sys'
+        ) %>
+      </div>
+    </fieldset>
+
+  </td>
+</tr></table>
+

@@ -1,0 +1,20 @@
+<%= breadcrumbs([@company, @property, @unit, 'New Rental Agreement']) %>
+
+<fieldset>
+  <legend>New Rental Agreement</legend>
+  <% form_for(
+    :rental_agreement,
+    :url => m([@company, @property, @unit, 'rental_agreements']),
+    :builder => LabeledBuilder
+  ) do |form| %>
+    <% fields_for :current_rent do |current_rent| %>
+      <p>
+        <label>Starting Rent</label><br/>
+        <%= current_rent.text_field :amount, :size => 8 %>
+      </p>
+    <% end %>
+    <%= render :partial => 'form', :object => form %>
+    <%= submit_tag 'Create' %>
+  <% end %>
+</fieldset>
+

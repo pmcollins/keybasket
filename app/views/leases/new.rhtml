@@ -1,0 +1,15 @@
+<%= breadcrumbs([@company, @property, @unit, @rental_agreement, 'New Lease']) %>
+<fieldset>
+  <legend>Lease Details</legend>
+  <% form_for(
+    :lease,
+    :url => m([@company, @property, @unit, @rental_agreement, 'leases']),
+    :company_id => @company_id,
+    :property_id => @property_id,
+    :unit_id => @unit_id,
+    :builder => LabeledBuilder
+  ) do |form| %>
+    <%= render :partial => 'form', :object => form %>
+    <%= submit_tag 'Create' %>
+  <% end %>
+</fieldset>

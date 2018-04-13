@@ -1,0 +1,13 @@
+<% contact = tenant_verbose.contact %>
+<p>
+<div><%= render :partial => '/tenants/tenant', :object => tenant_verbose %></div>
+<div class="indent">
+<% if contact.phones.any? %>
+  <%= render(
+    :partial => '/tenant_phones/tenant_phone_nolink',
+    :collection => contact.phones
+  ) %>
+<% end %>
+</div>
+</p>
+

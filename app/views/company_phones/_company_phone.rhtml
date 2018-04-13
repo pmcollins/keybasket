@@ -1,0 +1,7 @@
+<div>
+  <%= link_to(
+    company_phone.number,
+    m([@company, 'company_phones', company_phone.id, 'edit'])
+  ) %>
+  <span class="value"><%= company_phone.tag %></span>
+</div>

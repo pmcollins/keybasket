@@ -1,0 +1,18 @@
+-add unit flagging so managers can know if data is stale and needs to be updated later
+
+-lease start date and end date -- not duration
+
+-fast property/unit drill-down
+
+-redirected to unit page instead of ra page after rent deletion and unit phone editing
+-"unit phone" pages should use term "land line" instead
+-rental agreement fieldset stuff is confusing
+-tenant phones css/formatting fix
+-show tenant phones (r/o) in ra page tenant fieldset
+-creating new rent sends you to unit page instead of ra page
+-lease duration-months prefilled to 12 (set by company preference)
+-next/prev buttons in unit view
+-lease edit sends you to unit page
+
+-add all details to unit-rental-agreement fieldset
+

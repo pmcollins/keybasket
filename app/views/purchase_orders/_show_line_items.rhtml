@@ -1,0 +1,19 @@
+<% purchase_order_line_items = show_line_items %>
+<% if purchase_order_line_items.any? %>
+  <table style="width: 100%;">
+    <tr class="name">
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>Product Code</th>
+      <th>U/M</th>
+      <th>Unit Price</th>
+      <th>Total Price</th>
+    </tr>
+    <%= render(
+      :partial => '/purchase_order_line_items/purchase_order_line_item',
+      :collection => purchase_order_line_items
+    ) %>
+  </table>
+<% else %>
+  <span class="empty">No Line Items Specified</span>
+<% end %>

@@ -1,0 +1,38 @@
+<%= breadcrumbs([@company, @property, 'Units']) %>
+
+<% if @units.any? %>
+
+  <fieldset>
+    <legend>All Units</legend>
+    <%= render(
+      :partial => 'unit_row',
+      :collection => @units
+    ) %>
+    <div class="sys">
+      <%= link_to(
+        'add a unit',
+        m([@company, @property, 'units/new'])
+      ) %>
+    </div>
+  </fieldset>
+
+<% else %>
+
+  <fieldset>
+    <legend>Units</legend>
+    <span class="empty">No Units Defined</span>
+    <div class="sys"><%= link_to(
+      'new building prototoype',
+      m([@company, @property, 'building_prototypes/new'])
+    ) %></div>
+    <br/>
+    <div style="sys">
+      <%= link_to(
+        'add a single unit',
+        m([@company, @property, 'units/new'])
+      ) %>
+    </div>
+  </fieldset>
+
+<% end %>
+

@@ -1,0 +1,20 @@
+<%= breadcrumbs([@company, @property, 'Property Photo']) %>
+
+<fieldset>
+  <legend>Property Photo</legend>
+  <div><img src="<%= m(['photos', @property_photo.id]) %>"/></div>
+  <p>
+    <% if @property_photo.caption.empty? %>
+      <span class="empty">No caption defined.</span>
+    <% else %>
+      <span class="value"><%= @property_photo.caption %></span>
+    <% end %>
+  </p>
+  <div>
+    <%= link_to(
+      'edit',
+      m([@company, @property, @property_photo, 'edit']),
+      :class => 'sys'
+    ) %>
+  </div>
+</fieldset>

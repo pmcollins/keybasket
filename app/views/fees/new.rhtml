@@ -1,0 +1,17 @@
+<%= breadcrumbs([@company, @property, @unit, @rental_agreement, 'New Fee']) %>
+<fieldset>
+  <legend>New Fee</legend>
+  <p>
+    <% form_for(
+      :fee,
+      :url => m([@company, @property, @unit, @rental_agreement, 'fees']),
+      :builder => LabeledBuilder
+    ) do |fee| %>
+      <%=  %>
+      <%= fee.text_field :amount, :size => 16 %>
+      <%= fee.text_area :notes, :rows => 4, :cols => 40 %>
+      <div><%= submit_tag 'Apply Fee' %></div>
+    <% end %>
+  </p>
+</fieldset>
+

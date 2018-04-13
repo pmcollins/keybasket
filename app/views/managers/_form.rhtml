@@ -1,0 +1,52 @@
+<fieldset>
+  <legend>Login Information</legend>
+  <% fields_for :login do |u| %>
+    <p>
+      <label>Username</label><br/>
+      <%= u.text_field :name %>
+    </p>
+    <p>
+      <label>Password</label><br/>
+      <%= u.password_field :password %>
+    </p>
+    <p>
+      <label>Password Confirmation</label><br/>
+      <%= u.password_field :password_confirmation %>
+    </p>
+  <% end %>
+</fieldset>
+<fieldset>
+  <legend>Contact Information</legend>
+  <% fields_for :contact do |c| %>
+    <p>
+      <label>First Name</label><br/>
+      <%= c.text_field :first_name %>
+    </p>
+    <p>
+      <label>Last Name</label><br/>
+      <%= c.text_field :last_name %>
+    </p>
+    <% fields_for :address do |a| %>
+      <p>
+        <label>Address Line 1</label><br/>
+        <%= a.text_field :line1 %>
+      </p>
+      <p>
+        <label>Address Line 2</label><br/>
+        <%= a.text_field :line2 %><br/>
+      </p>
+      <p>
+        <label>City</label><br/>
+        <%= a.text_field :city %><br/>
+      </p>
+      <p>
+        <label>State</label><br/>
+        <%= a.text_field :state %><br/>
+      </p>
+      <p>
+        <label>Zip</label><br/>
+        <%= a.text_field :zip %>
+      </p>
+    <% end %>
+  <% end %>
+</fieldset>

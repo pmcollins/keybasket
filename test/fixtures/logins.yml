@@ -1,0 +1,26 @@
+--- 
+logins_005: 
+  name: katja
+  salt: "-6155936780.384049078432349"
+  hashed_password: e6fd39325a1a4091f6c1ef55448ff47c85cec9a6
+  id: "5"
+logins_001: 
+  name: pcollins
+  salt: "-6111044980.820888830549802"
+  hashed_password: ffa747ad65e92e7740d4a466a1f1f941a40b89e6
+  id: "1"
+logins_002: 
+  name: shosheleh
+  salt: "-6106865880.614079538363618"
+  hashed_password: b16bc219d6682d77820fcc3bcd79a60d14e6ffe7
+  id: "2"
+logins_003: 
+  name: sindy
+  salt: "237679689941800.275425106383601"
+  hashed_password: 9e2a67bfd6d1bdcf801a5090dab1bbff284e1a92
+  id: "3"
+logins_004: 
+  name: pablo@keybasket.com
+  salt: "237609356753200.382371840518239"
+  hashed_password: d9056527f76340a9cdc0618783ecbfb823cc3c12
+  id: "4"

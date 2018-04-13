@@ -1,0 +1,15 @@
+<%= breadcrumbs([@company, @property, @unit, @rental_agreement, 'Current Rents']) %>
+
+<fieldset>
+  <legend>Current Rents</legend>
+  <p>
+  <%= render :partial => '/current_rents/current_rent', :collection =>  @current_rents %>
+  </p>
+  <div>
+    <%= link_to(
+      'new rent',
+      m([@company, @property, @unit, @rental_agreement, 'current_rents/new']),
+      :class => 'sys'
+    ) %>
+  </div>
+</fieldset>

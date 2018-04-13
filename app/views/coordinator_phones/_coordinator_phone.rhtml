@@ -1,0 +1,9 @@
+<% phone = coordinator_phone %>
+<div>
+  <%= link_to(
+    phone.number,
+    m([@company, @coordinator, 'coordinator_phones', phone.id, 'edit']),
+    :class => 'sys_inline'
+  ) %>
+  <span class="value"><%= phone.tag %></span>
+</div>

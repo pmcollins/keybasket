@@ -1,0 +1,14 @@
+<%= breadcrumbs([@company, 'New Report']) %>
+<fieldset>
+  <legend>New Report</legend>
+  <p>
+    <% form_for(
+      :report,
+      :url => m([@company, 'reports']),
+      :builder => LabeledBuilder
+    ) do |report| %>
+      <%= report.text_field :name, :size => 16 %>
+      <%= submit_tag 'save' %>
+    <% end %>
+  </p>
+</fieldset>

@@ -1,0 +1,14 @@
+<%= breadcrumbs([@company, @property, ['property_vendor', @property_vendor]]) %>
+
+<fieldset>
+  <legend>Property Vendor</legend>
+  <p>
+    <dl>
+      <dt>Vendor</dt>
+      <dd><%= @property_vendor.vendor %></dd>
+      <dt>Notes</dt>
+      <dt><%= @property_vendor.notes %></dt>
+    </dl>
+  </p>
+</fieldset>
+

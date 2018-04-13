@@ -1,0 +1,11 @@
+<%= breadcrumbs([@company, 'Checks']) %>
+
+<fieldset>
+  <legend>Checks</legend>
+  <p>
+    <%= render(
+      :partial => '/company_checks/company_check',
+      :collection => @checks
+    ) %>
+  </p>
+</fieldset>

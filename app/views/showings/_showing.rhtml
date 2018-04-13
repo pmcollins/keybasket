@@ -1,0 +1,9 @@
+<div>
+  Starting at
+  <%= showing.starting_at %> for <%= showing.duration_minutes %> minutes.
+  <%= link_to(
+    'edit',
+    m([@company, @property, @unit, @listing, showing, 'edit']),
+    :class => 'sys_inline'
+  ) %>
+</div>

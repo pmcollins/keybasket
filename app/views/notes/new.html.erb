@@ -1,0 +1,9 @@
+<%= breadcrumbs([@company, @parent, 'New Note']) %>
+
+<fieldset>
+  <legend>New Note</legend>
+  <% form_for(:note, :url => @index_path) do |note| %>
+    <%= render :partial => 'form', :object => note %>
+    <%= submit_tag 'Save' %>
+  <% end %>
+</fieldset>

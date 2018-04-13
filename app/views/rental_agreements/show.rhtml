@@ -1,0 +1,142 @@
+<%= breadcrumbs([@company, @property, @unit, @rental_agreement]) %>
+<table class="main">
+  <tr>
+    <td>
+      <fieldset>
+        <legend>Tenants</legend>
+        <p>
+        <% if @tenants.any? %>
+          <%= render(
+            :partial => '/tenants/tenant_verbose',
+            :collection => @tenants
+          ) %>
+        <% else %>
+          <span class="empty">No tenants defined.</span>
+        <% end %>
+        </p>
+        <div class="sys">
+          <%= link_to(
+            'new tenant',
+            m([@company, @property, @unit, @rental_agreement, 'tenants/new'])
+          ) %>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Details</legend>
+        <dl>
+          <dt>Move in</dt>
+          <dd><%= @rental_agreement.move_in_date %></dd>
+          <dt>Notes</dt>
+          <dd>
+            <% if @rental_agreement.notes && @rental_agreement.notes.any? %>
+              <%= @rental_agreement.notes %>
+            <% else %>
+              <span class="empty">No notes defined.</span>
+            <% end %>
+          </dd>
+        </dl>
+        <div class="sys">
+          <%= link_to(
+            'edit rental agreement',
+            m([@company, @property, @unit, @rental_agreement, 'edit'])
+          ) %>
+        </div>
+          <% if @rental_agreement.moveout_notice %>
+            <% moveout_notice = @rental_agreement.moveout_notice %>
+            <div>
+            <%= render(
+              :partial => '/moveout_notices/moveout_notice',
+              :object => moveout_notice
+            ) %>
+            </div>
+            <div class="sys">
+            <%= link_to(
+              'edit moveout notice',
+              m([@company, @property, @unit, @rental_agreement, moveout_notice, 'edit'])
+            ) %>
+            </div>
+          <% else %>
+            <div class="sys">
+              <%= link_to(
+                'new moveout notice',
+                m([@company, @property, @unit, @rental_agreement, 'moveout_notices/new'])
+              ) %>
+            </div>
+          <% end %>
+            <div class="sys">
+              <%= link_to(
+                'move tenants out now',
+                m([@company, @property, @unit, @rental_agreement, 'move_outs/new'])
+              ) %>
+            </div>
+      </fieldset>
+    </td>
+    <td>
+      <fieldset>
+        <legend>Rent History</legend>
+        <dl>
+          <%= render(
+            :partial => '/current_rents/current_rent',
+            :collection => @rental_agreement.current_rents
+          ) %>
+        </dl>
+        <div class="sys">
+          <%= link_to(
+            'new rent',
+            m([@company, @property, @unit, @rental_agreement, 'current_rents/new'])
+          ) %>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Lease</legend>
+        <% if @lease %>
+          <dl>
+            <%= render(
+              :partial => '/leases/lease',
+              :object => @lease
+            ) %>
+          </dl>
+        <% else %>
+          <p><span class="empty">No lease defined.</span></p>
+        <% end %>
+        <div class="sys">
+          <%= link_to(
+            'create a new lease',
+            m([@company, @property, @unit, @rental_agreement, 'leases/new'])
+          ) %>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Accounting</legend>
+        <dl>
+          <dt>Balance</dt>
+          <dd><%= number_to_currency(@accounts_receivable_balance) %></dd>
+        </dl>
+        <div class="sys">
+          <%= link_to(
+            'accounting overview',
+            m([
+              @company,
+              @property,
+              @unit,
+              @rental_agreement,
+              'rental_agreement_account_types'
+            ])
+          ) %>
+        </div>
+        <div class="sys">
+          <%= link_to(
+            'view accounting history',
+            m([
+              @company,
+              @property,
+              @unit,
+              @rental_agreement,
+              'rental_agreement_account_updates'
+            ])
+          ) %>
+        </div>
+      </fieldset>
+    </td>
+  </tr>
+</table>

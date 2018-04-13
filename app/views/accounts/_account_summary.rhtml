@@ -1,0 +1,10 @@
+<% account = account_summary %>
+<div>
+  <span style="float: left;">
+  <%= link_to(
+    account,
+    m([@company, 'accounts'])
+  ) %>
+  </span>
+  <span style="float: right;"><%= number_to_currency(account.get_balance_by_company_id(@company.id)) %></span>
+</div>

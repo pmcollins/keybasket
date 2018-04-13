@@ -1,0 +1,19 @@
+<html>
+
+<head>
+  <title>KeyBasket</title>
+  <%= stylesheet_link_tag 'application' %>
+  <%= javascript_include_tag 'prototype', 'tabby', 'application' %>
+</head>
+
+<body <%= yield(:body_tag) %>>
+  <div id="matte">
+    <div class="top">
+      <%= render :partial => '/layouts/banner' %>
+    </div>
+    <div id="content"><%= yield  %></div>
+    <div class="footer"><%= render :partial => '/layouts/footer' %></div>
+  </div>
+</body>
+
+</html>

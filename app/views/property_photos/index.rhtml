@@ -1,0 +1,16 @@
+<%= breadcrumbs([@company, @property, 'Property Photos']) %>
+
+<fieldset>
+  <legend>Property Photos</legend>
+  <p>
+    <%= render :partial => 'property_thumbnail', :collection => @property_photos %>
+  </p>
+  <div>
+    <%= link_to(
+      'new',
+      m([@company, @property, 'property_photos/new']),
+      :class => 'sys'
+    ) %>
+  </div>
+</fieldset>
+

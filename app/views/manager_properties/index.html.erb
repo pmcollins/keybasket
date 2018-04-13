@@ -1,0 +1,14 @@
+<%= breadcrumbs([@company, @manager, 'Manager Properties']) %>
+<fieldset>
+  <legend>Manager Properties</legend>
+  <p>
+    <% if @properties.any? %>
+      <% @properties.each do |property| %>
+        <div><%= property %></div>
+      <% end %>
+    <% else %>
+      <span class="empty">No properties associated with this manager.</span>
+    <% end %>
+  </p>
+  <%= link_to('new', m([@company, @manager, 'manager_properties/new'])) %>
+</fieldset>

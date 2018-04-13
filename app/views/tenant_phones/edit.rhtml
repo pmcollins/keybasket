@@ -1,0 +1,26 @@
+<%= breadcrumbs([@company, @property, @unit, @rental_agreement, @tenant, 'Edit Phone']) %>
+
+<fieldset>
+  <legend>Edit Tenant Phone</legend>
+  <% form_for(
+    :phone,
+    :url => m([@company, @property, @unit, @rental_agreement, @tenant, 'tenant_phones', @phone.id]),
+    :builder => LabeledBuilder,
+    :html => {:method => :put}
+  ) do |form| %>
+    <%= render :partial => 'form', :object => form %>
+    <%= submit_tag 'Save' %>
+  <% end %>
+</fieldset>
+
+<fieldset>
+  <legend>Delete Phone</legend>
+  <% form_for(
+    :phone,
+    :url => m([@company, @property, @unit, @rental_agreement, @tenant, 'tenant_phones', @phone.id]),
+    :html => {:method => :delete}
+  ) do |form| %>
+    <%= submit_tag 'Delete' %>
+  <% end %>
+</fieldset>
+

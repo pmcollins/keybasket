@@ -1,0 +1,41 @@
+--- 
+property_photos_001: 
+  id: "1"
+  property_id: "1"
+  caption: The air-conditioned lobby.
+  photo_id: "1"
+property_photos_002: 
+  id: "2"
+  property_id: "1"
+  caption: The mail area in the lobby.
+  photo_id: "2"
+property_photos_003: 
+  id: "3"
+  property_id: "1"
+  caption: The lobby near the main entrance.
+  photo_id: "3"
+property_photos_004: 
+  id: "4"
+  property_id: "1"
+  caption: View from the sidewalk in front of the building.
+  photo_id: "4"
+property_photos_005: 
+  id: "5"
+  property_id: "1"
+  caption: A hallway on the first floor.
+  photo_id: "5"
+property_photos_006: 
+  id: "6"
+  property_id: "1"
+  caption: ""
+  photo_id: "6"
+property_photos_007: 
+  id: "7"
+  property_id: "1"
+  caption: ""
+  photo_id: "7"
+property_photos_008: 
+  id: "8"
+  property_id: "1"
+  caption: ""
+  photo_id: "8"

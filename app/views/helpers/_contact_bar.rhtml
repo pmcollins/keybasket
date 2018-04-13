@@ -1,0 +1,15 @@
+<% contact = contact_bar %>
+<fieldset style="height: 85%;">
+  <legend>Welcome</legend>
+  <p>
+    <span class="value"><%= contact %></span>
+  </p>
+  <p>
+    <%= link_to(
+      'log out',
+      "/user_sessions/#{session.session_id}",
+      :method => :delete,
+      :class => 'sys'
+    ) %>
+  </p>
+</fieldset>

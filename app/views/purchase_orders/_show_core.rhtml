@@ -1,0 +1,21 @@
+<% purchase_order = show_core %>
+<div>
+  <span class="name">Title:</span>
+  <span class="value"><%= purchase_order.title %></span>
+</div>
+<div>
+  <span class="name">Notes:</span>
+  <span class="value"><%= purchase_order.notes %></span>
+</div>
+<div>
+  <span class="name">Required by:</span>
+  <span class="value"><%= purchase_order.required_by %></span>
+</div>
+<div>
+  <span class="name">Amount:</span>
+  <span class="value"><%= number_to_currency(purchase_order.amount) %></span>
+</div>
+<div>
+  <span class="name">Status:</span>
+  <span class="value"><%= purchase_order.get_status %></span>
+</div>

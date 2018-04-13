@@ -1,0 +1,11 @@
+<% fee = fee_tr %>
+<tr>
+  <td class="name"><%= fee.created_on %></td>
+  <td class="name"><%= fee.notes %></td>
+  <td class="value">
+    <%= link_to(
+      number_to_currency(fee.amount),
+      m([@company, @property, @unit, fee.rental_agreement, fee])
+    ) %>
+  </td>
+</tr>

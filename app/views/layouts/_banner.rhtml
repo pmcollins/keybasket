@@ -1,0 +1,32 @@
+<table id="banner" style="height: 50px; width: 100%;"><tr>
+  <td style="text-align: left; width: 240px;">
+    <a href="/" class="big"><img src="/images/bitstream_charter_50.png"/></a>
+  </td>
+  <td style="text-align: center;">
+    <% if flash[:notice] %><div id="flash"><%= flash[:notice] %></div><% end %>
+  </td>
+  <td style="text-align: right; width: 200px;">
+    <% if session[:username] %>
+      <div style="padding: 8px; border: solid transparent 1px; text-align: left;">
+        <span>
+          Logged in as
+          <% url = session[:manager_id] ? m(
+            ['companies', session[:company_id], 'managers', session[:manager_id]]
+          ) : m(
+            ['companies', session[:company_id], 'coordinators', session[:coordinator_id]]
+          ) %>
+          <span style="font-weight: bold;"><%= link_to(
+            session[:username],
+            url
+          ) %></span>.
+        </span>
+        <br/>
+        <%= link_to(
+          'log out',
+          m(['user_sessions', 'current']),
+          {:method => :delete}
+        ) %>
+      </div>
+    <% end %>
+  </td>
+</tr></table>

@@ -1,0 +1,14 @@
+<p>Admin Home</p>
+<fieldset>
+  <legend>Companies</legend>
+  <p>
+  <% for company in @companies %>
+    <div><%= link_to company.name, m(company) %></div>
+  <% end %>
+  </p>
+  <div><%= link_to(
+    'new',
+    m('companies/new'),
+    :class => 'sys'
+  ) %></div>
+</fieldset>

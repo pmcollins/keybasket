@@ -1,0 +1,12 @@
+<% moveout_notice = adbox_moveout_notice %>
+<% u = adbox_moveout_notice.rental_agreement.unit %>
+<% f = u.floor_plan %>
+<div class="moveout_notice">
+  Unit <%= u.apt %>
+  <%= f.bedrooms %> bd <%= f.bathrooms %> bath
+  <%= f.sq_ft %> sqft
+  vacant on <%= moveout_notice.moveout_date %>
+  <% if f.floor_plan_photos.any? %>
+    [photos here]
+  <% end %>
+</div>

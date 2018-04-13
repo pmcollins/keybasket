@@ -1,0 +1,9 @@
+<% purchase_order = company_purchase_order %>
+<div>
+  <%= link_to(
+    purchase_order.title,
+    m([@company, purchase_order.vendor, purchase_order])
+  ) %>
+  <span class="name">Submitted by</span>
+  <span class="value"><%= purchase_order.requisitioner %></span>
+</div>

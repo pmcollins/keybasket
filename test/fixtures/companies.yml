@@ -1,0 +1,9 @@
+--- 
+companies_001: 
+  name: Xenon Investments
+  id: "1"
+  address_id: "3"
+companies_002: 
+  name: Alpha Properties
+  id: "2"
+  address_id: 

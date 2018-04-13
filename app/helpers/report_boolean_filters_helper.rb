@@ -1,0 +1,2 @@
+module ReportBooleanFiltersHelper
+end

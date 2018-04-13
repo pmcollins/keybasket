@@ -1,0 +1,54 @@
+<%= breadcrumbs([@company, @property, @unit, 'Edit Unit Details']) %>
+<fieldset>
+  <legend>Unit Details</legend>
+  <% form_for(
+    :unit,
+    :url => m([@company, @property, @unit]),
+    :html => {:method => :put}
+  ) do |form| %>
+    <dl>
+      <dt>Unit</dt>
+      <dd><%= form.text_field :apt, :size => 8 %></dd>
+
+      <dt>Floor</dt>
+      <dd><%= form.text_field :floor, :size => 8 %></dd>
+
+      <dt>Notes</dt>
+      <dd><%= form.text_area :notes, :rows => 4 %></dd>
+
+      <dt>Flag</dt>
+      <dd><%= form.check_box :flagged %></dd>
+
+      <dt>Floor Plan</dt>
+      <dd>
+        <% if @floor_plans.any? %>
+          <%= form.collection_select(
+            :floor_plan_id,
+            @floor_plans,
+            :id,
+            :to_s, {:include_blank => true}
+          ) %>
+        <% else %>
+          <span class="empty">
+            There are no floor plans defined for this property.
+            You may associate units with floor plans after you set up your floor plans.
+          </span>
+        <% end %>
+      </dd>
+    </dl>
+    <%= submit_tag 'Save' %>
+  <% end %>
+</fieldset>
+<fieldset>
+  <legend>Delete Unit</legend>
+  <% form_for(
+    :unit,
+    :url => m([@company, @property, @unit]),
+    :html => {:method => :delete}
+  ) do |form| %>
+    <p><%= submit_tag(
+      'Delete this Unit',
+      :onclick => "return confirm('Delete this unit?')"
+    ) %></p>
+  <% end %>
+</fieldset>

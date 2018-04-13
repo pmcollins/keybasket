@@ -1,0 +1,14 @@
+<%= breadcrumbs([@company, @property, @unit, @listing, 'New Showing']) %>
+<fieldset>
+  <legend>Showing</legend>
+  <% form_for(
+    :showing,
+    :url => m([@company, @property, @unit, @listing, 'showings']),
+    :builder => LabeledBuilder
+  ) do |form| %>
+    <%= form.datetime_select :starting_at %>
+    <%= form.text_field :duration_minutes, :size => 8 %>
+    <%= form.text_area :comments, :rows => 4 %>
+    <%= submit_tag 'Create' %>
+  <% end %>
+</fieldset>

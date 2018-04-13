@@ -1,0 +1,66 @@
+<p><%= breadcrumbs([@company, @property, @unit, @rental_agreement, @tenant]) %></p>
+<table class="main"><tr>
+  <td>
+    <fieldset>
+      <legend>Tenant</legend>
+        <p>
+          <span class="name">Name:</span>
+          <span class="value">
+            <%= @contact.first_name %> <%= @contact.last_name %>
+          </span>
+        </p>
+        <div>
+          <%= link_to(
+            'edit this tenant',
+            m([@company, @property, @unit, @rental_agreement, @tenant, 'edit']),
+            :class => 'sys'
+          ) %>
+        </div>
+    </fieldset>
+  </td>
+  <td>
+    <fieldset>
+      <legend>Tenant Phones</legend>
+      <p>
+        <% if @phones.any? %>
+          <%= render(
+            :partial => '/tenant_phones/tenant_phone',
+            :collection => @phones
+          ) %>
+        <% else %>
+          <span class="empty">No phones defined.</span>
+        <% end %>
+      </p>
+      <div><%= link_to(
+        'new tenant phone',
+        m([
+          @company,
+          @property,
+          @unit,
+          @rental_agreement,
+          @tenant,
+          'tenant_phones/new'
+        ]),
+        :class => 'sys'
+      ) %></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Delete Tenant</legend>
+      <% form_for(
+        :tenant,
+        :url => m([
+          @company,
+          @property,
+          @unit,
+          @rental_agreement,
+          @tenant
+        ]),
+        :html => {:method => :delete}
+      ) do |form| %>
+        <%= submit_tag 'Delete' %>
+      <% end %>
+    </fieldset>
+  </td>
+</tr></table>
+

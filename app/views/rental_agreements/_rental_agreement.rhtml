@@ -1,0 +1,20 @@
+<dl>
+  <dt>Tenants</dt>
+  <dd>
+    <% if rental_agreement.tenants.any? %>
+      <% rental_agreement.tenants.each do |tenant| %>
+        <%= render :partial => '/tenants/tenant', :object => tenant %>
+      <% end %>
+    <% else %>
+      <div class="empty">No tenants defined.</div>
+    <% end %>
+  </dd>
+  <dt>Move in</dt>
+  <dd><%= rental_agreement.move_in_date %></dd>
+  <dt>Notes</dt>
+  <% if rental_agreement.notes? %>
+    <dd><%= rental_agreement.notes %></dd>
+  <% else %>
+    <dd class="empty">No notes defined.</dd>
+  <% end %>
+</dl>

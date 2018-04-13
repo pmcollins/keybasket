@@ -1,0 +1,15 @@
+<%= breadcrumbs([@company, @manager, @purchase_order]) %>
+
+<fieldset>
+  <legend>Purchase Order</legend>
+  <p>
+    <%= render :partial => '/purchase_orders/show_core', :object => @purchase_order %>
+  </p>
+</fieldset>
+
+<fieldset>
+  <legend>Line Items</legend>
+  <p>
+    <%= render :partial => '/purchase_orders/show_line_items', :object => @purchase_order_line_items %>
+  </p>
+</fieldset>

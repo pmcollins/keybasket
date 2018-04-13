@@ -1,0 +1,13 @@
+<%= breadcrumbs([@company, 'New Property']) %>
+<% form_for(
+  :property,
+  :url => m([@company, 'properties']),
+  :company_id => @company_id
+) do |form| %>
+<fieldset>
+  <legend>Add a Property</legend>
+  <%= render :partial => 'form', :object => form %>
+  <p><%= submit_tag 'Create' %></p>
+</fieldset>
+<% end %>
+

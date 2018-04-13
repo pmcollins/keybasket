@@ -1,0 +1,29 @@
+<%= breadcrumbs([@company, @property, 'New Property Vendor']) %>
+
+<fieldset>
+  <legend>Add a Property Vendor</legend>
+  <p>
+    <% if @vendors.any? %>
+      <% form_for(
+        :property_vendor,
+        :url => m([@company, @property, 'property_vendors'])
+      ) do |property_vendor| %>
+        <p>
+          <% @vendors.each do |vendor| %>
+            <div>
+              <%= property_vendor.radio_button(:vendor_id, vendor.id) %>
+              <%= vendor %>
+            </div>
+          <% end %>
+        </p>
+        <p>
+          <label>Notes</label><br/>
+          <%= property_vendor.text_area :notes, :columns => 40, :rows => 4 %>
+        </p>
+        <div><%= submit_tag 'Save' %></div>
+      <% end %>
+    <% else %>
+      <span class="empty">No company vendors defined. First add a vendor to your company, then come back here and associate the vendor with this propery.</span>
+    <% end %>
+  </p>
+</fieldset>

@@ -1,0 +1,11 @@
+<% contact = tenant.contact %>
+<%= link_to(
+ "#{contact.first_name} #{contact.last_name}",
+  m([
+    tenant.rental_agreement.unit.property.company,
+    tenant.rental_agreement.unit.property,
+    tenant.rental_agreement.unit,
+    tenant.rental_agreement,
+    tenant
+  ])
+) %>

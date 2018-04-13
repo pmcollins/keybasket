@@ -1,0 +1,18 @@
+<div class="building_prototype">
+  <blockquote>
+    <% h building_prototype.apt %>
+    <%= link_to(
+      'Show',
+      m([@company, @property, building_prototype])
+    ) %>
+    <%= link_to(
+      'Edit',
+      m([@company, @property, building_prototype, 'edit'])
+    ) %>
+    <%= link_to(
+      'Delete',
+      :method => :delete,
+      m([@company, @property, building_prototype])
+    ) %>
+  </blockquote>
+</div>

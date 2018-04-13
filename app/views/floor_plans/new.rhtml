@@ -1,0 +1,13 @@
+<%= breadcrumbs([@company, @property, 'New Floor Plan']) %>
+<% form_for(
+  :floor_plan,
+  :url => m([@company, @property, 'floor_plans']),
+  :builder => LabeledBuilder
+) do |form| %>
+<fieldset>
+  <legend>Add a Floor Plan</legend>
+  <%= render :partial => 'form', :object => form %>
+  <p><%= submit_tag 'Create' %></p>
+</fieldset>
+<% end %>
+

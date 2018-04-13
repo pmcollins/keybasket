@@ -1,0 +1,6 @@
+<%= form.text_field :floors, :size => 8 %>
+<%= form.text_field :units_per_floor, :size => 8 %>
+<label>Apartment Labels</label>
+<blockquote>
+<%= render :partial => '/building_prototypes/type_selector', :collection => @types %>
+</blockquote>

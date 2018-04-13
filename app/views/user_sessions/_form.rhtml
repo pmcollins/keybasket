@@ -1,0 +1,24 @@
+<% form_for(
+  :user_session,
+  :url => '/user_sessions'
+) do |form| %>
+<p>
+  <div><label>Username</label></div>
+  <div><%= form.text_field :name, :size => 24 %></div>
+</p>
+<% content_for :body_tag do %>
+onload="$('user_session_name').focus()"
+<% end %>
+<p>
+  <div><label>Password</label></div>
+  <div><%= form.password_field :password, :size => 24 %></div>
+</p>
+<p>
+  <%= submit_tag 'Log In' %>
+  <!-- %= link_to(
+    'new management account',
+    '/management_accounts/new',
+    :class => 'sys'
+  ) % -->
+</p>
+<% end %>

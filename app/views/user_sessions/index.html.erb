@@ -1,0 +1,10 @@
+<table border=1>
+<% @user_sessions.each do |user_session| %>
+  <tr>
+    <td><%= user_session.login %></td>
+    <td><%= user_session.logged_in_at %></td>
+    <td><%= user_session.logged_out_at %></td>
+    <td><%= user_session.remote_ip %></td>
+  </tr>
+<% end %>
+</table>

@@ -1,0 +1,28 @@
+<%= breadcrumbs([@company, @vendor, @purchase_order]) %>
+
+<fieldset>
+  <legend>Purchase Order</legend>
+  <p>
+    <%= render :partial => 'show_core', :object => @purchase_order %>
+  </p>
+</fieldset>
+<fieldset>
+  <legend>Line Items</legend>
+  <p>
+    <%= render :partial => 'show_line_items', :object => @purchase_order_line_items %>
+  </p>
+</fieldset>
+<fieldset>
+  <legend>Approval</legend>
+  <p>
+    <% if @purchase_order.purchase_order_approval_id.nil? %>
+      <%= link_to(
+        'approve this purchase order',
+        m([@company, @vendor, @purchase_order, 'purchase_order_approvals/new']),
+        :class => 'sys'
+      ) %>
+    <% else %>
+      meta: show approval here
+    <% end %>
+  </p>
+</fieldset>

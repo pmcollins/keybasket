@@ -1,0 +1,10 @@
+<div>
+  <span class="value">
+    <%= link_to(
+      number_to_currency(company_check.amount),
+      m([@company, 'company_checks', company_check.id])
+    ) %>
+  </span>
+  <span class="value"><%= company_check.account %></span>
+  <span class="value"><%= company_check.notes %></span>
+</div>

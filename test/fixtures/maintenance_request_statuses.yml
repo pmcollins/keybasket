@@ -1,0 +1,21 @@
+--- 
+maintenance_request_statuses_001: 
+  name: open
+  id: "1"
+  ordering: "0"
+maintenance_request_statuses_002: 
+  name: postponed
+  id: "2"
+  ordering: "1"
+maintenance_request_statuses_003: 
+  name: in_progress
+  id: "3"
+  ordering: "2"
+maintenance_request_statuses_004: 
+  name: completed
+  id: "4"
+  ordering: "3"
+maintenance_request_statuses_005: 
+  name: closed
+  id: "5"
+  ordering: "4"

@@ -1,0 +1,19 @@
+<% listing = listing_core %>
+<% u = listing.unit %>
+<% f = u.floor_plan %>
+
+<%= u.property.address.city %> <%= u.property.address.zip %>,
+
+<%= f.bedrooms %> bed <%= f.bathrooms %> bath,
+
+<%= f.sq_ft %> square feet,
+
+<%= listing.rent %>/month,
+
+<% if listing.lease_months %>
+  <%= listing.lease_months %> month lease,
+<% else %>
+  rent is month-to-month,
+<% end %>
+
+available <%= listing.available_date %>

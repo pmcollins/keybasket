@@ -1,0 +1,16 @@
+<% listing = adbox_listing %>
+<% u = listing.unit %>
+<% f = u.floor_plan %>
+<div class="listing">
+  Unit <%= u.apt %>
+  <%= f.bedrooms %> bd <%= f.bathrooms %> bath
+  <%= f.sq_ft %> sqft
+  <%= number_to_currency listing.amount %>/month
+  <% listing.lease_months || 'mtm' %>
+  Available <%= listing.available_date %>
+  <% if f.floor_plan_photos.any? %>
+    [photos here]
+  <% else %>
+    <span class="empty">no unit photos available</span>
+  <% end %>
+</div>
